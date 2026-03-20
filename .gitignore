@@ -1,0 +1,43 @@
+
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# Dependencias (NUNCA subas esta carpeta, es pesadísima)
+node_modules/
+
+# Construcción (Archivos que genera Vite al compilar)
+dist/
+dist-ssr/
+*.local
+
+# Logs (Errores de instalación)
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Entorno y Secretos (VITAL por si luego usas APIs o Tokens)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos del Sistema / Editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+!.vscode/extensions.json
+.idea
+.DS_Store
