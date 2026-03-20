@@ -1,16 +1,63 @@
-# React + Vite
+# Portfolio Profesional | José Rodríguez García
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Data Analyst • BI Developer • Full-Stack Solutions Architect
 
-Currently, two official plugins are available:
+Bienvenido a mi portafolio interactivo. Este proyecto no es solo una muestra de mis habilidades de diseño web, sino un ecosistema que centraliza mis proyectos más complejos en **Ciencia de Datos**, **Business Intelligence** y **Desarrollo de Software Administrativo**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Proyectos Destacados
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. RepoDeclara (Expert System)
 
-## Expanding the ESLint configuration
+**Sistemas Administrativos / Full-Stack**
+Sistema experto diseñado para resolver la complejidad fiscal en México. Construido para garantizar trazabilidad y salvaguarda de información que los ERPs extranjeros suelen ignorar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Stack:** Next.js, Prisma ORM, TypeScript, Tailwind CSS.
+- **Valor:** Control total del dato desde la captura hasta el análisis forense.
+
+### 2. Predicción de Rotación de Empleados
+
+**Machine Learning / Scikit-Learn**
+Modelo predictivo de alta precisión (98.3% AUC) desarrollado bajo el framework **PACE** de Google.
+
+- **Stack:** Python, XGBoost, SHAP, Pandas.
+- **Insight:** Identificación de la "zona crítica" de abandono entre los 4 y 5.5 años de antigüedad.
+
+### 3. SuperTienda Analytics
+
+**Custom Web App / Data Science**
+Desarrollo "In-House" para diagnóstico de fugas de capital sin costos de licenciamiento.
+
+- **Stack:** React, Python FastAPI, Recharts.
+
+---
+
+## 🛠️ Tech Stack
+
+| Área              | Tecnologías                               |
+| :---------------- | :---------------------------------------- |
+| **Data Science**  | Python (Pandas, NumPy, Scikit-Learn), SQL |
+| **Visualización** | Tableau, Looker Studio, Power BI (DAX)    |
+| **Web Dev**       | React, Next.js, Tailwind CSS, Prisma      |
+| **Metodologías**  | PACE, Auditoría Forense, Gestión ERP      |
+
+---
+
+## 📊 Certificaciones Clave
+
+- **Google Advanced Data Analytics Professional Certificate**
+  - Enfoque: Regresión estadística, Machine Learning y Python avanzado.
+- **Contador Público & Ex-Gerente Administrativo**
+  - Especialidad: Auditoría y optimización de procesos de negocio.
+
+---
+
+## 🛠️ Instalación y Uso (Desarrollo Local)
+
+Si deseas replicar este portafolio localmente:
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/pprgarcia/tu-repositorio.git
+   ```
