@@ -653,7 +653,7 @@ export default function Portfolio() {
               'También, puedes generar una captura de Solicitud, Requerimiento de información y Resolución, con datos sintéticos de tu preferencia. No nos hacemos responsables por la información que adjuntes o captures, considera que otras personas podrán ver esta versión de prueba. Cuando lancemos RepoDeclara en la versión en producción la información estará sellada sólo para los usuarios autorizados por el "administrador de la empresa" que se asigne en el sistema a cada empresa.',
               "Debido a que estamos usando una base de datos de prueba, el límite de archivos pesados es limitado. Te agradecería si al final de tu prueba borras los archivos que adjuntes, después de generar los reportes en Excel o pantallas que gustes.",
             ],
-            src: "/",
+            src: "https://repo-declara.vercel.app/",
           },
         ],
 
@@ -1145,7 +1145,7 @@ Monto_Advertencia =>
             <div className="mb-10">
               <div className="w-56 h-56 mx-auto rounded-full overflow-hidden bg-gray-200 border-4 border-gray-100 shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                  src="/images/JRG.png"
                   alt="José Rodríguez García"
                   className="w-full h-full object-cover"
                 />
@@ -1353,7 +1353,8 @@ Monto_Advertencia =>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Si tengo la capacidad de arquitectar una plataforma de esta
-              naturaleza y magnitud, puedo desarrollar{" "}
+              naturaleza y magnitud (RepoDeclara), ten seguridad que puedo
+              desarrollar{" "}
               <strong>interfaces de recolección de datos a medida</strong>,
               desde sistemas de registro hasta herramientas de encuestas, para
               capturar las observaciones precisas que el problema de negocio
