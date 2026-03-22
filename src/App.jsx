@@ -1145,7 +1145,7 @@ Monto_Advertencia =>
             <div className="mb-10">
               <div className="w-56 h-56 mx-auto rounded-full overflow-hidden bg-gray-200 border-4 border-gray-100 shadow-xl">
                 <img
-                  src="/images/JRG.jpeg"
+                  src="/images/JRG.JPG"
                   alt="José Rodríguez García"
                   className="w-full h-full object-cover"
                 />
