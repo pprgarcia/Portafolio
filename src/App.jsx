@@ -1528,7 +1528,7 @@ Monto_Advertencia =>
                       }}
                       className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold cursor-pointer"
                     >
-                      Ver proyecto completo{" "}
+                      Ver descripción completa{" "}
                       <ExternalLink className="ml-2 w-4 h-4" />
                     </button>
                   </div>
