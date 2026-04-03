@@ -362,6 +362,11 @@ export default function Portfolio() {
       level: "Pandas, NumPy, Matplotlib, Scikit-learn",
     },
     {
+      name: "React",
+      icon: "⚛️",
+      level: "Hooks, Context API, Reusable Components",
+    },
+    {
       name: "Looker Studio",
       icon: "📉",
       level: "Dashboards, Data Blending, Custom Reports",
@@ -372,25 +377,20 @@ export default function Portfolio() {
       icon: "📑",
       level: "Pivot Tables, Advanced Functions, Dashboards",
     },
-    {
-      name: "React",
-      icon: "⚛️",
-      level: "Hooks, Context API, Reusable Components",
-    },
     { name: "Power BI", icon: "📊", level: "DAX, Power Query, Data Modeling" },
   ];
 
   const projects = [
     {
       id: "react-supertienda-admin",
-      title: "SuperTienda Analytics - Custom Web App",
-      category: "Full Stack Development / Data Science",
+      title: "Dashboard SuperTienda Analytics - Sistema Web Personalizable",
+      category: "Full Stack Development / Data Analytics",
       description:
         "Aplicación web de analítica a medida desarrollada con Next.js y Python. Procesa 50k+ registros para diagnosticar fugas de capital y optimizar la rentabilidad operativa mediante una arquitectura de microservicios.",
       image: "/images/admintool_main.png",
       tags: [
         "Next.js",
-        "React",
+        "React (Next.js)",
         "Python FastAPI",
         "Pandas/Python",
         "Tailwind CSS",
@@ -404,8 +404,7 @@ export default function Portfolio() {
 
       detailedInfo: {
         context:
-          'A diferencia de las herramientas tradicionales de BI (Tableau/PowerBI), este proyecto consiste en el desarrollo de un software de analítica personalizado "In-House". El objetivo fue crear una solución escalable, sin costos de licenciamiento por usuario y con total flexibilidad en la visualización de datos, conectando un backend de procesamiento robusto (Python) con un frontend de alto rendimiento (React).',
-
+          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), este software representa una solución de Soberanía de Datos de grado empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
         impact:
           "La herramienta permite democratizar el acceso a los datos operativos sin depender de licencias costosas. Técnicamente, reduce la carga cognitiva del usuario mediante interfaces limpias y tooltips contextuales inteligentes. A nivel de negocio, valida matemáticamente la pérdida de $920K USD por descuentos mal aplicados y desmiente mitos sobre los costos logísticos, reorientando la estrategia comercial de la empresa.",
 
@@ -444,20 +443,45 @@ export default function Portfolio() {
             image: "/images/admintool-scatter.png",
           },
           {
-            title: "Link al proyecto en línea",
+            title: "Uso de Tooltips Contextuales Inteligentes",
             description:
-              "Accede a la aplicación web completa para explorar el dashboard interactivo y analizar los datos de SuperTienda.",
+              "El uso deTooltips contextuales inteligentes es una característica clave que mejora significativamente la experiencia del usuario al interactuar con los gráficos. Estos tooltips permiten la identificación de los elementos integrantes de las gráficas, ofreciendo su información inmediatamente. También, se aplica una lógica de colores dinámica para resaltar visualmente los datos según su impacto en la rentabilidad (por ejemplo, verde para ganancias, rojo para pérdidas). Además, el formateo inteligente de moneda y porcentajes facilita la interpretación rápida de los datos financieros, permitiendo a los usuarios tomar decisiones informadas sin necesidad de análisis adicionales.",
+            image: "/images/admintool-productos1.png",
+          },
+          {
+            title: "Executive Insights Narrativos",
+            description:
+              "Recuadros editables conectados a Base de Datos, para dejar comentarios, indicaciones, y/o conclusiones.",
+            image: "/images/admintool-insights.png",
+          },
+          {
+            title: "Link al proyecto en línea",
+            description: [
+              "Accede a la aplicación web completa para explorar el dashboard interactivo y analizar los datos de SuperTienda. Los perfiles administrador y viewer tienen diferentes niveles de acceso para experimentar la herramienta desde distintas perspectivas: Los administradores pueden editar los insights, controlar el acceso de los usuarios y acceder a toda la información, mientras que los viewers tienen acceso de solo lectura para obtener la experiencia de usuario a quien se destina la información. Incluso podríamos controlar qué perfiles pueden ver algunos módulos, o no.",
+              "Administrador:",
+              "contador1.2@supertienda.com",
+              "Password: Contador_1.2",
+              "Viewer:",
+              "contador1.1@ey.com",
+              "Password: Contador_1.1",
+            ],
             src: "https://supertienda-dashboard-analisis.vercel.app/",
           },
         ],
 
         dashboardBreakdown: [
+          "Esto es sólo un ejemplo de las características que se pueden desarrollar en un dashboard personalizado, el límite es la imaginación y la habilidad para interpretar los datos de manera estratégica. En este caso, se desarrollaron los siguientes módulos:",
           "Panel de Control (Dashboard): KPIs en tiempo real (Ventas, Margen, Tendencias) y resumen ejecutivo.",
           'Módulo de Descuentos: Análisis de sensibilidad que revela la "Zona de la Muerte" (Descuentos >20%).',
           'Análisis de Productos: Scatter Plot interactivo de Ventas vs. Utilidad para identificar productos "Bleeders".',
           "Gestión de Clientes: Matriz de segmentación identificando Clientes Críticos (alto volumen, margen negativo).",
           "Logística Internacional: Mapa de calor y análisis de costos de envío vs. rentabilidad por país.",
           "Conclusiones (Insights): Sección narrativa que traduce los datos en acciones de negocio concretas.",
+          "Autenticación de Grado Bancario: Implementación de seguridad mediante JWT (JSON Web Tokens) encriptados en Cookies HttpOnly, protegidos contra ataques XSS y CSRF, con hashing de contraseñas mediante el algoritmo Argon2.",
+          'Módulo de Gobernanza y Control de Acceso: Sistema jerárquico (Owner, Admin, Viewer) con Sala de Espera (Pending Queue) para aprobación manual de usuarios. Incluye un "Kill-Switch" para suspender accesos en tiempo real durante sesiones críticas.',
+          "Bitácora de Auditoría Inmutable: Registro histórico automático de cada acción administrativa (aprobaciones, cambios de rol, eliminaciones) con trazabilidad exacta de fecha, hora (MX) y responsable, almacenado en Vercel Postgres.",
+          "Motor de Ingesta con Validación Dinámica: Interfaz Drag & Drop para la carga de nuevos datasets (CSV) y actualizar constantemente el dataset que alimenta las gráficas. El backend valida programáticamente la integridad de las columnas y realiza un Hot-Reload de los datos sin interrumpir el servicio.",
+          "Módulo de Executive Insights: Sistema de gestión de contenido (CMS) integrado que permite a los directivos insertar directrices estratégicas personalizadas para cada módulo de análisis, guardadas permanentemente en la base de datos.",
         ],
 
         keyInsights: [
@@ -476,6 +500,9 @@ export default function Portfolio() {
           "/images/admintool-clientes.png", // Gráfica de barras horizontal (Países/Clientes)
           "/images/admintool-paises.png",
           "/images/admintool-conclusiones.png", // La página de texto con los checks
+          "/images/admintool-gestiondatos.png", // La sección de gestion de archivos csv
+          "/images/admintool-bitacora.png", // La sección de bitácora
+          "/images/admintool-controlusuarios.png", // La sección de control de usuarios
         ],
       },
     },
