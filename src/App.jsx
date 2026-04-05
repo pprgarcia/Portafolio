@@ -735,13 +735,13 @@ export default function Portfolio() {
 
         process: [
           {
-            title: "Creación y Edición de Sábanas",
+            title: "Cédulas de Registro Integral (Sábanas)", // Título del módulo
             description: [
-              "Una sábana es una declaración que tiene un Número de Operación Único, en la que se presentaron uno o más impuestos. Esta es la página de captura de información como tipo, Número de Operación, Periodo, Fecha de Presentación, elección del Impuesto que se va a documentar (Federales, Estatales, Retenciones), Monto a cargo, Monto presentado con anterioridad (si es complementaria), INPC's, Factor de Actualización, Recargos, Memo de aclaraciones, etc.",
-              "Botón (Subir Acuse SAT) para subir los archivos relacionados como: la declaración en digital, Archivos relevantes para el cálculo. Los papeles de trabajo se pueden adjuntar con otro botón que es específico para cada impuesto (Soporte Documental Específico), de esta manera cuando se consulte un impuesto se obtiene toda la información capturada y los archivos globales y específicos",
-              "Si el monto presentado en una declaración complementaria es menor que el presentado en la normal, se genera una monto a favor (bolsa en el sistema) que el contribuyente puede recuperar vía compensación o devolución.",
+              "Una Cédula de Registro Integral (Sábana) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
+              "Esta interfaz gestiona datos críticos como Periodo, Fecha de Presentación, Montos a cargo, Montos presentados con anterioridad (para complementarias), INPCs, Factores de Actualización, Recargos y Memos de aclaración.",
+              "Botón (Subir Acuse SAT) para subir los archivos relacionados como: la declaración en digital, Archivos relevantes para el cálculo. Los papeles de trabajo se pueden adjuntar con otro botón que es específico para cada impuesto (Soporte Documental Específico), de esta manera cuando se consulte un impuesto se obtiene toda la información capturada y los archivos globales y específicos relacionados a ese impuesto.",
+              "El sistema detecta automáticamente si el monto de una declaración complementaria genera un Saldo a Favor, creando una 'Bolsa de Recuperación' disponible para procesos de compensación o devolución.",
             ],
-            codeSnippet: "Next.js, React",
             image: "/images/RepoDeclara-sabana.png",
           },
           {
