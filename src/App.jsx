@@ -682,7 +682,7 @@ export default function Portfolio() {
       image: "/images/RepoDeclara-Tablero Principal.png",
       tags: ["React 19", "Next.js 16 (App Router)", "Prisma ORM", "TypeScript"],
       metrics: [
-        "Digitalización de Declaraciones",
+        "Digitalización de Declaraciones (CRI)",
         "Listado de declaraciones (Actualizaciones y Recargos, Saldos a Favor)",
         "Toda la información acerca de Compensaciones aplicadas y sus Actualizaciones (en proceso y su históricas)",
         "Toda la información acerca de Devoluciones, sus Actualizaciones e Intereses (en proceso y su históricas)",
@@ -696,14 +696,64 @@ export default function Portfolio() {
       detailedInfo: {
         context: [
           "En México, las empresas están obligadas a llevar contabilidad financiera, pero los papeles de trabajo de determinaciones fiscales se llevan en archivos de Excel y se guardan en carpetas de Windows, lo cual es un control muy precario ya que se pueden perder las versiones definitivas, y poner al contribuyente en riesgos legales y créditos fiscales por no poder diseñar una defensa fiscal sólida.",
-          "En una revisión de cualquier autoridad, le otorgan al contribuyente un plazo para atender, por lo que el tiempo se vuelve el mayor enemigo al plantear una defensa estratégica. Manten tu información al día para que tu estrategia sea poder entender si hay un riesgo y cómo mitigarlo, y no tener que emplear largas jornadas para agrupar información y entender tu propia situación fiscal.",
+          "En una revisión de cualquier autoridad, le otorgan al contribuyente un plazo para atender, por lo que el tiempo se vuelve el mayor enemigo al plantear una defensa estratégica. Mantén tu información al día para que tu estrategia sea poder entender si hay un riesgo y cómo mitigarlo, y no tener que emplear largas jornadas para agrupar información y entender tu propia situación fiscal.",
           "Cuando es necesario agrupar la información fiscal para presentar a algún revisor (Auditor, Autoridades, Ejecutivos, Dueños, Due Dilligence, etc.), se pierden tiempo y otros recursos para agrupar y relacionar documentos manualmente, enlistar la información de declaraciones, compensaciones, devoluciones, relacionar papeles de trabajo y evidencia de negocio de las operaciones que sirvieron de base a esos cálculos. Dependiendo del revisor, no terminar a tiempo toda la información para presentar, resulta en multas, créditos fiscales, una revisión más profunda por parte de las autoridades u otro tipo de consecuencias.",
         ],
 
         impact: [
-          "¿Qué es RepoDeclara?",
-          "Es la solución para conocer el estatus real y obtener evidencia de la existencia de la información fiscal y legal, depositada en una base de datos en donde se documenta la historia fiscal y legal de empresas, y contribuyentes en general.",
-          "Es un sistema de documentación fiscal y legal que permite tener toda la información organizada, actualizada y disponible para cualquier revisión, ideal para demostrar el cumplimiento de obligaciones fiscales, así como documentar, mostrar y dar seguimiento a los procesos de recuperación de dinero por Pagos Indebidos de Impuestos, Saldos a Favor de IVA Operativos o Procesos Legales. Especialmente cuando la autoridad fiscal emite Requerimientos de Información, Devoluciones Parciales, hay Remanentes de Saldos Pendientes de recuperar (dinero en poder del SAT u otras autoridades), o en caso de Auditorías, Revisiones o Visitas Domiciliarias, tener toda la información organizada y disponible para presentar a las autoridades es FUNDAMENTAL para sustentar el éxito de Compensaciones y Devoluciones, así como para EVITAR multas, y créditos fiscales, o DEFENDERSE ante las Facultades de Revisión de SAT o una acusación por Delito Fiscal.",
+          <>
+            ¿Qué es <strong>RepoDeclara</strong>?
+          </>,
+
+          <>
+            Es la solución para conocer el <strong>estatus real</strong> y
+            obtener evidencia de la existencia de la información fiscal y legal,
+            depositada en una base de datos en donde se documenta la
+            <strong> historia fiscal y legal</strong> de empresas y
+            contribuyentes en general.
+          </>,
+
+          <>
+            Es un sistema de <strong>documentación fiscal y legal</strong> que
+            permite tener toda la información organizada, actualizada y
+            disponible para cualquier revisión; ideal para demostrar el{" "}
+            <strong>cumplimiento de obligaciones fiscales</strong>, así como
+            documentar, mostrar y dar seguimiento a los procesos de
+            <strong> recuperación de dinero</strong> por Pagos Indebidos de
+            Impuestos, Saldos a Favor de IVA Operativos o Procesos Legales.
+          </>,
+
+          <>
+            Especialmente cuando la autoridad fiscal emite Requerimientos de
+            Información o Devoluciones Parciales, o existen{" "}
+            <strong>
+              Remanentes de Saldos Pendientes de recuperar antigüos
+            </strong>{" "}
+            (dinero en poder del SAT), tener toda la información organizada es{" "}
+            <strong>FUNDAMENTAL para sustentar el éxito</strong> de
+            Compensaciones y Devoluciones, así como para{" "}
+            <strong>EVITAR multas</strong> y créditos fiscales, o{" "}
+            <strong className="font-semibold text-blue-800">DEFENDERSE</strong>{" "}
+            ante las Facultades de Revisión de SAT o una acusación por Delito
+            Fiscal.
+          </>,
+
+          <>
+            También es la herramienta que permite la{" "}
+            <strong>Optimización del Flujo de Efectivo</strong> haciendo de la
+            recuperación estratégica de Saldos a Favor un proceso{" "}
+            <strong>visible y con evidencias</strong>, y{" "}
+            <strong>no un proceso en sombras</strong> que solamente conocen las
+            personas que presentan los trámites. Si el sistema es alimentado
+            consistentemente, presenta a los{" "}
+            <strong>shareholders la certeza</strong> de qué se está haciendo y
+            hace visibles los contratiempos, para que no se convierta en un
+            factor más de{" "}
+            <strong>
+              incertidumbre en la planeación del flujo de efectivo
+            </strong>
+            .
+          </>,
         ],
 
         businessQuestions: [
@@ -735,9 +785,9 @@ export default function Portfolio() {
 
         process: [
           {
-            title: "Cédulas de Registro Integral (Sábanas)", // Título del módulo
+            title: "Cédulas de Registro Integral (CRI)", // Título del módulo
             description: [
-              "Una Cédula de Registro Integral (Sábana) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
+              "Una Cédula de Registro Integral (CRI) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
               "Esta interfaz gestiona datos críticos como Periodo, Fecha de Presentación, Montos a cargo, Montos presentados con anterioridad (para complementarias), INPCs, Factores de Actualización, Recargos y Memos de aclaración.",
               "Botón (Subir Acuse SAT) para subir los archivos relacionados como: la declaración en digital, Archivos relevantes para el cálculo. Los papeles de trabajo se pueden adjuntar con otro botón que es específico para cada impuesto (Soporte Documental Específico), de esta manera cuando se consulte un impuesto se obtiene toda la información capturada y los archivos globales y específicos relacionados a ese impuesto.",
               "El sistema detecta automáticamente si el monto de una declaración complementaria genera un Saldo a Favor, creando una 'Bolsa de Recuperación' disponible para procesos de compensación o devolución.",
@@ -755,7 +805,7 @@ export default function Portfolio() {
           {
             title: "Listado de Declaraciones",
             description: [
-              "Cada vez que se guarda una sábana, cada impuesto se forma en su tarjeta exclusiva específica de su nombre, en donde se puede revisar la información capturada (Favor de ampliar el zoom del navegador a +175)",
+              "Cada vez que se guarda una CRI, cada impuesto se forma en su tarjeta exclusiva específica de su nombre, en donde se puede revisar la información capturada (Favor de ampliar el zoom del navegador a +175)",
               'En la columna "Compensación" se muestra el monto total compensado (Acumulación de una o más aplicaciones de diferentes bolsas) el cual se disminuye del monto pagado (columna: "Pagado / (-) Pend. Rec."), el cual puede ser "cero", o haber quedado un remanente pagado con dinero.',
               'Se puede obtener en un reporte Excel la información del tablero principal. Cabe aclarar que todos los módulos tiene una o varias versiones de Reportes Excel, hay un Reporte General en Excel con toda la información capturada en un click. También, con el botón "Bóveda de Evidencia" se pueden obtener todos los archivos (o una selección) que hayan servido de evidencia para las declaraciones (Archivos: .xlxs, .docx, pdf, imágenes, fotografías, etc.)',
             ],
@@ -828,9 +878,9 @@ export default function Portfolio() {
             ],
           },
           {
-            title: "Bóveda de Archivos de Evidencia ",
+            title: "Bóveda de Evidencia Fiscal Blindada",
             description: [
-              'Además de poder subir, bajar o eliminar todos los archivos desde la sección en que fueron adjuntados también tenemos la Bóveda de archivos digitales que permite descargar todos o algunos archivos seleccionándolos, en cualquier momento. Todo por medio del botón del tablero principal "Bóveda de evidencia".',
+              'Además de poder subir, bajar o eliminar todos los archivos desde la sección en que fueron adjuntados también tenemos la Bóveda de Evidencia Fiscal Blindada, con los archivos digitales, que permite descargar todos o algunos archivos seleccionándolos, en cualquier momento. Todo por medio del botón del tablero principal "Bóveda de evidencia".',
             ],
             image: [
               "/images/RepoDeclara-boveda.png",
@@ -844,8 +894,8 @@ export default function Portfolio() {
               "Accede a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
               "Si quieres acceder a la empresa que tiene ejemplos completos puedes entrar con el usuario: administradorfy@fy.com; password: Administradorfy",
               "Si quieres accesar a las empresas de pruebas y generar tus propias capturas puedes hacerlo con: admsinempre@ey.com; password:EdmSinEmpre",
-              "La empresa Empresa Young, S.A de C.V. tiene ejemplos concretos. La empresa Pruebas, S.A. de C.V. contiene algunas declaraciones pero sin compensaciones o devoluciones. Puedes entrar a generar nuevas declaraciones (sábanas) o puedes entrar a editar cualquier declaración e intentar hacer una compensación en el módulo de compensaciones (dentro de la misma sábana).",
-              "La empresa SINDATOS PRUEBA2, S.A. de C.V. esta completamente vacía para que generes tus propias sábanas y escenarios",
+              "La empresa Empresa Young, S.A de C.V. tiene ejemplos concretos. La empresa Pruebas, S.A. de C.V. contiene algunas declaraciones pero sin compensaciones o devoluciones. Puedes entrar a generar nuevas declaraciones (CRI) o puedes entrar a editar cualquier declaración e intentar hacer una compensación en el módulo de compensaciones (dentro de la misma CRI).",
+              "La empresa SINDATOS PRUEBA2, S.A. de C.V. esta completamente vacía para que generes tus propias CRI y escenarios",
               'También, puedes generar una captura de Solicitud, Requerimiento de información y Resolución, con datos sintéticos de tu preferencia. No nos hacemos responsables por la información que adjuntes o captures, considera que otras personas podrán ver esta versión de prueba. Cuando lancemos RepoDeclara en la versión en producción la información estará sellada sólo para los usuarios autorizados por el "administrador de la empresa" que se asigne en el sistema a cada empresa.',
               "Debido a que estamos usando una base de datos de prueba, el límite de archivos pesados es limitado. Te agradecería si al final de tu prueba borras los archivos que adjuntes, después de generar los reportes en Excel o pantallas que gustes.",
             ],
