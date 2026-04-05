@@ -506,15 +506,21 @@ export default function Portfolio() {
           </>,
 
           <>
-            - o si eres responsable del área contable ¿Estas cansado de que cada
-            cierre de mes las cosas se compliquen hasta altas horas de la noche,
-            haciendo cambios de última hora, por situaciones ajenas a ti, y
-            tener que controlar cada cambio con archivos de Excel?, Tal vez te
-            convendría un sistema que te permita clasificar las cuentas
-            contables de la Balanza de Comprobación, y a partir de allí
+            - Si eres responsable del área contable, ¿estás cansado de que cada
+            cierre de mes se complique hasta altas horas de la noche por cambios
+            de última hora y
+            <strong>depender de complejos archivos de Excel</strong>? Podrías
+            contar con un sistema personalizado que te permita{" "}
+            <strong>parametrizar y clasificar personalmente</strong> las cuentas
+            de tu Balanza de Comprobación. Bajo este enfoque, el sistema respeta
+            tu criterio profesional para
             <strong>
-              automatizar el Proceso de cierre contable y el Paquete entragable.
+              automatizar la consolidación del cierre y la generación del
+              paquete entregable
             </strong>
+            . Esto garantiza que el procesamiento de datos sea fiel a tu lógica
+            de negocio, 100% confiable y con un resguardo seguro en una base de
+            datos profesional.
           </>,
 
           <>
@@ -1747,23 +1753,28 @@ Monto_Advertencia =>
             <span className="text-yellow-400 font-bold">
               Analítica Avanzada
             </span>{" "}
-            con un enfoque Operativo único disruptivo: el desarrollo de{" "}
+            con un enfoque Operativo Disruptivo{" "}
             <span className="text-yellow-400 font-bold">
-              soluciones web a medida
+              para el desarrollo de soluciones web a medida
             </span>{" "}
-            para el sector contable-administrativo.
+            para optimizar la gestión contable-administrativa.
             <br />
             <br />
-            Construyo herramientas inteligentes que no solo visualizan, sino que{" "}
+            Construyo herramientas inteligentes que no solo visualizan datos,
+            sino que{" "}
             <span className="underline decoration-yellow-400 decoration-2 underline-offset-4 font-semibold text-white">
               auditan y automatizan
             </span>{" "}
-            tu flujo de información real. Hablemos sobre cómo modernizar o
-            complementar, lo que no puede hacer tu{" "}
+            el flujo real de tu información con tecnología escalable,
+            complementando la capacidad de tu{" "}
             <span className="text-white font-bold italic tracking-wider">
-              ERP,
+              ERP o sistemas actuales,
             </span>{" "}
-            con tecnología propia.
+            para administrar riesgos que hoy <strong>viven</strong> en archivos
+            de Excel y se manifiestan en la{" "}
+            <strong>operación real de tu negocio</strong>. Hablemos sobre cómo
+            llevar tu administración más allá de las gráficas, implementando
+            tecnología propia donde las soluciones comerciales se quedan cortas.
           </p>
 
           {/* GRUPO DE ICONOS UNIFICADOS */}
