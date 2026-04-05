@@ -494,24 +494,68 @@ export default function Portfolio() {
             centros de costos, o de tus proyectos, o de tus campañas de
             marketing, o de tus sucursales, etc.?
           </>,
+
           <>
-            {" "}
-            <b>
-              Cualquier cosa que actualmente administres en spreadsheets de
-              Excel
-            </b>
-            , puede ser llevada a un sistema personalizado como éste, con esta calidad de gráficas, 
-            con la visión estratégica de lo que es importante administrativamente, y te ayude a
-            desarrollar las mejores estrategias con tu equipo. El poder de las gráficas es que muestran
-            de manera más directa lo que una tabla con miles de registros no podría. Además con la
-            ventaja de que puedes controlar la seguridad de tu información, y a
-            la vez, diseñar la experiencia de usuario para que sea lo más
-            amigable posible, y que el usuario pueda obtener hallazgos
-            estratégicos, mediante alertas de colores, sin necesidad de hacer
-            análisis adicionales.
+            - o Tal vez ¿Te gustaría algo más semejante a un sistema de control
+            de
+            <strong>
+              Inversiones, Gastos, Activos Fijos, Depreciaciones, Bajas,
+              Importaciones, Exportaciones
+            </strong>
+            clasificados por tipo?
           </>,
-          "Bajo el enfoque de este ejemplo de sistema que te presento, tú tienes el control de cuándo quieres actualizar la información, la periodicidad la decides tu. Metes una Tabla en un archivo '.csv' con formato y columnas específicos y el sistema se encarga de validar la integridad de los datos y actualizar las gráficas sin necesidad de ninguna intervención.",
-          "En adelante, te detallo las características del dashboard que te presento como ejemplo, y los hallazgos claves que se obtuvieron al analizar los datos del DataSet SuperTienda. Esto es sólo un ejemplo de la capacidad de gráficas y herramientas que tienes a tu disposición si me permites colaborar contigo en el desarrollo de la herramienta ideal para ti.",
+
+          <>
+            - o si eres responsable del área contable ¿Estas cansado de que cada
+            cierre de mes las cosas se compliquen hasta altas horas de la noche,
+            haciendo cambios de última hora, por situaciones ajenas a ti, y
+            tener que controlar cada cambio con archivos de Excel?, Tal vez te
+            convendría un sistema que te permita clasificar las cuentas
+            contables de la Balanza de Comprobación, y a partir de allí
+            <strong>
+              automatizar el Proceso de cierre contable y el Paquete entragable.
+            </strong>
+          </>,
+
+          <>
+            Cualquier <strong>proceso</strong> que actualmente administres en{" "}
+            <strong>spreadsheets de Excel</strong>, puede ser llevado a un{" "}
+            <strong>sistema personalizado</strong> como éste, con esta calidad
+            de gráficas, con la visión de lo que es importante{" "}
+            <strong>controlar administrativamente</strong>, y te ayude a
+            desarrollar las mejores estrategias con tu equipo. El poder de las
+            gráficas es que muestran de manera más directa lo que una{" "}
+            <strong>tabla con miles de registros</strong> no podría. Además con
+            la ventaja de que puedes{" "}
+            <strong>controlar la seguridad de tu información</strong>, y a la
+            vez, diseñar la <strong>experiencia de usuario</strong> para que sea
+            lo más amigable posible, y que el usuario pueda obtener{" "}
+            <strong>hallazgos estratégicos</strong>, mediante{" "}
+            <strong>alertas de colores</strong>, sin necesidad de hacer análisis
+            adicionales.
+          </>,
+
+          <>
+            Cualquiera que sea tu necesidad, quedaría bajo el mismo enfoque de
+            este ejemplo de sistema que te presento, donde{" "}
+            <strong>tú tienes el control</strong> de cuándo quieres actualizar
+            la información, la <strong>periodicidad la decides tú</strong>.
+            Metes una Tabla en un archivo <strong>'.csv'</strong> con formato y
+            columnas específicos y el sistema se encarga de{" "}
+            <strong>validar la integridad de los datos</strong> y{" "}
+            <strong>actualizar las gráficas</strong> sin necesidad de ninguna
+            intervención.
+          </>,
+
+          <>
+            En adelante, te detallo las características del dashboard que te
+            presento como ejemplo, y los <strong>hallazgos claves</strong> que
+            se obtuvieron al analizar los datos del{" "}
+            <strong>DataSet SuperTienda</strong>. Esto es sólo un ejemplo de la{" "}
+            <strong>capacidad de gráficas y herramientas</strong> que tienes a
+            tu disposición si me permites colaborar contigo en el desarrollo de
+            la <strong>herramienta ideal para ti</strong>.
+          </>,
         ],
         businessQuestions: [
           <>
