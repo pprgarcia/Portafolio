@@ -904,7 +904,7 @@ export default function Portfolio() {
         ],
 
         dashboardBreakdown: [
-          "El tablero principal esta ordenado por tarjetas de impuestos, ordenadas de más recientes a mas antiguas lo que permite ver claramente el saldo de impuesto a cargo o a favor de cada mes, si importar cuántas declaraciones tenga ese mes y cuántas compensaciones y/ devoluciones tenga ese impuesto/periodo.",
+          "El tablero principal esta ordenado por tarjetas de impuestos, ordenadas de más recientes a mas antigüas lo que permite ver claramente el saldo de impuesto a cargo o a favor de cada mes, si importar cuántas declaraciones tenga ese mes y cuántas compensaciones y/ devoluciones tenga ese impuesto/periodo.",
           "La sección Documental para Cumplimiento Legal permite llevar un control de los compromisos más importantes de la entidad, o incluso puede ser usada como bitácora de reuniones gerenciales en donde se den seguimiento a los objetivos de la empresa como un proceso continuo, separadas por ejemplo, por cada mes.",
           "El sistema tiene una sección en donde se guardan los INPC's que se acumulan gracias al llamado de una API del Banco de México, por lo que con un click mensual se mantendrá actualizado el listado.",
           "El sistema cuenta con un proceso de autenticación para poder entrar al sistema, garantizando que sólo los usuarios asignados a cada empresa tengan acceso. Ningún usuario puede ver una empresa a la que no haya sido asignado previamente",
