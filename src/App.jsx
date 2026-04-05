@@ -60,18 +60,28 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Contexto */}
             {/* Contexto - CÓDIGO CORREGIDO */}
             <div>
-              {/* Esta línea convierte el texto en arreglo automáticamente si no lo es */}
+              {/* Bloque de Contexto */}
               {(Array.isArray(details.context)
                 ? details.context
                 : [details.context]
               ).map((paragraph, i) => (
-                <p className="text-gray-600 italic mb-4" key={i}>
+                <p className="text-gray-600 italic mb-4" key={`ctx-${i}`}>
                   {paragraph}
                 </p>
               ))}
-              <p className="text-lg text-gray-800 leading-relaxed">
-                {details.impact}
-              </p>
+
+              {/* Bloque de Impacto (Asegúrate que NO haya una coma aquí afuera) */}
+              {(Array.isArray(details.impact)
+                ? details.impact
+                : [details.impact]
+              ).map((paragraph, i) => (
+                <p
+                  className="text-lg text-gray-800 leading-relaxed mb-4"
+                  key={`imp-${i}`}
+                >
+                  {paragraph}
+                </p>
+              ))}
             </div>
 
             {/* Preguntas de Negocio */}
@@ -81,15 +91,23 @@ const ProjectModal = ({ project, onClose }) => {
                   Preguntas de Negocio
                 </h3>
                 <div className="bg-blue-50 rounded-xl p-6">
+                  {/* 1. Renderizamos solo el primer elemento como un párrafo (Introducción) */}
+                  <div className="text-gray-800 mb-4 leading-relaxed">
+                    {details.businessQuestions[0]}
+                  </div>
+
+                  {/* 2. Mapeamos desde el segundo elemento en adelante para la lista numerada */}
                   <ol className="space-y-3">
-                    {details.businessQuestions.map((question, idxbq) => (
-                      <li key={idxbq} className="text-gray-700">
-                        <span className="font-semibold text-blue-600">
-                          {idxbq + 1}.
-                        </span>{" "}
-                        {question}
-                      </li>
-                    ))}
+                    {details.businessQuestions
+                      .slice(1)
+                      .map((question, idxbq) => (
+                        <li key={idxbq} className="text-gray-700">
+                          <span className="font-semibold text-blue-600">
+                            {idxbq + 1}.
+                          </span>{" "}
+                          {question}
+                        </li>
+                      ))}
                   </ol>
                 </div>
               </div>
@@ -404,16 +422,112 @@ export default function Portfolio() {
 
       detailedInfo: {
         context:
-          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), este software representa una solución de Soberanía de Datos de grado empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
-        impact:
-          "La herramienta permite democratizar el acceso a los datos operativos sin depender de licencias costosas. Técnicamente, reduce la carga cognitiva del usuario mediante interfaces limpias y tooltips contextuales inteligentes. A nivel de negocio, valida matemáticamente la pérdida de $920K USD por descuentos mal aplicados y desmiente mitos sobre los costos logísticos, reorientando la estrategia comercial de la empresa.",
+          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), éste es un Ejemplo de Plataforma de Software a Medida que puedes tener y que representa una solución a la Soberanía de Datos de Grado Empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
+        impact: [
+          <>
+            Podrías desarrollar diversos sistemas para{" "}
+            <strong>administrar tus riesgos</strong>, por ejemplo:
+          </>,
 
+          <>
+            - ¿Te gustaría tener un resumen de los{" "}
+            <strong>indicadores clave de desempeño (KPIs)</strong> de tu negocio
+            en <strong>tiempo real</strong>?
+          </>,
+
+          <>
+            - ¿Te gustaría ver exactamente qué{" "}
+            <strong>consumos de materiales</strong> se hicieron durante un turno
+            en la planta de manufactura, o cuáles fueron las{" "}
+            <strong>entradas y salidas en el almacén</strong>, en gráficas
+            clasificadas por tipo de materiales o productos?
+          </>,
+
+          <>
+            - o saber, ¿Cuántos productos se produjeron durante el turno,
+            cuántos quedaron como <strong>producción en proceso</strong>, y/o
+            cuántos fueron aceptados por el{" "}
+            <strong>departamento de control de calidad</strong>?
+          </>,
+
+          <>
+            - ¿Cuánto material se llevó a <strong>scrap</strong> totalmente
+            identificado, cuánto se llevó a <strong>reproceso</strong>, y tener
+            la información suficiente para diseñar{" "}
+            <strong>estrategias para reducir</strong> el scrap y reproceso?
+          </>,
+
+          <>
+            - ¿Tener tu <strong>plan de mantenimiento preventivo</strong>, y
+            poder verificar si se está cumpliendo, o si se está retrasando, y
+            qué <strong>servicios correctivos</strong> están en proceso o fueron
+            terminados?
+          </>,
+
+          <>
+            - Te gustaría que con un <strong>pase de lista</strong> de tus
+            supervisores de planta en un <strong>formulario web</strong>, puedas
+            obtener las <strong>horas hombre</strong> con las que cuentas para
+            la producción del turno, y por lo tanto diseñar estrategias para{" "}
+            <strong>evitar retrasos de producción</strong>?
+          </>,
+
+          <>
+            - ¿Te gustaría tener un sistema en el que puedas crear tus{" "}
+            <strong>estados financieros</strong> desde tus{" "}
+            <strong>Journal Entries</strong> o tu{" "}
+            <strong>Libro Mayor (General Ledger)</strong>, y redactar tus notas
+            a los estados financieros?
+          </>,
+
+          <>
+            - Te gustaría incluir un módulo para{" "}
+            <strong>bitácora de seguimiento</strong> en donde puedas documentar
+            conclusiones, acuerdos, tareas, responsables, fechas, etc., para dar
+            seguimiento a los procesos de <strong>mejora continua</strong> de tu
+            negocio?
+          </>,
+
+          <>
+            - ¿Saber cuál es el <strong>desempeño</strong> de tus vendedores, o
+            de tus productos, o de tus clientes, o de tus proveedores, o de tus
+            centros de costos, o de tus proyectos, o de tus campañas de
+            marketing, o de tus sucursales, etc.?
+          </>,
+          <>
+            {" "}
+            <b>
+              Cualquier cosa que actualmente administres en spreadsheets de
+              Excel
+            </b>
+            , puede ser llevada a un sistema personalizado como éste, con esta calidad de gráficas, 
+            con la visión estratégica de lo que es importante administrativamente, y te ayude a
+            desarrollar las mejores estrategias con tu equipo. El poder de las gráficas es que muestran
+            de manera más directa lo que una tabla con miles de registros no podría. Además con la
+            ventaja de que puedes controlar la seguridad de tu información, y a
+            la vez, diseñar la experiencia de usuario para que sea lo más
+            amigable posible, y que el usuario pueda obtener hallazgos
+            estratégicos, mediante alertas de colores, sin necesidad de hacer
+            análisis adicionales.
+          </>,
+          "Bajo el enfoque de este ejemplo de sistema que te presento, tú tienes el control de cuándo quieres actualizar la información, la periodicidad la decides tu. Metes una Tabla en un archivo '.csv' con formato y columnas específicos y el sistema se encarga de validar la integridad de los datos y actualizar las gráficas sin necesidad de ninguna intervención.",
+          "En adelante, te detallo las características del dashboard que te presento como ejemplo, y los hallazgos claves que se obtuvieron al analizar los datos del DataSet SuperTienda. Esto es sólo un ejemplo de la capacidad de gráficas y herramientas que tienes a tu disposición si me permites colaborar contigo en el desarrollo de la herramienta ideal para ti.",
+        ],
         businessQuestions: [
-          "¿Es posible detectar programáticamente anomalías en márgenes de utilidad en tiempo real?",
+          <>
+            <b>En éste Ejemplo</b>, a nivel de negocio, el sistema valida
+            matemáticamente la pérdida de $920K USD por descuentos mal aplicados
+            y desmiente mitos sobre los costos logísticos, para reorientar la
+            estrategia comercial de la empresa. Las preguntas que se plantearon
+            son:
+          </>,
+          "¿Es posible detectar automáticamente anomalías en márgenes de utilidad en tiempo real?",
           "¿Cómo impactan los descuentos agresivos (>20%) en la erosión del capital neto?",
           "¿Existe una correlación directa entre altos costos de envío y pérdidas operativas?",
           "¿Quiénes son realmente los clientes VIP que sostienen la rentabilidad del negocio?",
           "¿Qué subcategorías de productos (como Mesas) requieren una reestructuración inmediata de precios?",
+          "¿En qué meses se concentran las caídas de ventas para diseñar estrategias de mitigación estacional?",
+          "¿Qué mercados internacionales son más rentables a pesar de los costos logísticos, y cuáles representan un riesgo constante?",
         ],
 
         process: [
@@ -443,7 +557,8 @@ export default function Portfolio() {
             image: "/images/admintool-scatter.png",
           },
           {
-            title: "Uso de Tooltips Contextuales Inteligentes",
+            title:
+              "Uso de Tooltips Contextuales Inteligentes (Cajas Negras Informativas)",
             description:
               "El uso deTooltips contextuales inteligentes es una característica clave que mejora significativamente la experiencia del usuario al interactuar con los gráficos. Estos tooltips permiten la identificación de los elementos integrantes de las gráficas, ofreciendo su información inmediatamente. También, se aplica una lógica de colores dinámica para resaltar visualmente los datos según su impacto en la rentabilidad (por ejemplo, verde para ganancias, rojo para pérdidas). Además, el formateo inteligente de moneda y porcentajes facilita la interpretación rápida de los datos financieros, permitiendo a los usuarios tomar decisiones informadas sin necesidad de análisis adicionales.",
             image: "/images/admintool-productos1.png",
@@ -457,11 +572,11 @@ export default function Portfolio() {
           {
             title: "Link al proyecto en línea",
             description: [
-              "Accede a la aplicación web completa para explorar el dashboard interactivo y analizar los datos de SuperTienda. Los perfiles administrador y viewer tienen diferentes niveles de acceso para experimentar la herramienta desde distintas perspectivas: Los administradores pueden editar los insights, controlar el acceso de los usuarios y acceder a toda la información, mientras que los viewers tienen acceso de solo lectura para obtener la experiencia de usuario a quien se destina la información. Incluso podríamos controlar qué perfiles pueden ver algunos módulos, o no.",
+              "Accede a la aplicación web completa para explorar el dashboard interactivo y analizar los datos de SuperTienda. Los perfiles administrador y usuarios tienen diferentes niveles de acceso para experimentar la herramienta desde distintas perspectivas: Los administradores pueden editar los insights, controlar el acceso de los usuarios y acceder a toda la información, mientras que los usuarios tienen acceso de solo lectura para obtener la experiencia de usuario a quien se destina la información. Incluso podríamos controlar qué perfiles pueden ver algunos módulos, o no.",
               "Administrador:",
               "contador1.2@supertienda.com",
               "Password: Contador_1.2",
-              "Viewer:",
+              "Usuario:",
               "contador1.1@ey.com",
               "Password: Contador_1.1",
             ],
@@ -478,7 +593,7 @@ export default function Portfolio() {
           "Logística Internacional: Mapa de calor y análisis de costos de envío vs. rentabilidad por país.",
           "Conclusiones (Insights): Sección narrativa que traduce los datos en acciones de negocio concretas.",
           "Autenticación de Grado Bancario: Implementación de seguridad mediante JWT (JSON Web Tokens) encriptados en Cookies HttpOnly, protegidos contra ataques XSS y CSRF, con hashing de contraseñas mediante el algoritmo Argon2.",
-          'Módulo de Gobernanza y Control de Acceso: Sistema jerárquico (Owner, Admin, Viewer) con Sala de Espera (Pending Queue) para aprobación manual de usuarios. Incluye un "Kill-Switch" para suspender accesos en tiempo real durante sesiones críticas.',
+          'Módulo de Gobernanza y Control de Acceso: Sistema jerárquico (Owner, Admin, Usuarios) con Sala de Espera (Pending Queue) para aprobación manual de usuarios. Incluye un "Kill-Switch" para suspender accesos en tiempo real durante sesiones críticas.',
           "Bitácora de Auditoría Inmutable: Registro histórico automático de cada acción administrativa (aprobaciones, cambios de rol, eliminaciones) con trazabilidad exacta de fecha, hora (MX) y responsable, almacenado en Vercel Postgres.",
           "Motor de Ingesta con Validación Dinámica: Interfaz Drag & Drop para la carga de nuevos datasets (CSV) y actualizar constantemente el dataset que alimenta las gráficas. El backend valida programáticamente la integridad de las columnas y realiza un Hot-Reload de los datos sin interrumpir el servicio.",
           "Módulo de Executive Insights: Sistema de gestión de contenido (CMS) integrado que permite a los directivos insertar directrices estratégicas personalizadas para cada módulo de análisis, guardadas permanentemente en la base de datos.",
@@ -513,32 +628,36 @@ export default function Portfolio() {
         "RepoDeclara, Repositorio de Declaraciones Fiscales y Documentos Legales",
       category: "Sistemas Administrativos (Próximamente en la Nube)",
       description:
-        "Sistema completo de documentación de declaraciones fiscales y documentos legales, para su análisis y seguimiento.",
+        "Sistema completo de documentación de declaraciones fiscales y documentos legales para su análisis, control y seguimiento. Te ofrece:",
       image: "/images/RepoDeclara-Tablero Principal.png",
       tags: ["React 19", "Next.js 16 (App Router)", "Prisma ORM", "TypeScript"],
       metrics: [
         "Digitalización de Declaraciones",
         "Listado de declaraciones (Actualizaciones y Recargos, Saldos a Favor)",
-        "Compensaciones (Actualizaciones)",
-        "Devoluciones (Actualizaciones e Intereses)",
+        "Toda la información acerca de Compensaciones aplicadas y sus Actualizaciones (en proceso y su históricas)",
+        "Toda la información acerca de Devoluciones, sus Actualizaciones e Intereses (en proceso y su históricas)",
         "Contratos (Seguimiento a su Cumplimiento)",
         "Pólizas (Seguimiento y Vencimiento)",
-        "Seguimiento al Cumplimiento (Planeación y Asignación de actividades)",
+        "Seguimiento al Cumplimiento de proyectos (Planeación y Asignación de actividades)",
         "Integración de papeles de trabajo por declaración",
         "Archivo Permanente (Acta Constitutiva, Poderes, Licencias, Contratos, Seguros, Proyectos, etc.)",
       ],
 
       detailedInfo: {
         context: [
-          "En México, las empresas están obligadas a llevar contabilidad financiera, los papeles de trabajo de determinaciones fiscales se llevan en archivos de Excel y se guardan en carpetas de Windows, lo cual es un control muy precario ya que se pueden perder las versiones definitivas. Es así que, cuando es necesario agrupar la información fiscal para presentar a algún revisor (Auditor, Autoridades, Ejecutivos, Dueños, Due Dilligence, etc. ) se pierden recursos para agrupar y relacionar documentos, información y papeles de trabajo. ",
-          "                            ",
-          "RepoDeclara no es una calculadora fiscal, es un Repositorio que respeta los datos con los que fueron presentadas las declaraciones, los cálculos se presentan como una guía de comparación pero los datos son forenses, es decir, son una ayuda que pretende dar indicios de errores o montos inadecuados permitiendo la captura fiel de la información presentada.",
+          "En México, las empresas están obligadas a llevar contabilidad financiera, pero los papeles de trabajo de determinaciones fiscales se llevan en archivos de Excel y se guardan en carpetas de Windows, lo cual es un control muy precario ya que se pueden perder las versiones definitivas, y poner al contribuyente en riesgos legales y créditos fiscales por no poder diseñar una defensa fiscal sólida.",
+          "En una revisión de cualquier autoridad, le otorgan al contribuyente un plazo para atender, por lo que el tiempo se vuelve el mayor enemigo al plantear una defensa estratégica. Manten tu información al día para que tu estrategia sea poder entender si hay un riesgo y cómo mitigarlo, y no tener que emplear largas jornadas para agrupar información y entender tu propia situación fiscal.",
+          "Cuando es necesario agrupar la información fiscal para presentar a algún revisor (Auditor, Autoridades, Ejecutivos, Dueños, Due Dilligence, etc.), se pierden tiempo y otros recursos para agrupar y relacionar documentos manualmente, enlistar la información de declaraciones, compensaciones, devoluciones, relacionar papeles de trabajo y evidencia de negocio de las operaciones que sirvieron de base a esos cálculos. Dependiendo del revisor, no terminar a tiempo toda la información para presentar, resulta en multas, créditos fiscales, una revisión más profunda por parte de las autoridades u otro tipo de consecuencias.",
         ],
 
-        impact:
-          "Esta herramienta es la solución para conocer el estatus real y obtener evidencia de la existencia de la información fiscal y legal depositada en una base de datos (no hay versiones) en donde se documenta la historia fiscal y legal de empresas, y contribuyentes en general. Representa la oportunidad de estar preparado para cualquier revisión sin tener que emplear largas jornadas y recursos para lograrlo. Vital para evaluar riesgos, pronosticar resultados y contestar revisiones fiscales.",
+        impact: [
+          "¿Qué es RepoDeclara?",
+          "Es la solución para conocer el estatus real y obtener evidencia de la existencia de la información fiscal y legal, depositada en una base de datos en donde se documenta la historia fiscal y legal de empresas, y contribuyentes en general.",
+          "Es un sistema de documentación fiscal y legal que permite tener toda la información organizada, actualizada y disponible para cualquier revisión, ideal para demostrar el cumplimiento de obligaciones fiscales, así como documentar, mostrar y dar seguimiento a los procesos de recuperación de dinero por Pagos Indebidos de Impuestos, Saldos a Favor de IVA Operativos o Procesos Legales. Especialmente cuando la autoridad fiscal emite Requerimientos de Información, Devoluciones Parciales, hay Remanentes de Saldos Pendientes de recuperar (dinero en poder del SAT u otras autoridades), o en caso de Auditorías, Revisiones o Visitas Domiciliarias, tener toda la información organizada y disponible para presentar a las autoridades es FUNDAMENTAL para sustentar el éxito de Compensaciones y Devoluciones, así como para EVITAR multas, y créditos fiscales, o DEFENDERSE ante las Facultades de Revisión de SAT o una acusación por Delito Fiscal.",
+        ],
 
         businessQuestions: [
+          "Este sistema ayuda a la administración de los conceptos que implican las siguientes preguntas:",
           "¿Cuáles declaraciones se han presentado?",
           "¿Cuándo se presentaron?",
           "¿Con qué montos?",
@@ -695,6 +814,7 @@ export default function Portfolio() {
         keyInsights: [
           "Recomiendo ver el caso de marzo en cuanto al tema de compensaciones",
           "Las tarjetas de remanentes de devoluciones contienen toda la información accediendo a Solicitudes, Requerimiento de Información, Resoluciones por medio de los botones correspondientes en las tarjetas",
+          "RepoDeclara no es una calculadora fiscal, es un Repositorio que respeta los datos con los que fueron presentadas las declaraciones, mientras te presenta cálculos de los accesorios para hacer una comparación contra los cálculos reales, es decir, son una ayuda que pretende dar indicios de errores o montos inadecuados permitiendo la captura fiel de la información presentada.",
         ],
 
         images: [
@@ -730,6 +850,7 @@ export default function Portfolio() {
           "Desarrollo de modelo XGBoost con 98.3% AUC que identifica con precisión del 94.8% (F1-Score) a empleados en riesgo de abandono. El modelo detecta correctamente al 15.76% de empleados como alto riesgo, coincidiendo con la tasa real de rotación del 16.85%. Esto permite intervenciones proactivas que podrían ahorrar millones en costos de reclutamiento y capacitación.",
 
         businessQuestions: [
+          "Este sistema ayuda a la administración de los conceptos que implican las siguientes preguntas:",
           "¿Qué factores hacen que un empleado deje la compañía?",
           "¿Es posible predecir qué empleados están en riesgo de irse?",
           "¿Qué empleados específicos requieren intervención inmediata?",
@@ -911,6 +1032,7 @@ export default function Portfolio() {
           "Desarrollo de dashboard de Looker Studio para determinación de estacionalidades (tendencias), de productos y desempeño de tiendas. Además de proporcionar capacidades de filtrado dinámico al reporte por medio selección de filas en las tablas resumen, o de botónes de controles.",
 
         businessQuestions: [
+          "Este sistema ayuda a la administración de los conceptos que implican las siguientes preguntas:",
           "¿Cuáles son los Productos que tienen mayor demanda y qué ingresos generan?",
           "¿Cuáles son las Tiendas que más ingresos generan a la empresa y cuáles requieren campañas de publicidad?",
           "¿Se puede identificar un patrón de estacionalidad en los productos y/o en las tiendas?",
@@ -1024,6 +1146,7 @@ Monto_Advertencia =>
           "Identificación de $849K en pérdidas acumuladas por estrategia de descuentos mal calibrada, representando un promedio de $200K anuales en oportunidades de recuperación. El análisis revela que descuentos superiores al 20% generan un margen negativo del -52%, mientras que aproximadamente el 50% de productos con descuentos altos operan a pérdida.",
 
         businessQuestions: [
+          "Este sistema ayuda a la administración de los conceptos que implican las siguientes preguntas:",
           "¿Los descuentos están generando pérdidas netas para el negocio?",
           "¿Qué nivel de descuento maximiza volumen sin sacrificar rentabilidad?",
           "¿Qué productos específicos tienen margen negativo y requieren atención inmediata?",
@@ -1580,7 +1703,7 @@ Monto_Advertencia =>
             <span className="text-yellow-400 font-bold">
               Analítica Avanzada
             </span>{" "}
-            con un enfoque disruptivo: el desarrollo de{" "}
+            con un enfoque Operativo único disruptivo: el desarrollo de{" "}
             <span className="text-yellow-400 font-bold">
               soluciones web a medida
             </span>{" "}
