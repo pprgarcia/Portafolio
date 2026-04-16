@@ -630,7 +630,7 @@ export default function Portfolio() {
               "contador1.1@ey.com",
               "Password: Contador_1.1",
             ],
-            src: "https://supertienda-dashboard-analisis.vercel.app/",
+            src: "https://bi-facturacion-mx.vercel.app",
           },
         ],
 
@@ -642,7 +642,7 @@ export default function Portfolio() {
           "Gestión de Clientes: Matriz de segmentación identificando Clientes Críticos (alto volumen, margen negativo).",
           "Logística Internacional: Mapa de calor y análisis de costos de envío vs. rentabilidad por país.",
           "Conclusiones (Insights): Sección narrativa que traduce los datos en acciones de negocio concretas.",
-          "Autenticación de Grado Bancario: Implementación de seguridad mediante JWT (JSON Web Tokens) encriptados en Cookies HttpOnly, protegidos contra ataques XSS y CSRF, con hashing de contraseñas mediante el algoritmo Argon2.",
+          "Autenticación de Alto Grado: Implementación de seguridad mediante JWT (JSON Web Tokens) encriptados en Cookies HttpOnly, protegidos contra ataques XSS y CSRF, con hashing de contraseñas mediante el algoritmo Argon2.",
           'Módulo de Gobernanza y Control de Acceso: Sistema jerárquico (Owner, Admin, Usuarios) con Sala de Espera (Pending Queue) para aprobación manual de usuarios. Incluye un "Kill-Switch" para suspender accesos en tiempo real durante sesiones críticas.',
           "Bitácora de Auditoría Inmutable: Registro histórico automático de cada acción administrativa (aprobaciones, cambios de rol, eliminaciones) con trazabilidad exacta de fecha, hora (MX) y responsable, almacenado en Vercel Postgres.",
           "Motor de Ingesta con Validación Dinámica: Interfaz Drag & Drop para la carga de nuevos datasets (CSV) y actualizar constantemente el dataset que alimenta las gráficas. El backend valida programáticamente la integridad de las columnas y realiza un Hot-Reload de los datos sin interrumpir el servicio.",
