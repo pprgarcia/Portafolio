@@ -497,10 +497,10 @@ export default function Portfolio() {
 
           <>
             - o Tal vez ¿Te gustaría algo más semejante a un sistema de control
-            de
+            de{" "}
             <strong>
               Inversiones, Gastos, Activos Fijos, Depreciaciones, Bajas,
-              Importaciones, Exportaciones
+              Importaciones, Exportaciones{" "}
             </strong>
             clasificados por tipo?
           </>,
@@ -508,12 +508,12 @@ export default function Portfolio() {
           <>
             - Si eres responsable del área contable, ¿estás cansado de que cada
             cierre de mes se complique hasta altas horas de la noche por cambios
-            de última hora y
-            <strong>depender de complejos archivos de Excel</strong>? Podrías
+            de última hora y{" "}
+            <strong> depender de complejos archivos de Excel</strong>? Podrías
             contar con un sistema personalizado que te permita{" "}
             <strong>parametrizar y clasificar personalmente</strong> las cuentas
             de tu Balanza de Comprobación. Bajo este enfoque, el sistema respeta
-            tu criterio profesional para
+            tu criterio profesional para{" "}
             <strong>
               automatizar la consolidación del cierre y la generación del
               paquete entregable
@@ -542,8 +542,8 @@ export default function Portfolio() {
           </>,
 
           <>
-            Cualquiera que sea tu necesidad, quedaría bajo el mismo enfoque de
-            este ejemplo de sistema que te presento, donde{" "}
+            Cualquiera que sea tu necesidad, tu sistema puede quedar bajo el
+            mismo enfoque de este ejemplo de sistema que te presento, donde{" "}
             <strong>tú tienes el control</strong> de cuándo quieres actualizar
             la información, la <strong>periodicidad la decides tú</strong>.
             Metes una Tabla en un archivo <strong>'.csv'</strong> con formato y
@@ -552,7 +552,46 @@ export default function Portfolio() {
             <strong>actualizar las gráficas</strong> sin necesidad de ninguna
             intervención.
           </>,
-
+          <>
+            En la última actualización del sistema se incluyó un robusto módulo
+            de <strong>autenticación de grado empresarial</strong> aceptando,
+            suspendiendo, eliminando usuarios para control de{" "}
+            <strong>confidencialidad de información</strong> y una{" "}
+            <strong>Sábana Auditora de Transacciones (Data Explorer)</strong>{" "}
+            dotada de <strong>filtros dinámicos</strong> y capacidad de{" "}
+            <strong>eliminación seleccionable</strong>, garantizando que el
+            administrador tenga control total sobre la depuración de la base de
+            datos. Cada movimiento queda registrado en una{" "}
+            <strong>bitácora de auditoría inmutable</strong>, asegurando la
+            trazabilidad de quién, cuándo y qué acción realizó.
+            <br />
+            <br />
+            Asimismo, se integraron cuadros de{" "}
+            <strong>Directrices Estratégicas (Executive Insights)</strong>{" "}
+            editables en cada pestaña o dashboard, permitiendo que la alta
+            dirección documente conclusiones y órdenes operativas directamente
+            en cada panel de análisis.
+          </>,
+          <>
+            Lo más novedoso es la incorporación de un{" "}
+            <strong>motor universal de ingesta XML</strong>, diseñado para
+            extraer y procesar la información del{" "}
+            <strong>CFDI 4.0 de ingresos</strong>. Este motor extrae
+            automáticamente{" "}
+            <strong>
+              ventas, descuentos, cargos por envío, clientes, RFC y fechas
+            </strong>{" "}
+            directamente de la fuente legal (el XML), eliminando errores de
+            captura y garantizando la <strong>soberanía del dato fiscal</strong>
+            . El sistema se puede alimentar desde archivos de texto o tus
+            propias facturas. Este feature de extracción avanzada es modular y
+            puede ser{" "}
+            <strong>
+              trasladado a cualquier otro tipo de sistema personalizado
+            </strong>{" "}
+            donde se requiera automatizar el procesamiento de información
+            tributaria y operativa.
+          </>,
           <>
             En adelante, te detallo las características del dashboard que te
             presento como ejemplo, y los <strong>hallazgos claves</strong> que
@@ -614,7 +653,7 @@ export default function Portfolio() {
             image: "/images/admintool-productos1.png",
           },
           {
-            title: "Executive Insights Narrativos",
+            title: "Directrices Ejecutivas Narrativos",
             description:
               "Recuadros editables conectados a Base de Datos, para dejar comentarios, indicaciones, y/o conclusiones.",
             image: "/images/admintool-insights.png",
@@ -622,7 +661,7 @@ export default function Portfolio() {
           {
             title: "Link al proyecto en línea",
             description: [
-              "Accede a la aplicación web completa para explorar el dashboard interactivo y analizar los datos de SuperTienda. Los perfiles administrador y usuarios tienen diferentes niveles de acceso para experimentar la herramienta desde distintas perspectivas: Los administradores pueden editar los insights, controlar el acceso de los usuarios y acceder a toda la información, mientras que los usuarios tienen acceso de solo lectura para obtener la experiencia de usuario a quien se destina la información. Incluso podríamos controlar qué perfiles pueden ver algunos módulos, o no.",
+              "Accede a la aplicación web completa para explorar el dashboard interactivo y analizar los datos de SuperTienda. Los perfiles administrador y usuarios tienen diferentes niveles de acceso para experimentar la herramienta desde distintas perspectivas: Los administradores pueden editar las directrices, controlar el acceso de los usuarios y acceder a toda la información, mientras que los usuarios tienen acceso de solo lectura para obtener la experiencia de usuario a quien se destina la información. Incluso podríamos controlar qué perfiles pueden ver algunos módulos, o no.",
               "Administrador:",
               "contador1.2@supertienda.com",
               "Password: Contador_1.2",
@@ -641,12 +680,12 @@ export default function Portfolio() {
           'Análisis de Productos: Scatter Plot interactivo de Ventas vs. Utilidad para identificar productos "Bleeders".',
           "Gestión de Clientes: Matriz de segmentación identificando Clientes Críticos (alto volumen, margen negativo).",
           "Logística Internacional: Mapa de calor y análisis de costos de envío vs. rentabilidad por país.",
-          "Conclusiones (Insights): Sección narrativa que traduce los datos en acciones de negocio concretas.",
+          "Conclusiones (Directrices): Sección narrativa que traduce los datos en acciones de negocio concretas.",
           "Autenticación de Alto Grado: Implementación de seguridad mediante JWT (JSON Web Tokens) encriptados en Cookies HttpOnly, protegidos contra ataques XSS y CSRF, con hashing de contraseñas mediante el algoritmo Argon2.",
-          'Módulo de Gobernanza y Control de Acceso: Sistema jerárquico (Owner, Admin, Usuarios) con Sala de Espera (Pending Queue) para aprobación manual de usuarios. Incluye un "Kill-Switch" para suspender accesos en tiempo real durante sesiones críticas.',
+          "Módulo de Gobernanza y Control de Acceso: Sistema jerárquico (Owner, Admin, Usuarios) con Sala de Espera (Pending Queue) para aprobación manual de usuarios. Incluye funcionalidad para suspender temporalmente accesos a criterio del administrador.",
           "Bitácora de Auditoría Inmutable: Registro histórico automático de cada acción administrativa (aprobaciones, cambios de rol, eliminaciones) con trazabilidad exacta de fecha, hora (MX) y responsable, almacenado en Vercel Postgres.",
-          "Motor de Ingesta con Validación Dinámica: Interfaz Drag & Drop para la carga de nuevos datasets (CSV) y actualizar constantemente el dataset que alimenta las gráficas. El backend valida programáticamente la integridad de las columnas y realiza un Hot-Reload de los datos sin interrumpir el servicio.",
-          "Módulo de Executive Insights: Sistema de gestión de contenido (CMS) integrado que permite a los directivos insertar directrices estratégicas personalizadas para cada módulo de análisis, guardadas permanentemente en la base de datos.",
+          "Motor de Ingesta con Validación Dinámica: Interfaz Drag & Drop para la carga de nuevos datasets (CSV) y/o la Ingesta de datos desde el CFDI 4.0 de ingresos, para actualizar constantemente el dataset que alimenta las gráficas. El backend valida programáticamente la integridad de las columnas y realiza un Hot-Reload de los datos sin interrumpir el servicio.",
+          "Módulo de Directrices Ejecutivas: Sistema de gestión de contenido (CMS) integrado que permite a los directivos insertar directrices estratégicas personalizadas para cada módulo de análisis, guardadas permanentemente en la base de datos.",
         ],
 
         keyInsights: [
@@ -655,7 +694,6 @@ export default function Portfolio() {
           'Problema de Categoría: "Furniture" (específicamente Mesas) opera con margen negativo estructural, no coyuntural.',
           "Concentración VIP: Existe una intersección sana de clientes de alto volumen y alta rentabilidad que sostienen el crecimiento.",
           "Estacionalidad: Las caídas más pronunciadas de ventas ocurren consistentemente en Julio y Octubre.",
-          "Optimización Técnica: La migración de archivo .csv a esta Web App redujo el tiempo de obtención de insights de horas a milisegundos.",
         ],
 
         images: [
@@ -1172,9 +1210,9 @@ Monto_Advertencia =>
               "Creé todas las gráficas visibles para proporcionar análisis sobre cada pregunta de negocio respectiva.",
           },
           {
-            title: "Identificación de Insights y Conclusiones",
+            title: "Identificación de Hallazgos y Conclusiones",
             description:
-              "Con el conocimiento adquirido durante la exploración de los datos y el proceso de creación del dashboard, se determinaron las conclusiones y se identificaron los insights. Sin embargo, la actualización de los datos permite que estos insights evolucionen con el tiempo.",
+              "Con el conocimiento adquirido durante la exploración de los datos y el proceso de creación del dashboard, se determinaron las conclusiones y se identificaron los hallazgos. Sin embargo, la actualización de los datos permite que estos hallazgos evolucionen con el tiempo.",
           },
           {
             title: "Publicación y Actualización",
