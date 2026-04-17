@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 
 const ProjectModal = ({ project, onClose }) => {
+  const [zoomImage, setZoomImage] = useState(null);
+
   if (!project.detailedInfo) {
     window.open(project.link, "_blank");
     onClose();
@@ -54,6 +56,7 @@ const ProjectModal = ({ project, onClose }) => {
             <img
               src={project.image}
               alt={project.title}
+              onClick={() => setZoomImage(null)}
               className="max-w-8xl mx-auto rounded-xl shadow-lg"
             />
 
@@ -117,7 +120,7 @@ const ProjectModal = ({ project, onClose }) => {
             {details.process && (
               <div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  Proceso de Desarrollo
+                  Proceso de Desarrollo (Haz clic en las imágenes para ampliar)
                 </h3>
                 <div className="space-y-8">
                   {details.process.map((step, idxpr) => (
@@ -145,7 +148,10 @@ const ProjectModal = ({ project, onClose }) => {
                             key={i}
                             src={img}
                             alt={`${step.title} ${i + 1}`}
-                            className="max-w-4xl mx-auto rounded-lg shadow-md mb-4"
+                            onClick={
+                              step.noZoom ? null : () => setZoomImage(img)
+                            }
+                            className={`max-w-4xl mx-auto rounded-lg shadow-md mb-4 ${step.noZoom ? "cursor-default" : "cursor-zoom-in"}`}
                           />
                         ))}
                       {step.src && (
@@ -230,7 +236,7 @@ const ProjectModal = ({ project, onClose }) => {
             {details.images && details.images.length > 1 && (
               <div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Galería
+                  Galería (Haz clic en las imágenes para ampliar)
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {details.images.map((img, idxim) => (
@@ -238,6 +244,7 @@ const ProjectModal = ({ project, onClose }) => {
                       key={idxim}
                       src={img}
                       alt={`Screenshot ${idxim + 1}`}
+                      onClick={() => setZoomImage(img)}
                       className="w-full rounded-lg shadow-md"
                     />
                   ))}
@@ -261,7 +268,8 @@ const ProjectModal = ({ project, onClose }) => {
                       <img
                         src={step.image}
                         alt={step.title}
-                        className="w-full rounded-lg shadow-md mb-4"
+                        onClick={() => setZoomImage(step.image)}
+                        className="w-full rounded-lg shadow-md mb-4 "
                       />
                     )}
                     {step.src && (
@@ -297,6 +305,7 @@ const ProjectModal = ({ project, onClose }) => {
                       key={idxim2}
                       src={img2}
                       alt={`Screenshot ${idxim2 + 1}`}
+                      onClick={() => setZoomImage(img2)}
                       className="w-full rounded-lg shadow-md"
                     />
                   ))}
@@ -316,6 +325,27 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
         </div>
       </div>
+      {/* CAPA DE ZOOM (Lightbox) */}
+      {zoomImage && (
+        <div
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 cursor-zoom-out animate-in fade-in duration-300"
+          onClick={() => setZoomImage(null)} // Cerrar al hacer clic
+        >
+          <div className="relative max-w-7xl w-full h-full flex items-center justify-center">
+            {/* Botón X para cerrar */}
+            <button className="absolute top-0 right-0 m-4 text-white text-4xl hover:text-gray-300">
+              &times;
+            </button>
+
+            <img
+              src={zoomImage}
+              alt="Zoom"
+              className="max-w-full max-h-[95vh] rounded-lg shadow-2xl object-contain animate-in zoom-in-95 duration-300"
+              style={{ transform: "scale(1.15)" }} // Aquí controlas el tamaño extra del zoom
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -616,7 +646,7 @@ export default function Portfolio() {
           "¿Quiénes son realmente los clientes VIP que sostienen la rentabilidad del negocio?",
           "¿Qué subcategorías de productos (como Mesas) requieren una reestructuración inmediata de precios?",
           "¿En qué meses se concentran las caídas de ventas para diseñar estrategias de mitigación estacional?",
-          "¿Qué mercados internacionales son más rentables a pesar de los costos logísticos, y cuáles representan un riesgo constante?",
+          "¿Qué plazas comerciales dentro de la República Mexicana son más rentables a pesar de los costos logísticos, y cuáles representan un riesgo constante?",
         ],
 
         process: [
@@ -626,18 +656,21 @@ export default function Portfolio() {
               "Desarrollo de una API RESTful con FastAPI. Procesamiento de datos crudos (CSV/Excel) utilizando Pandas para limpieza, tipado y agregaciones complejas (GroupBys, Pivot Tables). Implementación de endpoints específicos para cada módulo de análisis para optimizar la transferencia de datos (payloads ligeros).",
             codeSnippet: "Python, Pandas/Python, FastAPI, Docker",
             image: "/images/admintool-python.png",
+            noZoom: true,
           },
           {
             title: "Arquitectura Frontend (Next.js & TypeScript)",
             description:
               "Construcción de una SPA (Single Page Application) moderna utilizando Next.js. Implementación de un sistema de componentes modular y tipado estricto con TypeScript para asegurar la estabilidad. Uso de Tailwind CSS para un diseño responsivo y consistente con la identidad corporativa.",
             image: "/images/admintool-dashboard.png",
+            noZoom: true,
           },
           {
             title: "Visualización de Datos Avanzada",
             description:
               "Implementación de Recharts para gráficos interactivos. Desarrollo de lógica personalizada para Tooltips condicionales (lógica de colores dinámica según profit/loss, formateo inteligente de moneda/porcentajes). Creación de gráficos compuestos (Bar + Line) y Scatter Plots para análisis multidimensional.",
             image: "/images/admintool-descuentos.png",
+            noZoom: true,
           },
           {
             title: "Despliegue y CI/CD",
@@ -701,10 +734,13 @@ export default function Portfolio() {
           "/images/admintool-descuentos2.png", // La gráfica de barras roja/gris (Fuga)
           "/images/admintool-productos.png", // Scatter plot o lista de productos
           "/images/admintool-clientes.png", // Gráfica de barras horizontal (Países/Clientes)
-          "/images/admintool-paises.png",
+          "/images/admintool-paises.png", //
           "/images/admintool-conclusiones.png", // La página de texto con los checks
           "/images/admintool-gestiondatos.png", // La sección de gestion de archivos csv
+          "/images/admintool-ingestacfdi.png", // La sección de ingesta de datos desde CFDI
+          "images/admintool-tabladatos.png", // La sección de tabla de datos (Data Explorer)
           "/images/admintool-bitacora.png", // La sección de bitácora
+          "/images/admintool-directrices.png",
           "/images/admintool-controlusuarios.png", // La sección de control de usuarios
         ],
       },
