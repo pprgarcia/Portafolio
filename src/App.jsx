@@ -1483,7 +1483,8 @@ Monto_Advertencia =>
             <div className="w-32 h-1.5 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mb-8"></div>
 
             <p className="text-2xl md:text-3xl text-gray-600 mb-12 font-light">
-              Data Analyst | BI Developer
+              Especialista en Automatización Financiera | Financial Systems
+              Developer | Contaduría + Data Science
             </p>
 
             {/* BARRA DE CONTACTO HÍBRIDA */}
@@ -1492,7 +1493,7 @@ Monto_Advertencia =>
               <div className="relative flex items-center group">
                 <button
                   onClick={() =>
-                    copyToClipboard("+52 55 1234 5678", setCopiedWhatsapp)
+                    copyToClipboard("442 597 37 53", setCopiedPhone)
                   }
                   className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-md overflow-hidden ${
                     copiedWhatsapp
@@ -1516,7 +1517,7 @@ Monto_Advertencia =>
                         : "opacity-0 group-hover:opacity-100 text-white text-sm"
                     }`}
                   >
-                    {copiedWhatsapp ? "¡WHATSAPP COPIADO!" : "+52 55 1234 5678"}
+                    {copiedWhatsapp ? "¡WHATSAPP COPIADO!" : "442 346 27 89"}
                   </span>
                 </button>
               </div>
@@ -1525,7 +1526,7 @@ Monto_Advertencia =>
               <div className="relative flex items-center group">
                 <button
                   onClick={() =>
-                    copyToClipboard("+52 55 8765 4321", setCopiedPhone)
+                    copyToClipboard("442 597 37 53", setCopiedPhone)
                   }
                   className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-md overflow-hidden ${
                     copiedPhone
@@ -1543,7 +1544,7 @@ Monto_Advertencia =>
                         : "opacity-0 group-hover:opacity-100 text-gray-800 text-sm"
                     }`}
                   >
-                    {copiedPhone ? "¡NÚMERO COPIADO!" : "+52 55 8765 4321"}
+                    {copiedPhone ? "¡NÚMERO COPIADO!" : "442 597 37 53"}
                   </span>
                 </button>
               </div>
@@ -1615,86 +1616,82 @@ Monto_Advertencia =>
           </h2>
 
           {/* Aumentamos el padding interno (p-12 md:p-20) y suavizamos el redondeado */}
-          <div className="bg-gray-50 rounded-[3rem] p-10 md:p-20 shadow-sm border border-gray-100">
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Soy contador y ex gerente administrativo con experiencia en
-              auditoría, contabilidad, administración e implementación de{" "}
-              <strong>ERP's</strong> (funcional del cliente). Mi evolución hacia
-              el <strong>Análisis de Datos y Business Intelligence</strong> nace
-              de una convicción: los datos contables y administrativos son solo
-              el punto de partida; el valor real reside en lo que podemos
-              comprender analizando tendencias y predecir escenarios a partir de
-              ellos.
-            </p>
+          {/*<div className="bg-gray-50 rounded-[3rem] p-10 md:p-20 shadow-sm border border-gray-100">*/}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-black text-indigo-600 uppercase italic tracking-tighter mb-6">
+              "Construyo puentes donde los ERPs tradicionales fallan."
+            </h3>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Combino mi conocimiento administrativo-contable con habilidades
-              técnicas en <strong>Python, SQL</strong> y herramientas de
-              visualización para crear <strong>ventajas competitivas</strong>:
-              automatización de procesos, controles internos y reportes
-              gerenciales que generan valor real e impulsan decisiones
-              estratégicas.
-            </p>
-
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Puedo trabajar con herramientas de BI como{" "}
-              <strong>Looker Studio, Tableau y Power BI</strong> para crear
-              dashboards intuitivos, pero cuando la confidencialidad es
-              prioritaria, desarrollo dashboards y soluciones personalizadas con{" "}
-              <strong>Python</strong> (lenguaje más usado en ciencia de datos) y{" "}
-              <strong>Javascript (React)</strong> que garantizan control total
-              sobre seguridad y acceso a los datos.
-            </p>
-
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Como profesional certificado en{" "}
-              <strong>Advanced Data Analytics por Google</strong>, mi enfoque no
-              se limita a la descripción de eventos pasados. Aplico rigurosidad
-              estadística mediante{" "}
+              Con <strong>años de experiencia</strong> en alta gerencia
+              administrativa y auditoría, no solo entiendo los estados
+              financieros: diseño y programo los ecosistemas tecnológicos que
+              los gestionan, protegen y proyectan. Mi diferencial es la fusión
+              de tres mundos: la{" "}
+              <strong>rigurosidad del cumplimiento fiscal mexicano</strong>, el
+              poder del{" "}
               <strong>
-                Análisis de Regresión y Modelos de Machine Learning
-                (Scikit-Learn)
+                análisis estadístico predictivo (Python/Machine Learning)
               </strong>{" "}
-              para reducir la incertidumbre operativa. No solo presento qué
-              sucedió, sino que utilizo la ciencia de datos para descubrir el
-              porqué y el qué sigue, identificando patrones ocultos en variables
-              complejas como la <strong>rotación de personal</strong>, costo de
-              conseguir un cliente, o el riesgo crediticio.
+              y la{" "}
+              <strong>arquitectura de software moderna (Next.js/Prisma)</strong>
+              .
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Mi diferenciador no es solo analizar la información, sino
-              construir los ecosistemas que la gestionan. Un ejemplo de esto es{" "}
-              <strong>RepoDeclara</strong>, un sistema repositorio fiscal y
-              legal que desarrollé utilizando <strong>Next.js y Prisma</strong>,
-              diseñado como herramienta para resolver problemas reales de
-              trazabilidad fiscal y salvaguarda de información que enfrentan las
-              empresas hoy, y que los{" "}
-              <strong>ERP’s de diseño extranjero</strong> suelen ignorar, por no
-              estar familiarizados con la rigurosidad y complejidad fiscal en
-              México.
+              Mi especialidad es la creación de{" "}
+              <strong>sistemas de alta integridad forense</strong> y soluciones
+              de <strong>Business Intelligence a medida</strong>, garantizando
+              soberanía total sobre la información donde las herramientas
+              comerciales de diseño extranjero suelen ser insuficientes.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Si tengo la capacidad de arquitectar una plataforma de esta
-              naturaleza y magnitud (RepoDeclara), ten seguridad que puedo
-              desarrollar{" "}
-              <strong>interfaces de recolección de datos a medida</strong>,
-              desde sistemas de registro hasta herramientas de encuestas, para
-              capturar las observaciones precisas que el problema de negocio
-              identificado requiere, garantizando el{" "}
-              <strong>control total sobre la calidad del dato</strong> desde el
-              momento de su captura.
-            </p>
+            <div className="mb-8">
+              <h4 className="text-xl font-bold text-gray-800 mb-4">
+                Lo que aporto a su organización:
+              </h4>
+              <ul className="space-y-4">
+                <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                  • <strong>Ingeniería de Sistemas Multi-tenant:</strong>{" "}
+                  Capacidad probada para arquitectar plataformas complejas desde
+                  cero (como <strong>RepoDeclara</strong> y BI Facturación con
+                  más de <strong>50,000 registros</strong>), garantizando silos
+                  de datos seguros y trazabilidad total.
+                </li>
+                <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                  • <strong>Ingeniería Forense y Fiscal:</strong> Creador de{" "}
+                  <strong>RepoDeclara</strong>, una plataforma de trazabilidad
+                  fiscal y legal diseñada para resolver la complejidad que los
+                  sistemas extranjeros ignoran.
+                </li>
+                <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                  • <strong>Analítica con Propósito:</strong> Modelos de Machine
+                  Learning para reducir la incertidumbre en variables críticas
+                  como <strong>rotación de personal</strong>, riesgo crediticio,
+                  optimización de capital de trabajo y{" "}
+                  <strong>flujo de efectivo</strong>.
+                </li>
+                <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                  • <strong>Software de Grado Auditoría:</strong> Desarrollo de
+                  dashboards personalizados donde la confidencialidad y el
+                  control de acceso basado en roles (<strong>RBAC</strong>) son
+                  la prioridad absoluta.
+                </li>
+              </ul>
+            </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
-              Mi objetivo es crear <strong>puentes tecnológicos</strong> donde
-              la <strong>carga administrativa y fiscal</strong>, la precisión de
-              la <strong>estadística predictiva</strong> y la eficiencia del{" "}
-              <strong>desarrollo web</strong> converjan para generar verdaderas
-              ventajas competitivas.
+            <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
+              <strong>
+                No soy un programador que intenta entender las finanzas;
+              </strong>{" "}
+              soy un{" "}
+              <strong>experto financiero que domina la tecnología</strong> para
+              eliminar el riesgo operativo. Mi objetivo es convertir la carga
+              administrativa en una ventaja competitiva medible.
             </p>
           </div>
+          <br />
+          <br />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="bg-blue-50 p-6 rounded-xl text-center">
@@ -1907,7 +1904,7 @@ Monto_Advertencia =>
             <div className="relative flex items-center group">
               <button
                 onClick={() =>
-                  copyToClipboard("+52 55 1234 5678", setCopiedWhatsapp)
+                  copyToClipboard("442 346 27 89", setCopiedWhatsapp)
                 }
                 className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-xl overflow-hidden ${
                   copiedWhatsapp
@@ -1929,7 +1926,7 @@ Monto_Advertencia =>
                       : "opacity-0 group-hover:opacity-100 text-white text-sm"
                   }`}
                 >
-                  {copiedWhatsapp ? "¡WHATSAPP COPIADO!" : "+52 55 1234 5678"}
+                  {copiedPhone ? "Telefono COPIADO!" : "442 597 37 53"}
                 </span>
               </button>
             </div>
