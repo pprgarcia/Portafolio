@@ -1483,8 +1483,8 @@ Monto_Advertencia =>
             <div className="w-32 h-1.5 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mb-8"></div>
 
             <p className="text-2xl md:text-3xl text-gray-600 mb-12 font-light">
-              Especialista en Automatización Financiera | Financial Systems
-              Developer | Contaduría + Data Science
+              Financial Systems Architect | Analytics Engineer Integridad
+              Forense de Datos y Automatización Financiera
             </p>
 
             {/* BARRA DE CONTACTO HÍBRIDA */}
@@ -1619,7 +1619,7 @@ Monto_Advertencia =>
           {/*<div className="bg-gray-50 rounded-[3rem] p-10 md:p-20 shadow-sm border border-gray-100">*/}
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-black text-indigo-600 uppercase italic tracking-tighter mb-6">
-              "Construyo puentes donde los ERPs tradicionales fallan."
+              "Construyo puentes donde los ERP tradicionales fallan."
             </h3>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
