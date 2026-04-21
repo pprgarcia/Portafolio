@@ -1482,10 +1482,14 @@ Monto_Advertencia =>
 
             <div className="w-32 h-1.5 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mb-8"></div>
 
-            <p className="text-2xl md:text-3xl text-gray-600 mb-12 font-light">
-              Financial Systems Architect | Analytics Engineer Integridad
-              Forense de Datos y Automatización Financiera
-            </p>
+            <div className="mb-12">
+              <h2 className="text-2xl md:text-4xl text-gray-800 font-bold tracking-tight">
+                Financial Systems Architect | Analytics Engineer
+              </h2>
+              <p className="text-xl md:text-2xl text-gray-500 font-light mt-2">
+                Integridad Forense de Datos y Automatización Financiera
+              </p>
+            </div>
 
             {/* BARRA DE CONTACTO HÍBRIDA */}
             <div className="flex flex-wrap justify-center gap-4 items-center">
