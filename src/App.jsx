@@ -1031,11 +1031,9 @@ export default function Portfolio() {
           {
             title: "Link al proyecto en línea",
             description: [
-              <strong>
-                CONVOCATORIA PARA EXPERTOS: VALIDACIÓN DE VERSIÓN ALPHA
-              </strong>,
-              "RepoDeclara está en fase final de desarrollo. Busco a 3 especialistas (Contadores, CFOs, Contralores o Socios de Despacho) que gestionen volúmenes significativos de saldos a favor para otorgarles acceso gratuito y privado. El objetivo primordial es el refinamiento de los reportes ejecutivos mediante el feedback de alta dirección, asegurando que RepoDeclara cumpla con los estándares de rigor de los despachos líderes en México. A cambio, recibirán una licencia preferencial por un año cuando lancemos la versión de producción.",
-              "Aún si no quieres participar de la convocatoria, puedes acceder a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
+              <strong>DEMOSTRACIÓN TÉCNICA Y CONSULTORÍA</strong>,
+              "RepoDeclara es una prueba de concepto avanzada de arquitectura forense de datos. Si su organización enfrenta desafíos similares en la trazabilidad de saldos a favor o en la gobernanza de documentos fiscales, estoy disponible para realizar una demostración técnica de la arquitectura o para colaborar en el diseño de soluciones personalizadas que aseguren la integridad de su información.",
+              "Si quieres conocer el sistema, puedes acceder a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
               "Si quieres acceder a la empresa que tiene ejemplos completos puedes entrar con el usuario: administradorfy@fy.com; password: Administradorfy",
               "Si quieres accesar a las empresas de pruebas y generar tus propias capturas puedes hacerlo con: admsinempre@ey.com; password:EdmSinEmpre",
               "La empresa Empresa Young, S.A de C.V. tiene ejemplos concretos. La empresa Pruebas, S.A. de C.V. contiene algunas declaraciones pero sin compensaciones o devoluciones. Puedes entrar a generar nuevas declaraciones (CRI) o puedes entrar a editar cualquier declaración e intentar hacer una compensación en el módulo de compensaciones (dentro de la misma CRI).",
