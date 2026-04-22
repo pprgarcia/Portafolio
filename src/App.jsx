@@ -1032,7 +1032,7 @@ export default function Portfolio() {
             title: "Link al proyecto en línea",
             description: [
               <strong>DEMOSTRACIÓN TÉCNICA Y CONSULTORÍA</strong>,
-              "RepoDeclara es una prueba de concepto avanzada de arquitectura forense de datos. Si su organización enfrenta desafíos similares en la trazabilidad de saldos a favor o en la gobernanza de documentos fiscales, estoy disponible para realizar una demostración técnica de la arquitectura o para colaborar en el diseño de soluciones personalizadas que aseguren la integridad de su información.",
+              "RepoDeclara es una prueba de concepto avanzada de arquitectura forense de datos. Si su organización enfrenta desafíos similares en la trazabilidad de saldos a favor o en la gobernanza de documentos fiscales, estoy disponible para realizar una demostración técnica del sistema o para colaborar en el diseño de soluciones personalizadas que aseguren la integridad de su información.",
               "Si quieres conocer el sistema, puedes acceder a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
               "Si quieres acceder a la empresa que tiene ejemplos completos puedes entrar con el usuario: administradorfy@fy.com; password: Administradorfy",
               "Si quieres accesar a las empresas de pruebas y generar tus propias capturas puedes hacerlo con: admsinempre@ey.com; password:EdmSinEmpre",
@@ -1040,6 +1040,8 @@ export default function Portfolio() {
               "La empresa SINDATOS PRUEBA2, S.A. de C.V. esta completamente vacía para que generes tus propias CRI y escenarios",
               'También, puedes generar una captura de Solicitud, Requerimiento de información y Resolución, con datos sintéticos de tu preferencia. No nos hacemos responsables por la información que adjuntes o captures, considera que otras personas podrán ver esta versión de prueba. Cuando lancemos RepoDeclara en la versión en producción la información estará sellada sólo para los usuarios autorizados por el "administrador de la empresa" que se asigne en el sistema a cada empresa.',
               "Debido a que estamos usando una base de datos de prueba, el límite de archivos pesados es limitado. Te agradecería si al final de tu prueba borras los archivos que adjuntes, después de generar los reportes en Excel o pantallas que gustes.",
+              <strong>Nota: </strong>,
+              "RepoDeclara está diseñado como un repositorio de espejo (mirroring) de la información ya presentada ante la autoridad. Los cálculos internos de accesorios se presentan únicamente como una herramienta de validación forense para identificar posibles discrepancias en los registros originales.",
             ],
             src: "https://repo-declara.vercel.app/",
           },
