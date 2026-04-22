@@ -90,28 +90,42 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Preguntas de Negocio */}
             {details.businessQuestions && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">
                   Preguntas de Negocio
                 </h3>
-                <div className="bg-blue-50 rounded-xl p-6">
-                  {/* 1. Renderizamos solo el primer elemento como un párrafo (Introducción) */}
-                  <div className="text-gray-800 mb-4 leading-relaxed">
-                    {details.businessQuestions[0]}
-                  </div>
+                <div className="bg-blue-50 rounded-2xl p-8 shadow-inner">
+                  <p className="text-gray-800 mb-6 font-medium italic">
+                    Este sistema ayuda a la administración de los conceptos que
+                    implican las siguientes preguntas:
+                  </p>
 
-                  {/* 2. Mapeamos desde el segundo elemento en adelante para la lista numerada */}
-                  <ol className="space-y-3">
-                    {details.businessQuestions
-                      .slice(1)
-                      .map((question, idxbq) => (
-                        <li key={idxbq} className="text-gray-700">
-                          <span className="font-semibold text-blue-600">
-                            {idxbq + 1}.
-                          </span>{" "}
-                          {question}
-                        </li>
-                      ))}
-                  </ol>
+                  {/* Usamos un contador manual para la numeración global */}
+                  {(() => {
+                    let globalIndex = 0;
+                    return details.businessQuestions.map((section, sIdx) => (
+                      <div key={sIdx} className="mb-8 last:mb-0">
+                        <h4 className="text-blue-800 font-black uppercase tracking-wider text-sm mb-4 border-b border-blue-200 pb-1">
+                          {section.category}
+                        </h4>
+                        <ul className="space-y-3">
+                          {section.questions.map((question, qIdx) => {
+                            globalIndex++;
+                            return (
+                              <li
+                                key={qIdx}
+                                className="flex items-start gap-3 text-gray-700"
+                              >
+                                <span className="font-bold text-blue-600 min-w-[20px]">
+                                  {globalIndex}.
+                                </span>
+                                <span>{question}</span>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    ));
+                  })()}
                 </div>
               </div>
             )}
@@ -769,7 +783,8 @@ export default function Portfolio() {
 
       detailedInfo: {
         context: [
-          "En México, las empresas están obligadas a llevar contabilidad financiera, pero los papeles de trabajo de determinaciones fiscales se llevan en archivos de Excel y se guardan en carpetas de Windows, lo cual es un control muy precario ya que se pueden perder las versiones definitivas, y poner al contribuyente en riesgos legales y créditos fiscales por no poder diseñar una defensa fiscal sólida.",
+          "En México, millones de pesos en saldos a favor se pierden o se vuelven inauditables porque los papeles de trabajo de determinaciones fiscales se llevan en archivos de Excel y se guardan en carpetas de Windows desordenadas, lo cual es un control muy precario ya que se pueden perder las versiones definitivas, y con ello se pone al contribuyente en riesgos legales y/o expuestos a créditos fiscales por no poder diseñar una defensa fiscal sólida debido a los tiempos de respuesta exigibles por el SAT.",
+          "RepoDeclara elimina la dependencia de 'hojas de cálculo personales' y de consultores externos, devolviendo a la empresa el control total y forense del dinero propio que retiene el SAT.",
           "En una revisión de cualquier autoridad, le otorgan al contribuyente un plazo para atender, por lo que el tiempo se vuelve el mayor enemigo al plantear una defensa estratégica. Mantén tu información al día para que tu estrategia sea poder entender si hay un riesgo y cómo mitigarlo, y no tener que emplear largas jornadas para agrupar información y entender tu propia situación fiscal.",
           "Cuando es necesario agrupar la información fiscal para presentar a algún revisor (Auditor, Autoridades, Ejecutivos, Dueños, Due Dilligence, etc.), se pierden tiempo y otros recursos para agrupar y relacionar documentos manualmente, enlistar la información de declaraciones, compensaciones, devoluciones, relacionar papeles de trabajo y evidencia de negocio de las operaciones que sirvieron de base a esos cálculos. Dependiendo del revisor, no terminar a tiempo toda la información para presentar, resulta en multas, créditos fiscales, una revisión más profunda por parte de las autoridades u otro tipo de consecuencias.",
         ],
@@ -780,13 +795,50 @@ export default function Portfolio() {
           </>,
 
           <>
+            <strong>
+              Es Gobernanza Contable, un Repositorio Forense con Integridad de
+              Datos frente al SAT, Gestión de Riesgos y Certeza Financiera"
+            </strong>{" "}
             Es la solución para conocer el <strong>estatus real</strong> y
             obtener evidencia de la existencia de la información fiscal y legal,
             depositada en una base de datos en donde se documenta la
             <strong> historia fiscal y legal</strong> de empresas y
             contribuyentes en general.
           </>,
-
+          <div
+            key="pillars"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8"
+          >
+            <div className="bg-white p-6 rounded-xl border-l-4 border-blue-500 shadow-sm">
+              <h4 className="font-bold text-blue-900 mb-2">
+                Visibilidad del Flujo:
+              </h4>
+              <p className="text-sm text-gray-600">
+                Deja de ver la recuperación como un "proceso en sombras". Conoce
+                tus saldos en segundos, qué saldos tienes, cuánto se ha
+                recuperado y qué falta por solicitar..
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl border-l-4 border-indigo-500 shadow-sm">
+              <h4 className="font-bold text-indigo-900 mb-2">
+                Integridad Forense:
+              </h4>
+              <p className="text-sm text-gray-600">
+                Cada peso compensado o devuelto tiene un rastro inalterable. Si
+                el SAT audita hoy una declaración de hace 3 años, RepoDeclara te
+                da sustento legal y el cálculo exacto en un clic.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl border-l-4 border-purple-500 shadow-sm">
+              <h4 className="font-bold text-purple-900 mb-2">Blindaje Legal</h4>
+              <p className="text-sm text-gray-600">
+                No solo guardas declaraciones, documentas la materialidad de tus
+                contratos y el cumplimiento de tareas de tu equipo. Si un
+                responsable se va de la empresa, su conocimiento se queda en
+                RepoDeclara, no en su computadora.
+              </p>
+            </div>
+          </div>,
           <>
             Es un sistema de <strong>documentación fiscal y legal</strong> que
             permite tener toda la información organizada, actualizada y
@@ -831,30 +883,44 @@ export default function Portfolio() {
         ],
 
         businessQuestions: [
-          "Este sistema ayuda a la administración de los conceptos que implican las siguientes preguntas:",
-          "¿Cuáles declaraciones se han presentado?",
-          "¿Cuándo se presentaron?",
-          "¿Con qué montos?",
-          "¿Cuales son los saldos a favor (dinero pendiente de recuperar del SAT) y cuál es su saldo actual?",
-          "Si no se pagaron los impuestos a cargo, ¿Se compensaron contra un monto a favor?",
-          "¿Se calcularon actualizaciones a favor?, ¿Una parte se pagó en dinero, y otra se compensó?",
-          "¿Hubo modificación de saldos a favor una vez que parcial o totalmente se compensaron?",
-          "Fruto de un error en compensaciones ¿hay montos de impuestos a cargo?",
-          "¿Cuáles montos a favor que se recuperaron o estan por recuperar vía devolución?",
-          "¿Cuales montos fueron rechazados parcial o totalmente en el proceso de devolución por parte del SAT?",
-          "¿Hubo requerimientos de información por parte del SAT?",
-          "¿cuánto tiempo se bloquearon los 40 días que tiene la autoridad para responder una solicitud de devolución debido a su requerimiento de información?",
-          "¿Cuál es/fue el plan de trabajo para hacer la contestación oportuna a requerimientos de información fiscales",
-          "¿El SAT se negó a devolver parcialmente el monto solicitado?, ¿Por qué?",
-          "¿En algún lugar esta documentado el proceso y resultado de revisiones fiscales o autoridades en general?",
-          "¿Como se documenta la materialidad de transacciones importantes con impacto legal y fiscal?",
-          "¿Los contratos con clientes/proveedores estan vigentes?, ¿tienen riesgos?, ¿Qué parte del cumplimiento de parte del contribuyente requiere seguimiento de un equipo de trabajo?",
-          "Es seguro compartir contratos y documentos importantes mediante emails, o dispositivos electrónicos o ¿Preferirías tener todo en un sistema al que sólo acceden los que tienen que acceder y no tener que compartir con riesgos?",
-          "¿Cómo se documentan las Pólizas de Seguros?, ¿Hay acceso a la información relevante en un memo?",
-          "¿La gaveta física de los documentos del Archivo Permanente tiene un orden?, ¿En dónde se puede consultar la ubicación de los papeles físicos?",
-          "¿En dónde se documentan los faltantes de información y el plan de trabajo para solventarlos?",
-          "¿Es necesario documentar juntas periódicas, en donde se asignen actividades y responsabilidades a los integrantes de un equipo, dando seguimiento a los acuerdos y fechas acordadas?",
-          "¿Te parece relevante esta herramienta?",
+          {
+            category: "Estatus de Recuperación (Saldos a Favor)",
+            questions: [
+              "¿Cuáles declaraciones se han presentado?",
+              "¿Cuándo se presentaron?",
+              "¿Con qué montos?",
+              "¿Cuales son los saldos a favor y cuál es su saldo actual?",
+              "¿Cuáles montos se recuperaron o están por recuperar vía devolución?",
+              "¿Cuales montos fueron rechazados por el SAT?",
+              "¿Hubo requerimientos de información?",
+              "¿Cuánto tiempo se bloqueó el plazo de 40 días por requerimientos?",
+              "¿Cuál es el plan de trabajo para contestar al SAT?",
+              "¿El SAT se negó a devolver?, ¿Por qué?",
+            ],
+          },
+          {
+            category: "Blindaje Forense y Auditoría",
+            questions: [
+              "¿Se compensaron impuestos a cargo contra montos a favor?",
+              "¿Se calcularon actualizaciones a favor?",
+              "¿Hubo modificación de saldos tras compensaciones parciales?",
+              "¿Hay impuestos a cargo por errores en compensación?",
+              "¿Está documentado el resultado de revisiones fiscales?",
+            ],
+          },
+          {
+            category: "Materialidad y Cumplimiento Legal",
+            questions: [
+              "¿Cómo se documenta la materialidad de transacciones importantes?",
+              "¿Los contratos están vigentes y tienen riesgos?",
+              "¿Es seguro compartir contratos por email o prefieres un sistema sellado?",
+              "¿Cómo se documentan las Pólizas de Seguros?",
+              "¿Dónde está la ubicación de los papeles físicos?",
+              "¿Dónde se documentan los faltantes de información?",
+              "¿Cómo se da seguimiento a juntas y acuerdos de equipo?",
+              "¿Te parece relevante esta herramienta?",
+            ],
+          },
         ],
 
         process: [
@@ -862,6 +928,7 @@ export default function Portfolio() {
             title: "Cédulas de Registro Integral (CRI)", // Título del módulo
             description: [
               "Una Cédula de Registro Integral (CRI) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
+              "Garantiza que el fruto del trabajo administrativo sea un registro permanente y auditable",
               "Esta interfaz gestiona datos críticos como Periodo, Fecha de Presentación, Montos a cargo, Montos presentados con anterioridad (para complementarias), INPCs, Factores de Actualización, Recargos y Memos de aclaración.",
               "Botón (Subir Acuse SAT) para subir los archivos relacionados como: la declaración en digital, Archivos relevantes para el cálculo. Los papeles de trabajo se pueden adjuntar con otro botón que es específico para cada impuesto (Soporte Documental Específico), de esta manera cuando se consulte un impuesto se obtiene toda la información capturada y los archivos globales y específicos relacionados a ese impuesto.",
               "El sistema detecta automáticamente si el monto de una declaración complementaria genera un Saldo a Favor, creando una 'Bolsa de Recuperación' disponible para procesos de compensación o devolución.",
@@ -869,7 +936,7 @@ export default function Portfolio() {
             image: "/images/RepoDeclara-sabana.png",
           },
           {
-            title: "Modal de Compensaciones",
+            title: "Modal de Compensaciones (Precisión Aritmética)",
             description: [
               "Si presionas el botón 'Gestionar Aplicaciones (Multi-Bolsa)' se abre el Distribuidor Modal de Compensaciones en el cual puedes elegir la bolsa (monto a favor) de la cual se compensó al presentar la declaración. A veces pueden ser necesarios más de un saldo a favor y se tiene que elegir el monto a aplicar. A pesar de ser un sistema forense, hace cálculos que permiten fácilmente capturar la información.",
               "Este Dsitribuidor calcula la actualización del monto (parcial o total) que se está tomando del saldo a favor, desde el momento en que nación el saldo a favor al momento de cada aplicación.",
@@ -964,8 +1031,11 @@ export default function Portfolio() {
           {
             title: "Link al proyecto en línea",
             description: [
-              "Estamos en la versión Beta del sistema (haciendo pruebas) así que, cualquier comentario que nos quieras hacer, por favor dirígete a las herramimientas de comunicación de la portada.",
-              "Accede a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
+              <strong>
+                CONVOCATORIA PARA EXPERTOS: VALIDACIÓN DE VERSIÓN ALPHA
+              </strong>,
+              "RepoDeclara está en fase final de desarrollo. Busco a 3 especialistas (Contadores, CFOs, Contralores o Socios de Despacho) que gestionen volúmenes significativos de saldos a favor para otorgarles acceso gratuito y privado. El objetivo primordial es el refinamiento de los reportes ejecutivos mediante el feedback de alta dirección, asegurando que RepoDeclara cumpla con los estándares de rigor de los despachos líderes en México. A cambio, recibirán una licencia preferencial por un año cuando lancemos la versión de producción.",
+              "Aún si no quieres participar de la convocatoria, puedes acceder a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
               "Si quieres acceder a la empresa que tiene ejemplos completos puedes entrar con el usuario: administradorfy@fy.com; password: Administradorfy",
               "Si quieres accesar a las empresas de pruebas y generar tus propias capturas puedes hacerlo con: admsinempre@ey.com; password:EdmSinEmpre",
               "La empresa Empresa Young, S.A de C.V. tiene ejemplos concretos. La empresa Pruebas, S.A. de C.V. contiene algunas declaraciones pero sin compensaciones o devoluciones. Puedes entrar a generar nuevas declaraciones (CRI) o puedes entrar a editar cualquier declaración e intentar hacer una compensación en el módulo de compensaciones (dentro de la misma CRI).",
