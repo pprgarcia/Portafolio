@@ -770,7 +770,7 @@ export default function Portfolio() {
       image: "/images/RepoDeclara-Tablero Principal.png",
       tags: ["React 19", "Next.js 16 (App Router)", "Prisma ORM", "TypeScript"],
       metrics: [
-        "Digitalización de Declaraciones (CRI)",
+        "Digitalización de Declaraciones (CIR)",
         "Listado de declaraciones (Actualizaciones y Recargos, Saldos a Favor)",
         "Toda la información acerca de Compensaciones aplicadas y sus Actualizaciones (en proceso y su históricas)",
         "Toda la información acerca de Devoluciones, sus Actualizaciones e Intereses (en proceso y su históricas)",
@@ -925,9 +925,9 @@ export default function Portfolio() {
 
         process: [
           {
-            title: "Cédulas de Registro Integral (CRI)", // Título del módulo
+            title: "Cédulas de Registro Integral (CIR)", // Título del módulo
             description: [
-              "Una Cédula de Registro Integral (CRI) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
+              "Una Cédula Integral de Registro (CIR) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
               "Garantiza que el fruto del trabajo administrativo sea un registro permanente y auditable",
               "Esta interfaz gestiona datos críticos como Periodo, Fecha de Presentación, Montos a cargo, Montos presentados con anterioridad (para complementarias), INPCs, Factores de Actualización, Recargos y Memos de aclaración.",
               "Botón (Subir Acuse SAT) para subir los archivos relacionados como: la declaración en digital, Archivos relevantes para el cálculo. Los papeles de trabajo se pueden adjuntar con otro botón que es específico para cada impuesto (Soporte Documental Específico), de esta manera cuando se consulte un impuesto se obtiene toda la información capturada y los archivos globales y específicos relacionados a ese impuesto.",
@@ -1036,8 +1036,8 @@ export default function Portfolio() {
               "Si quieres conocer el sistema, puedes acceder a la aplicación web completa para explorar el dashboard principal y analizar los datos de RepoDeclara.",
               "Si quieres acceder a la empresa que tiene ejemplos completos puedes entrar con el usuario: administradorfy@fy.com; password: Administradorfy",
               "Si quieres accesar a las empresas de pruebas y generar tus propias capturas puedes hacerlo con: admsinempre@ey.com; password:EdmSinEmpre",
-              "La empresa Empresa Young, S.A de C.V. tiene ejemplos concretos. La empresa Pruebas, S.A. de C.V. contiene algunas declaraciones pero sin compensaciones o devoluciones. Puedes entrar a generar nuevas declaraciones (CRI) o puedes entrar a editar cualquier declaración e intentar hacer una compensación en el módulo de compensaciones (dentro de la misma CRI).",
-              "La empresa SINDATOS PRUEBA2, S.A. de C.V. esta completamente vacía para que generes tus propias CRI y escenarios",
+              "La empresa Empresa Young, S.A de C.V. tiene ejemplos concretos. La empresa Pruebas, S.A. de C.V. contiene algunas declaraciones pero sin compensaciones o devoluciones. Puedes entrar a generar nuevas declaraciones (CIR) o puedes entrar a editar cualquier declaración e intentar hacer una compensación en el módulo de compensaciones (dentro de la misma CIR).",
+              "La empresa SINDATOS PRUEBA2, S.A. de C.V. esta completamente vacía para que generes tus propias CIR y escenarios",
               'También, puedes generar una captura de Solicitud, Requerimiento de información y Resolución, con datos sintéticos de tu preferencia. No nos hacemos responsables por la información que adjuntes o captures, considera que otras personas podrán ver esta versión de prueba. Cuando lancemos RepoDeclara en la versión en producción la información estará sellada sólo para los usuarios autorizados por el "administrador de la empresa" que se asigne en el sistema a cada empresa.',
               "Debido a que estamos usando una base de datos de prueba, el límite de archivos pesados es limitado. Te agradecería si al final de tu prueba borras los archivos que adjuntes, después de generar los reportes en Excel o pantallas que gustes.",
               <strong>Nota: </strong>,
