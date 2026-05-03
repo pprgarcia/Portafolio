@@ -99,32 +99,51 @@ const ProjectModal = ({ project, onClose }) => {
                     implican las siguientes preguntas:
                   </p>
 
-                  {/* Usamos un contador manual para la numeración global */}
                   {(() => {
                     let globalIndex = 0;
-                    return details.businessQuestions.map((section, sIdx) => (
-                      <div key={sIdx} className="mb-8 last:mb-0">
-                        <h4 className="text-blue-800 font-black uppercase tracking-wider text-sm mb-4 border-b border-blue-200 pb-1">
-                          {section.category}
-                        </h4>
-                        <ul className="space-y-3">
-                          {section.questions.map((question, qIdx) => {
-                            globalIndex++;
-                            return (
-                              <li
-                                key={qIdx}
-                                className="flex items-start gap-3 text-gray-700"
-                              >
-                                <span className="font-bold text-blue-600 min-w-[20px]">
-                                  {globalIndex}.
-                                </span>
-                                <span>{question}</span>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
-                    ));
+
+                    return details.businessQuestions.map((item, idx) => {
+                      // CASO A: Es el formato complejo { category, questions: [] }
+                      if (typeof item === "object" && item.questions) {
+                        return (
+                          <div key={idx} className="mb-8 last:mb-0">
+                            <h4 className="text-blue-800 font-black uppercase tracking-wider text-sm mb-4 border-b border-blue-200 pb-1">
+                              {item.category}
+                            </h4>
+                            <ul className="space-y-3">
+                              {item.questions.map((question, qIdx) => {
+                                globalIndex++;
+                                return (
+                                  <li
+                                    key={qIdx}
+                                    className="flex items-start gap-3 text-gray-700"
+                                  >
+                                    <span className="font-bold text-blue-600 min-w-[20px]">
+                                      {globalIndex}.
+                                    </span>
+                                    <span>{question}</span>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        );
+                      }
+
+                      // CASO B: Es el formato simple (un string directo o JSX)
+                      globalIndex++;
+                      return (
+                        <div
+                          key={idx}
+                          className="mb-3 flex items-start gap-3 text-gray-700"
+                        >
+                          <span className="font-bold text-blue-600 min-w-[20px]">
+                            {globalIndex}.
+                          </span>
+                          <span>{item}</span>
+                        </div>
+                      );
+                    });
                   })()}
                 </div>
               </div>
