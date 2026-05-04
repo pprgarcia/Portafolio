@@ -479,6 +479,9 @@ export default function Portfolio() {
       ],
       metrics: [
         "Arquitectura Desacoplada (Back/Front)",
+        "Es un tablero personalizable de cualqueir cosa medible que quieras controlar en tu negocio, no sólo ventas, sino también producción, inventarios, logística, finanzas, recursos humanos, etc.",
+        "Sistema cerrado de BI a medida, sin costos de licenciamiento por usuario, con control total de seguridad, soberanía de datos y usuarios",
+        "Alimentado mediante archivos CSV (convertido desde Excel), o incluso con un motor de ingesta XML para extraer datos directamente de tus facturas CFDI 4.0 de ingresos",
         "API RESTful Custom",
         "Renderizado Híbrido",
       ],
