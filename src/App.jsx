@@ -2040,7 +2040,7 @@ Monto_Advertencia =>
             {/* LINKEDIN - Expansión (Link) */}
             <div className="relative flex items-center group">
               <a
-                href="(https://www.linkedin.com/in/josé-rodríguez-garcía-4b32733b9/)"
+                href="https://www.linkedin.com/in/josé-rodríguez-garcía-4b32733b9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-full bg-yellow-400 hover:bg-[#0077b5] hover:w-64 flex items-center justify-start px-4 transition-all duration-300 shadow-xl overflow-hidden group/link"
