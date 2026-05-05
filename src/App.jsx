@@ -1728,7 +1728,8 @@ Monto_Advertencia =>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
                   •{" "}
                   <strong>
-                    Arquitectura de Sistemas con Segregación de Datos:
+                    Arquitectura de Sistemas Escalables con Segregación de
+                    Datos:
                   </strong>{" "}
                   Capacidad probada para arquitectar plataformas complejas desde
                   cero (como RepoDeclara y BI Facturación con más de 50,000
@@ -1764,8 +1765,7 @@ Monto_Advertencia =>
               soy un{" "}
               <strong>experto financiero que domina la tecnología</strong> para
               eliminar el riesgo operativo. Mi objetivo es convertir la carga
-              administrativa en una ventaja competitiva consultable y
-              facilitando hallazgos.
+              administrativa en información consultable que facilite hallazgos.
             </p>
           </div>
           <br />
