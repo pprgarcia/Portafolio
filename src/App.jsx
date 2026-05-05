@@ -6,6 +6,7 @@ import {
   Mail,
   Linkedin,
   Github,
+  Award,
   ExternalLink,
   Phone,
   X,
@@ -471,16 +472,41 @@ export default function Portfolio() {
       image: "/images/admintool_main.png",
       tags: [
         "Next.js",
-        "React (Next.js)",
+        "PostgreSQL / Prisma",
         "Python FastAPI",
         "Pandas/Python",
         "Tailwind CSS",
         "Recharts",
       ],
       metrics: [
-        "Arquitectura Desacoplada (Back/Front)",
-        "API RESTful Custom",
-        "Renderizado Híbrido",
+        {
+          title: "Arquitectura Desacoplada (FastAPI + Next.js):",
+          desc: "Separación clara entre la lógica de procesamiento de datos y la interfaz de usuario para máxima escalabilidad.",
+        },
+        {
+          title: "Versatilidad Operativa:",
+          desc: "Es un tablero personalizable de cualqueir cosa medible que quieras controlar en tu negocio, no sólo ventas, sino también producción, inventarios, logística, finanzas, recursos humanos, etc.",
+        },
+        {
+          title: "Soberanía de Datos y Seguridad:",
+          desc: "Control total del entorno de BI, eliminando costos de licenciamiento por usuario y garantizando la privacidad de la información.",
+        },
+        {
+          title: "Ingesta de Datos Multifuente:",
+          desc: "Procesamiento automatizado de archivos CSV/Excel e integración con motores XML para extracción directa de facturas CFDI 4.0.",
+        },
+        {
+          title: "API RESTful de Alto Rendimiento:",
+          desc: "Endpoints optimizados para la entrega de métricas financieras y operativas en milisegundos.",
+        },
+        {
+          title: "Visualización Interactiva:",
+          desc: "Gráficos dinámicos con tooltips inteligentes y lógica de colores para insights inmediatos.",
+        },
+        {
+          title: "Despliegue en la Nube:",
+          desc: " Frontend en Vercel y Backend en Render con Docker para una experiencia de usuario fluida y tiempos de carga mínimos.",
+        },
       ],
 
       detailedInfo: {
@@ -789,15 +815,33 @@ export default function Portfolio() {
       image: "/images/RepoDeclara-Tablero Principal.png",
       tags: ["React 19", "Next.js 16 (App Router)", "Prisma ORM", "TypeScript"],
       metrics: [
-        "Digitalización de Declaraciones (CIR)",
-        "Listado de declaraciones (Actualizaciones y Recargos, Saldos a Favor)",
-        "Toda la información acerca de Compensaciones aplicadas y sus Actualizaciones (en proceso y su históricas)",
-        "Toda la información acerca de Devoluciones, sus Actualizaciones e Intereses (en proceso y su históricas)",
-        "Contratos (Seguimiento a su Cumplimiento)",
-        "Pólizas (Seguimiento y Vencimiento)",
-        "Seguimiento al Cumplimiento de proyectos (Planeación y Asignación de actividades)",
-        "Integración de papeles de trabajo por declaración",
-        "Archivo Permanente (Acta Constitutiva, Poderes, Licencias, Contratos, Seguros, Proyectos, etc.)",
+        {
+          title: "Digitalización de Declaraciones",
+          desc: "Mediante la  Cédula Integral de Registro (CIR)",
+        },
+        {
+          title: "Listado de Declaraciones",
+          desc: "Con Actualizaciones y Recargos, Saldos a Favor",
+        },
+        { title: "Compensaciones", desc: "Aplicaciones y sus Actualizaciones" },
+        {
+          title: "Devoluciones",
+          desc: "Sus Actualizaciones e Intereses Moratorios",
+        },
+        { title: "Contratos", desc: "Seguimiento a su Cumplimiento" },
+        { title: "Pólizas", desc: "Seguimiento y Vencimiento" },
+        {
+          title: "Seguimiento al Cumplimiento de proyectos",
+          desc: "Planeación y Asignación de actividades",
+        },
+        {
+          title: "Integración de papeles de trabajo por declaración",
+          desc: "",
+        },
+        {
+          title: "Archivo Permanente",
+          desc: "Acta Constitutiva, Poderes, Licencias, Contratos, Seguros, Proyectos, etc.",
+        },
       ],
 
       detailedInfo: {
@@ -1103,7 +1147,11 @@ export default function Portfolio() {
         "Modelo predictivo XGBoost que identifica empleados en riesgo de abandono con 98.3% de precisión, permitiendo intervenciones proactivas de retención en Salifort Motors.",
       image: "/images/ml-sharp-cover.png",
       tags: ["Python", "XGBoost", "SHAP", "Scikit-learn", "Employee Analytics"],
-      metrics: ["98.3% AUC", "94.8% F1-Score", "11,991 registros analizados"],
+      metrics: [
+        { title: "AUC", desc: " 98.3%" },
+        { title: "F1-Score", desc: " 94.8%" },
+        { title: "Registros Analizados", desc: " 11,991" },
+      ],
 
       detailedInfo: {
         context:
@@ -1272,7 +1320,17 @@ export default function Portfolio() {
         "Páginas Web funcionales y responsivas para promoción de negocios, con mapas y formulario de contactos.",
       image: "/images/web-1.jpeg",
       tags: ["React", "Google Maps", "Responsive Design"],
-      metrics: ["100% responsivo", "Optimizado para SEO"],
+      metrics: [
+        { title: "Responsivo:", desc: "100%" },
+        { title: "SEO:", desc: "Optimizado" },
+        { title: "Galería de fotos:", desc: "Con Zoom" },
+        { title: "Mapa de Ubicación:", desc: "Integrado con Google Maps" },
+        {
+          title: "Formulario de Contacto:",
+          desc: "Integrado con Google Forms",
+        },
+        { title: "Base de Datos:", desc: "Supabase" },
+      ],
       link: "https://departamento-queretaro.vercel.app/",
     },
     {
@@ -1284,9 +1342,12 @@ export default function Portfolio() {
       image: "/images/looker-2.png",
       tags: ["Looker Studio"],
       metrics: [
-        "Análisis de Pedidos, Visor Margen de Utilidad, Tracker de pérdida de empleados, etc.",
-        "Determinación del mejor Producto, Ciudad y Mes",
-        "Tendencias",
+        {
+          title:
+            "Análisis de Pedidos, Visor Margen de Utilidad, Tracker de pérdida de empleados, etc.",
+        },
+        { title: "Determinación del mejor Producto, Ciudad y Mes" },
+        { title: "Tendencias" },
       ],
       detailedInfo: {
         context:
@@ -1396,9 +1457,9 @@ Monto_Advertencia =>
       image: "/images/tableau-cover.png",
       tags: ["Tableau", "Business Intelligence", "Retail Analytics"],
       metrics: [
-        "51,290 transacciones analizadas",
-        "$200K impacto anual",
-        "-52% margen por descuentos >20%",
+        { title: "51,290 transacciones analizadas" },
+        { title: "$200K impacto anual" },
+        { title: "-52% margen por descuentos >20%" },
       ],
 
       detailedInfo: {
@@ -1810,6 +1871,8 @@ Monto_Advertencia =>
           <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
             Habilidades Técnicas
           </h2>
+
+          {/* Grid de Habilidades */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
               <div
@@ -1824,41 +1887,114 @@ Monto_Advertencia =>
               </div>
             ))}
           </div>
-          <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">
-              Certificaciones
+
+          {/* Bloque de Certificaciones */}
+          <div className="mt-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+              <Award className="w-7 h-7 text-blue-600" />
+              Certificaciones Profesionales
             </h3>
 
-            <div className="space-y-4">
-              <div className="flex flex-col md:flex-row md:items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100 group hover:bg-white hover:shadow-md transition-all">
-                <div className="flex items-center space-x-3 mb-3 md:mb-0">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700 leading-tight">
-                    <strong className="block text-gray-900">
-                      Google Advanced Data Analytics Professional Certificate
-                    </strong>
-                    <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">
-                      Coursera | Google Professional Certificates
-                    </span>
-                  </span>
+            <div className="space-y-6">
+              {/* 1. GOOGLE CERTIFICATE */}
+              <div className="relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between p-6 bg-gradient-to-r from-blue-50 to-transparent rounded-2xl border border-blue-100 group hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-5 z-10">
+                  <div className="flex-shrink-0 w-16 h-16 bg-white rounded-xl shadow-sm border border-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/googleg_64dp.png"
+                      alt="Google"
+                      className="w-10 h-10 object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 leading-tight mb-1">
+                      Google Advanced Data Analytics
+                    </h4>
+                    <p className="text-blue-700 font-semibold text-sm mb-3">
+                      Google Professional Certificate | Coursera
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        "Python",
+                        "Machine Learning",
+                        "Estadística",
+                        "Storytelling",
+                      ].map((s) => (
+                        <span
+                          key={s}
+                          className="px-2 py-1 bg-white/60 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase rounded-md"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-
-                {/* BOTÓN DE VERIFICACIÓN */}
                 <a
                   href="https://coursera.org/verify/professional-cert/PP26T9DQKCND"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-blue-200 text-blue-600 rounded-xl text-sm font-bold hover:bg-blue-600 hover:text-white transition-all shadow-sm group-hover:border-blue-600"
+                  className="mt-4 md:mt-0 z-10 flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl text-sm font-bold hover:bg-blue-700 transition-all shadow-md"
                 >
-                  Verificación de Certificado
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  Validar Credencial <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
 
-              <p className="text-gray-600 ml-5">
-                Incluye: Python (Pandas, Numpy), Visualizaciones, Regresión,
-                Machine Learning.
-              </p>
+              {/* 2. CREHANA + ULA MICRODEGREE */}
+              <div className="relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between p-6 bg-white rounded-2xl border border-gray-100 group hover:shadow-lg transition-all duration-300">
+                {/* Decoración de fondo sutil */}
+                <div className="absolute -right-8 -top-8 w-32 h-32 bg-purple-50 opacity-40 rounded-full blur-3xl"></div>
+
+                <div className="flex items-start gap-5 z-10">
+                  {/* Contenedor del Logo de ULA */}
+                  <div className="flex-shrink-0 w-16 h-16 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden p-2">
+                    <img
+                      src="/images/ULA.png"
+                      alt="ULA Logo"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 leading-tight mb-1">
+                      MicroDegree en Data Analytics
+                    </h4>
+                    <p className="text-purple-700 font-semibold text-sm mb-3">
+                      Universidad Latinoamericana (ULA) + Crehana
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        "SQL",
+                        "Excel Avanzado",
+                        "Tableau",
+                        "Business Intelligence",
+                      ].map((s) => (
+                        <span
+                          key={s}
+                          className="px-2 py-1 bg-purple-50 border border-purple-100 text-purple-700 text-[10px] font-bold uppercase rounded-md"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                      <span className="px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold uppercase rounded-md shadow-sm">
+                        150 Horas
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* BOTÓN DE VALIDACIÓN */}
+                <a
+                  href="https://s3.amazonaws.com/public-lessons.crehana.com/images/certificate/participation-pdf/7a084e82/4b8bbbb5.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 md:mt-0 z-10 flex items-center justify-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-xl text-sm font-bold hover:bg-black transition-all shadow-md hover:shadow-gray-200"
+                >
+                  Validar Credencial
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1906,14 +2042,21 @@ Monto_Advertencia =>
                         </span>
                       ))}
                     </div>
-                    <div className="mb-4 space-y-2">
+                    <div className="mb-4 space-y-3">
                       {project.metrics.map((metric, imt) => (
                         <div
                           key={imt}
-                          className="flex items-center text-sm text-gray-600"
+                          className="flex items-start text-sm text-gray-600 leading-relaxed"
                         >
-                          <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
-                          {metric}
+                          {/* El Bullet: flex-shrink-0 evita que se aplaste, mt-1.5 lo alinea con el primer renglón */}
+                          <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+
+                          <span>
+                            <strong className="text-gray-800 font-bold">
+                              {metric.title}
+                            </strong>{" "}
+                            {metric.desc}
+                          </span>
                         </div>
                       ))}
                     </div>
