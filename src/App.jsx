@@ -1715,9 +1715,9 @@ Monto_Advertencia =>
               </strong>
               , diseñando <strong>dashboards dinámicos</strong> que permiten a
               las organizaciones transitar de reportes estáticos a herramientas
-              de <strong>inteligencia de negocios</strong>
-              que impulsan decisiones estratégicas en tiempo real mediante la
-              integración de evidencia técnica y visualización avanzada.
+              de <strong>inteligencia de negocios </strong> que impulsan
+              decisiones estratégicas en tiempo real mediante la integración de
+              evidencia técnica y visualización avanzada.
             </p>
             <div className="mb-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">
@@ -1751,7 +1751,7 @@ Monto_Advertencia =>
                   • <strong>Analítica con Propósito:</strong> Implementación de
                   Modelos de Machine Learning para reducir la incertidumbre en
                   variables críticas:
-                  <strong>rotación de personal</strong> (modelo predictivo),
+                  <strong> rotación de personal</strong> (modelo predictivo),
                   riesgo crediticio, y{" "}
                   <strong>proyección de flujo de efectivo</strong>.
                 </li>
@@ -1764,8 +1764,9 @@ Monto_Advertencia =>
               </strong>{" "}
               soy un{" "}
               <strong>experto financiero que domina la tecnología</strong> para
-              eliminar el riesgo operativo. Mi objetivo es convertir la carga
-              administrativa en información consultable que facilite hallazgos.
+              eliminar riesgos. Mi objetivo es convertir la carga administrativa
+              en información consultable que facilite hallazgos críticos para la
+              salud financiera de la organización.
             </p>
           </div>
           <br />
@@ -2039,7 +2040,7 @@ Monto_Advertencia =>
             {/* LINKEDIN - Expansión (Link) */}
             <div className="relative flex items-center group">
               <a
-                href="https://linkedin.com/in/pprgarcia"
+                href="(https://www.linkedin.com/in/josé-rodríguez-garcía-4b32733b9/)"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-full bg-yellow-400 hover:bg-[#0077b5] hover:w-64 flex items-center justify-start px-4 transition-all duration-300 shadow-xl overflow-hidden group/link"
