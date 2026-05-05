@@ -1573,48 +1573,16 @@ Monto_Advertencia =>
 
             <div className="mb-12">
               <h2 className="text-2xl md:text-4xl text-gray-800 font-bold tracking-tight">
-                Financial Systems Architect | Analytics Engineer
+                Senior Financial Data Analyst & BI Specialist
               </h2>
               <p className="text-xl md:text-2xl text-gray-500 font-light mt-2">
-                Integridad Forense de Datos y Automatización Financiera
+                Especialista en Automatización de Procesos Financieros y
+                Auditoría de Datos
               </p>
             </div>
 
             {/* BARRA DE CONTACTO HÍBRIDA */}
             <div className="flex flex-wrap justify-center gap-4 items-center">
-              {/* BOTÓN: WHATSAPP (Móvil - Logotipo Real) */}
-              <div className="relative flex items-center group">
-                <button
-                  onClick={() =>
-                    copyToClipboard("442 597 37 53", setCopiedPhone)
-                  }
-                  className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-md overflow-hidden ${
-                    copiedWhatsapp
-                      ? "bg-[#25D366] w-52"
-                      : "bg-yellow-400 hover:bg-[#25D366] hover:w-64"
-                  }`}
-                >
-                  {/* Logotipo Oficial de WhatsApp en SVG */}
-                  <svg
-                    viewBox="0 0 24 24"
-                    className={`w-6 h-6 shrink-0 transition-colors ${copiedWhatsapp ? "fill-white" : "fill-gray-800 group-hover:fill-white"}`}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.396.015 12.03c0 2.12.554 4.189 1.604 6.008L0 24l6.117-1.605a11.803 11.803 0 005.925 1.586h.005c6.632 0 12.032-5.396 12.035-12.03a11.79 11.79 0 00-3.526-8.511" />
-                  </svg>
-
-                  <span
-                    className={`ml-4 font-bold whitespace-nowrap transition-opacity duration-300 ${
-                      copiedWhatsapp
-                        ? "opacity-100 text-white text-[10px]"
-                        : "opacity-0 group-hover:opacity-100 text-white text-sm"
-                    }`}
-                  >
-                    {copiedWhatsapp ? "¡WHATSAPP COPIADO!" : "442 346 27 89"}
-                  </span>
-                </button>
-              </div>
-
               {/* BOTÓN: TELÉFONO (Oficina / Alternativo) */}
               <div className="relative flex items-center group">
                 <button
@@ -1714,13 +1682,22 @@ Monto_Advertencia =>
             <h3 className="text-2xl font-black text-indigo-600 uppercase italic tracking-tighter mb-6">
               "Construyo puentes donde los ERP tradicionales fallan."
             </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Analista de datos con una trayectoria sólida de 17 años en
+              gerencia administrativa y auditoría (Big Four), especializado en
+              la creación de{" "}
+              <strong>soluciones de Business Intelligence</strong> y{" "}
+              <strong>automatización de reportes críticos</strong>. Poseo la
+              capacidad única de traducir la lógica contable, fiscal y operativa
+              en modelos de datos accionables, desde la extracción de datos
+              hasta la visualización estratégica.
+            </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Con <strong>años de experiencia</strong> en alta gerencia
-              administrativa y auditoría, no solo entiendo los estados
-              financieros: diseño y programo los ecosistemas tecnológicos que
-              los gestionan, protegen y proyectan. Mi diferencial es la fusión
-              de tres mundos: la{" "}
+              Con <strong>años de experiencia</strong> no solo entiendo los
+              estados financieros: diseño y programo los ecosistemas
+              tecnológicos que los gestionan, protegen y proyectan. Mi
+              diferencial es la fusión de tres mundos: la{" "}
               <strong>rigurosidad del cumplimiento fiscal mexicano</strong>, el
               poder del{" "}
               <strong>
@@ -1732,43 +1709,50 @@ Monto_Advertencia =>
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Mi especialidad es la creación de{" "}
-              <strong>sistemas de alta integridad forense</strong> y soluciones
-              de <strong>Business Intelligence a medida</strong>, garantizando
-              soberanía total sobre la información donde las herramientas
-              comerciales de diseño extranjero suelen ser insuficientes.
+              Mi enfoque actual se centra en el desarrollo de arquitecturas{" "}
+              <strong>
+                ETL (extracción, limpieza y carga) utilizando SQL y Python
+              </strong>
+              , diseñando <strong>dashboards dinámicos</strong> que permiten a
+              las organizaciones transitar de reportes estáticos a herramientas
+              de <strong>inteligencia de negocios</strong>
+              que impulsan decisiones estratégicas en tiempo real mediante la
+              integración de evidencia técnica y visualización avanzada.
             </p>
-
             <div className="mb-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">
-                Lo que aporto a su organización:
+                Lo que aporto a su organización con logros clave y Proyectos
+                como:
               </h4>
               <ul className="space-y-4">
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Ingeniería de Sistemas Multi-tenant:</strong>{" "}
+                  •{" "}
+                  <strong>
+                    Arquitectura de Sistemas con Segregación de Datos:
+                  </strong>{" "}
                   Capacidad probada para arquitectar plataformas complejas desde
-                  cero (como <strong>RepoDeclara</strong> y BI Facturación con
-                  más de <strong>50,000 registros</strong>), garantizando silos
-                  de datos seguros y trazabilidad total.
+                  cero (como RepoDeclara y BI Facturación con más de 50,000
+                  registros), donde la{" "}
+                  <strong>
+                    confidencialidad y el acceso basado en roles (RBAC)
+                  </strong>{" "}
+                  garantizan silos de información seguros y trazabilidad total.
                 </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Ingeniería Forense y Fiscal:</strong> Creador de{" "}
-                  <strong>RepoDeclara</strong>, una plataforma de trazabilidad
-                  fiscal y legal diseñada para resolver la complejidad que los
-                  sistemas extranjeros ignoran.
+                  • <strong>Ingeniería Forense y Fiscal:</strong> Desarrollo e
+                  implementación de{" "}
+                  <strong>plataformas de trazabilidad fiscal y legal</strong>{" "}
+                  (RepoDeclara), garantizando el cumplimiento normativo en
+                  entornos de alta complejidad que los ERPs extranjeros suelen
+                  omitir.
                 </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Analítica con Propósito:</strong> Modelos de Machine
-                  Learning para reducir la incertidumbre en variables críticas
-                  como <strong>rotación de personal</strong>, riesgo crediticio,
-                  optimización de capital de trabajo y{" "}
-                  <strong>flujo de efectivo</strong>.
-                </li>
-                <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Software de Grado Auditoría:</strong> Desarrollo de
-                  dashboards personalizados donde la confidencialidad y el
-                  control de acceso basado en roles (<strong>RBAC</strong>) son
-                  la prioridad absoluta.
+                  • <strong>Analítica con Propósito:</strong> Implementación de
+                  Modelos de Machine Learning para reducir la incertidumbre en
+                  variables críticas:
+                  <strong>rotación de personal</strong> (modelo predictivo),
+                  riesgo crediticio, y{" "}
+                  <strong>proyección de flujo de efectivo</strong>.
                 </li>
               </ul>
             </div>
@@ -1780,7 +1764,8 @@ Monto_Advertencia =>
               soy un{" "}
               <strong>experto financiero que domina la tecnología</strong> para
               eliminar el riesgo operativo. Mi objetivo es convertir la carga
-              administrativa en una ventaja competitiva medible.
+              administrativa en una ventaja competitiva consultable y
+              facilitando hallazgos.
             </p>
           </div>
           <br />
@@ -1993,11 +1978,11 @@ Monto_Advertencia =>
 
           {/* GRUPO DE ICONOS UNIFICADOS */}
           <div className="flex flex-wrap justify-center gap-6 items-center">
-            {/* WHATSAPP - Híbrido (Copia) */}
+            {/* WHATSAPP - Único número */}
             <div className="relative flex items-center group">
               <button
                 onClick={() =>
-                  copyToClipboard("442 346 27 89", setCopiedWhatsapp)
+                  copyToClipboard("442 597 37 53", setCopiedWhatsapp)
                 }
                 className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-xl overflow-hidden ${
                   copiedWhatsapp
@@ -2015,11 +2000,11 @@ Monto_Advertencia =>
                 <span
                   className={`ml-4 font-bold whitespace-nowrap transition-opacity duration-300 ${
                     copiedWhatsapp
-                      ? "opacity-100 text-white text-[10px]"
+                      ? "opacity-100 text-white text-sm"
                       : "opacity-0 group-hover:opacity-100 text-white text-sm"
                   }`}
                 >
-                  {copiedPhone ? "Telefono COPIADO!" : "442 597 37 53"}
+                  {copiedWhatsapp ? "¡Copiado!" : "442 597 37 53"}
                 </span>
               </button>
             </div>
