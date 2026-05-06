@@ -511,105 +511,65 @@ export default function Portfolio() {
 
       detailedInfo: {
         context:
-          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), éste es un Ejemplo de Plataforma de Software a Medida que puedes tener y que representa una solución a la Soberanía de Datos de Grado Empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
+          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), éste es un Ejemplo de Plataforma de Software a Medida que he desarrollado y que representa una solución a la Soberanía de Datos de Grado Empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
         impact: [
           <>
-            Podrías desarrollar diversos sistemas para{" "}
-            <strong>administrar tus riesgos</strong>, por ejemplo:
+            Mi enfoque no se limita a la visualización; diseño ecosistemas de
+            datos que <strong>resuelven problemas operativos</strong> donde los
+            sistemas tradicionales no llegan. Mi experiencia me permite integrar
+            lógica de negocio compleja en soluciones automatizadas, tales como:
           </>,
 
           <>
-            - ¿Te gustaría tener un resumen de los{" "}
-            <strong>indicadores clave de desempeño (KPIs)</strong> de tu negocio
-            en <strong>tiempo real</strong>?
+            - <strong>Control de Manufactura y Logística:</strong> Monitoreo en
+            tiempo real de KPIs de producción, trazabilidad de scrap/reprocesos
+            y gestión de mantenimiento preventivo de activos fijos.
           </>,
 
           <>
-            - ¿Te gustaría ver exactamente qué{" "}
-            <strong>consumos de materiales</strong> se hicieron durante un turno
-            en la planta de manufactura, o cuáles fueron las{" "}
-            <strong>entradas y salidas en el almacén</strong>, en gráficas
-            clasificadas por tipo de materiales o productos?
+            - <strong>Inteligencia de Capital Humano:</strong> Sistemas de
+            gestión de horas-hombre y disponibilidad de planta mediante
+            interfaces web dinámicas.
           </>,
 
           <>
-            - o saber, ¿Cuántos productos se produjeron durante el turno,
-            cuántos quedaron como <strong>producción en proceso</strong>, y/o
-            cuántos fueron aceptados por el{" "}
-            <strong>departamento de control de calidad</strong>?
+            - <strong>Automatización Contable y Financiera:</strong>{" "}
+            Estructuración de estados financieros automatizados desde el General
+            Ledger, eliminando la dependencia de archivos Excel manuales y
+            garantizando cierres mensuales más rápidos y auditables.
           </>,
 
           <>
-            - ¿Cuánto material se llevó a <strong>scrap</strong> totalmente
-            identificado, cuánto se llevó a <strong>reproceso</strong>, y tener
-            la información suficiente para diseñar{" "}
-            <strong>estrategias para reducir</strong> el scrap y reproceso?
+            - <strong>Gobierno y Soberanía de Datos:</strong> Migración de
+            procesos críticos administrados en hojas de cálculo hacia bases de
+            datos profesionales con arquitecturas de seguridad (RBAC) de acuerdo
+            a la política de confidencialidad, y trazabilidad total de
+            transacciones.
           </>,
 
           <>
-            - ¿Tener tu <strong>plan de mantenimiento preventivo</strong>, y
-            poder verificar si se está cumpliendo, o si se está retrasando, y
-            qué <strong>servicios correctivos</strong> están en proceso o fueron
-            terminados?
+            Mi objetivo es transformar la carga administrativa en una ventaja
+            competitiva, creando herramientas que permitan a la alta dirección y
+            gerencia obtener <strong>hallazgos estratégicos </strong>sin
+            necesidad de análisis adicionales.
           </>,
 
           <>
-            - Te gustaría que con un <strong>pase de lista</strong> de tus
-            supervisores de planta en un <strong>formulario web</strong>, puedas
-            obtener las <strong>horas hombre</strong> con las que cuentas para
-            la producción del turno, y por lo tanto diseñar estrategias para{" "}
-            <strong>evitar retrasos de producción</strong>?
-          </>,
-
-          <>
-            - ¿Te gustaría tener un sistema en el que puedas crear tus{" "}
-            <strong>estados financieros</strong> desde tus{" "}
-            <strong>Journal Entries</strong> o tu{" "}
-            <strong>Libro Mayor (General Ledger)</strong>, y redactar tus notas
-            a los estados financieros?
-          </>,
-
-          <>
-            - Te gustaría incluir un módulo para{" "}
-            <strong>bitácora de seguimiento</strong> en donde puedas documentar
-            conclusiones, acuerdos, tareas, responsables, fechas, etc., para dar
-            seguimiento a los procesos de <strong>mejora continua</strong> de tu
-            negocio?
-          </>,
-
-          <>
-            - ¿Saber cuál es el <strong>desempeño</strong> de tus vendedores, o
-            de tus productos, o de tus clientes, o de tus proveedores, o de tus
-            centros de costos, o de tus proyectos, o de tus campañas de
-            marketing, o de tus sucursales, etc.?
-          </>,
-
-          <>
-            - o Tal vez ¿Te gustaría algo más semejante a un sistema de control
-            de{" "}
+            Especializado en eliminar la complejidad crítica de los cierres
+            mensuales; diseño sistemas que permiten parametrizar y clasificar
+            balanzas de comprobación bajo criterios profesionales específicos,
+            automatizando la revaluación de moneda extranjera no realizada,
+            depreciación, amortización, consolidación, tablas de notas a los
+            estados financieros; automatizando aspectos específicos repetitivos
+            de la generación del{" "}
+            <strong>paquete entregable de cierre de periodo </strong>u otros
+            procesos contables complejos. Este enfoque{" "}
             <strong>
-              Inversiones, Gastos, Activos Fijos, Depreciaciones, Bajas,
-              Importaciones, Exportaciones{" "}
+              sustituye la dependencia de archivos de Excel vulnerables{" "}
             </strong>
-            clasificados por tipo?
-          </>,
-
-          <>
-            - Si eres responsable del área contable, ¿estás cansado de que cada
-            cierre de mes se complique hasta altas horas de la noche por cambios
-            de última hora y{" "}
-            <strong> depender de complejos archivos de Excel</strong>? Podrías
-            contar con un sistema personalizado que te permita{" "}
-            <strong>parametrizar y clasificar personalmente</strong> las cuentas
-            de tu Balanza de Comprobación. Bajo este enfoque, el sistema respeta
-            tu criterio profesional para{" "}
-            <strong>
-              automatizar la consolidación del cierre y la generación del
-              paquete entregable
-            </strong>
-            . Esto garantiza que el procesamiento de datos sea fiel a tu lógica
-            de negocio, 100% confiable y con un resguardo seguro en una base de
-            datos profesional.
+            por una base de datos profesional, garantizando que el procesamiento
+            sea fiel a las políticas contables y eliminando la incertidumbre
+            ante ajustes de última hora.
           </>,
 
           <>
@@ -631,15 +591,13 @@ export default function Portfolio() {
           </>,
 
           <>
-            Cualquiera que sea tu necesidad, tu sistema puede quedar bajo el
-            mismo enfoque de este ejemplo de sistema que te presento, donde{" "}
-            <strong>tú tienes el control</strong> de cuándo quieres actualizar
-            la información, la <strong>periodicidad la decides tú</strong>.
-            Metes una Tabla en un archivo <strong>'.csv'</strong> con formato y
-            columnas específicos y el sistema se encarga de{" "}
-            <strong>validar la integridad de los datos</strong> y{" "}
-            <strong>actualizar las gráficas</strong> sin necesidad de ninguna
-            intervención.
+            Este sistema ejemplifica la arquitectura de datos que diseño: una
+            interfaz segura donde la{" "}
+            <strong>integridad de la información</strong> es la prioridad. El
+            motor de ingesta está preparado para recibir archivos de datos (como
+            .csv), validando automáticamente cada campo y actualizando tableros
+            estratégicos de forma inmediata, eliminando el riesgo de error
+            humano en el procesamiento.
           </>,
           <>
             En la última actualización del sistema se incluyó un robusto módulo
@@ -663,8 +621,8 @@ export default function Portfolio() {
           </>,
           <>
             Lo más novedoso es la incorporación de un{" "}
-            <strong>motor universal de ingesta XML</strong>, diseñado para
-            extraer y procesar la información del{" "}
+            <strong>motor universal de ingesta XML</strong>, que desarrollé,
+            diseñado para extraer y procesar la información del{" "}
             <strong>CFDI 4.0 de ingresos</strong>. Este motor extrae
             automáticamente{" "}
             <strong>
@@ -682,13 +640,11 @@ export default function Portfolio() {
             tributaria y operativa.
           </>,
           <>
-            En adelante, te detallo las características del dashboard que te
-            presento como ejemplo, y los <strong>hallazgos claves</strong> que
-            se obtuvieron al analizar los datos del{" "}
-            <strong>DataSet SuperTienda</strong>. Esto es sólo un ejemplo de la{" "}
-            <strong>capacidad de gráficas y herramientas</strong> que tienes a
-            tu disposición si me permites colaborar contigo en el desarrollo de
-            la <strong>herramienta ideal para ti</strong>.
+            A continuación, detallo las capacidades analíticas de este dashboard
+            mediante el análisis del DataSet SuperTienda. Este proyecto
+            ejemplifica el <strong>estándar de herramientas </strong>que puedo
+            integrar en una organización para transformar datos crudos en
+            activos estratégicos.
           </>,
         ],
         businessQuestions: [
@@ -988,7 +944,7 @@ export default function Portfolio() {
 
         process: [
           {
-            title: "Cédulas de Registro Integral (CIR)", // Título del módulo
+            title: "Cédulas Integral de Registro (CIR)", // Título del módulo
             description: [
               "Una Cédula Integral de Registro (CIR) es el módulo central para la captura de la información detallada de una declaración vinculada a un Número de Operación Único. Permite documentar en un solo evento uno o más impuestos presentados (Federales, Estatales, Retenciones).",
               "Garantiza que el fruto del trabajo administrativo sea un registro permanente y auditable",
@@ -1009,7 +965,7 @@ export default function Portfolio() {
           {
             title: "Listado de Declaraciones",
             description: [
-              "Cada vez que se guarda una CRI, cada impuesto se forma en su tarjeta exclusiva específica de su nombre, en donde se puede revisar la información capturada (Favor de ampliar el zoom del navegador a +175)",
+              "Cada vez que se guarda una CIR, cada impuesto se forma en su tarjeta exclusiva específica de su nombre, en donde se puede revisar la información capturada (Favor de ampliar el zoom del navegador a +175)",
               'En la columna "Compensación" se muestra el monto total compensado (Acumulación de una o más aplicaciones de diferentes bolsas) el cual se disminuye del monto pagado (columna: "Pagado / (-) Pend. Rec."), el cual puede ser "cero", o haber quedado un remanente pagado con dinero.',
               'Se puede obtener en un reporte Excel la información del tablero principal. Cabe aclarar que todos los módulos tiene una o varias versiones de Reportes Excel, hay un Reporte General en Excel con toda la información capturada en un click. También, con el botón "Bóveda de Evidencia" se pueden obtener todos los archivos (o una selección) que hayan servido de evidencia para las declaraciones (Archivos: .xlxs, .docx, pdf, imágenes, fotografías, etc.)',
             ],
