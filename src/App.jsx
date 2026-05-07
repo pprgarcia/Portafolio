@@ -28,20 +28,25 @@ const ProjectModal = ({ project, onClose }) => {
     onClose();
     return null;
   }
-
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 z-50 overflow-y-auto">
-      <div className="min-h-screen px-4 py-8">
-        <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl">
-          {/* Header */}
-          <div className="sticky top-0 bg-white border-b border-gray-200 px-8 py-6 flex justify-between items-center rounded-t-2xl z-10">
+      {/* 1. Reducimos el padding lateral de px-4 a px-1 para acercar el modal al borde de la pantalla */}
+      <div className="min-h-screen px-4 py-4 md:py-9">
+        {/* 2. CAMBIO CLAVE: Subimos de 95vw a 98vw y de 1400px a 1600px (o la medida que prefieras) */}
+        {/* Esto ensancha el cuadro blanco hacia afuera, reduciendo los márgenes negros laterales */}
+        <div className="w-full max-w-[98vw] lg:max-w-[1600px] mx-auto bg-white rounded-2xl shadow-2xl">
+          {/* Header (Mismo código) */}
+          <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 md:px-8 md:py-6 flex justify-between items-center rounded-t-2xl z-10">
             <div>
               <div className="text-sm text-blue-600 font-semibold mb-1">
                 {project.category}
               </div>
-              <h2 className="text-3xl font-bold text-gray-800">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                 {project.title}
               </h2>
+              <h4 className="text-1xl md:text-1xl font-bold text-gray-600">
+                Haz click en las imagenes para verlas con zoom
+              </h4>
             </div>
             <button
               onClick={onClose}
@@ -51,36 +56,41 @@ const ProjectModal = ({ project, onClose }) => {
             </button>
           </div>
 
-          {/* Content */}
+          {/* Content (Mismo código, manteniendo tus px-10 internos que te gustan) */}
           <div className="px-8 py-8 space-y-12">
-            {/* Imagen principal */}
+            {/* Imagen principal - (Sin cambios en tu lógica interna) */}
+
             <img
               src={project.image}
               alt={project.title}
-              onClick={() => setZoomImage(null)}
+              onClick={() => setZoomImage(project.image)}
               className="max-w-8xl mx-auto rounded-xl shadow-lg"
             />
 
             {/* Contexto */}
             {/* Contexto - CÓDIGO CORREGIDO */}
-            <div>
+            {/* Contenedor con ancho limitado para mejor lectura */}
+            <div className="max-w-5xl mx-auto">
               {/* Bloque de Contexto */}
               {(Array.isArray(details.context)
                 ? details.context
                 : [details.context]
               ).map((paragraph, i) => (
-                <p className="text-gray-600 italic mb-4" key={`ctx-${i}`}>
+                <p
+                  className="text-gray-600 italic mb-6 text-md leading-relaxed"
+                  key={`ctx-${i}`}
+                >
                   {paragraph}
                 </p>
               ))}
 
-              {/* Bloque de Impacto (Asegúrate que NO haya una coma aquí afuera) */}
+              {/* Bloque de Impacto */}
               {(Array.isArray(details.impact)
                 ? details.impact
                 : [details.impact]
               ).map((paragraph, i) => (
                 <p
-                  className="text-lg text-gray-800 leading-relaxed mb-4"
+                  className="text-md text-gray-800 leading-relaxed mb-6"
                   key={`imp-${i}`}
                 >
                   {paragraph}
@@ -91,10 +101,10 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Preguntas de Negocio */}
             {details.businessQuestions && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                <h3 className="text-2xl font-bold text-gray-800 mb-6 pl-14">
                   Preguntas de Negocio
                 </h3>
-                <div className="bg-blue-50 rounded-2xl p-8 shadow-inner">
+                <div className="max-w-5xl mx-auto bg-blue-50 rounded-2xl p-8 shadow-inner">
                   <p className="text-gray-800 mb-6 font-medium italic">
                     Este sistema ayuda a la administración de los conceptos que
                     implican las siguientes preguntas:
@@ -153,26 +163,33 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Proceso */}
             {details.process && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                <h3 className="pl-12 text-2xl font-bold text-gray-800 mb-6">
                   Proceso de Desarrollo (Haz clic en las imágenes para ampliar)
                 </h3>
-                <div className="space-y-8">
+                <div className="space-y-8 ">
                   {details.process.map((step, idxpr) => (
                     <div
                       key={idxpr}
+                      onClick={() => setZoomImage(step.image)}
                       className="border-l-4 border-blue-500 pl-6"
                     >
-                      <h4 className="text-xl font-semibold text-gray-800 mb-2">
+                      <h4 className="text-xl font-semibold text-gray-800 mb-2 pl-14">
                         {idxpr + 1}. {step.title}
                       </h4>
-                      {(Array.isArray(step.description)
-                        ? step.description
-                        : [step.description]
-                      ).map((paragraph, i) => (
-                        <p className="text-gray-700 mb-4" key={i}>
-                          {paragraph}
-                        </p>
-                      ))}
+                      {/* Contenedor para limitar el ancho y centrar el texto */}
+                      <div className="max-w-7xl mx-auto">
+                        {(Array.isArray(step.description)
+                          ? step.description
+                          : [step.description]
+                        ).map((paragraph, i) => (
+                          <p
+                            className="text-gray-700 mb-4 leading-relaxed text-md"
+                            key={i}
+                          >
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
                       {step.image &&
                         (Array.isArray(step.image)
                           ? step.image
@@ -193,7 +210,7 @@ const ProjectModal = ({ project, onClose }) => {
                           href={step.src}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg mt-4"
+                          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg mt-4 pl-18"
                         >
                           👁️ Link a la Aplicación
                         </a>
@@ -213,10 +230,10 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Dashboard Breakdown */}
             {details.dashboardBreakdown && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 pl-12">
                   Características del Dashboard
                 </h3>
-                <div className="bg-gray-50 rounded-xl p-6">
+                <div className="bg-gray-50 max-w-7xl mx-auto rounded-xl p-6">
                   <ul className="space-y-3">
                     {details.dashboardBreakdown.map((item, idxbk) => (
                       <li key={idxbk} className="flex items-start">
@@ -232,10 +249,10 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Key Insights */}
             {details.keyInsights && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 pl-12">
                   Insights Clave
                 </h3>
-                <div className="bg-green-50 rounded-xl p-6">
+                <div className="bg-green-50 max-w-7xl mx-auto rounded-xl p-6">
                   <ul className="space-y-3">
                     {details.keyInsights.map((insight, idxki) => (
                       <li key={idxki} className="flex items-start">
@@ -765,7 +782,7 @@ export default function Portfolio() {
       id: "RepoDeclara",
       title:
         "RepoDeclara, Repositorio de Declaraciones Fiscales y Documentos Legales",
-      category: "Sistemas Administrativos (Próximamente en la Nube)",
+      category: "Soluciones en Sistemas Fiscales/Administrativos",
       description:
         "Sistema completo de documentación de declaraciones fiscales y documentos legales para su análisis, control y seguimiento. Te ofrece:",
       image: "/images/RepoDeclara-Tablero Principal.png",
@@ -784,16 +801,25 @@ export default function Portfolio() {
           title: "Devoluciones",
           desc: "Sus Actualizaciones e Intereses Moratorios",
         },
-        { title: "Contratos", desc: "Seguimiento a su Cumplimiento" },
-        { title: "Pólizas", desc: "Seguimiento y Vencimiento" },
-        {
-          title: "Seguimiento al Cumplimiento de proyectos",
-          desc: "Planeación y Asignación de actividades",
-        },
         {
           title: "Integración de papeles de trabajo por declaración",
           desc: "",
         },
+        {
+          title: "Demandas:",
+          desc: "Documentación y planeación de procesos legales (Historial de demandas, seguimiento a vencimientos, evidencias, resultados, etc.)",
+        },
+
+        {
+          title: "Contratos",
+          desc: "Seguimiento a su Cumplimiento para evitar riesgos de sanciones",
+        },
+
+        {
+          title: "Seguimiento al Cumplimiento de proyectos",
+          desc: "Planeación y Asignación de actividades",
+        },
+        { title: "Pólizas", desc: "Seguimiento y Vencimiento" },
         {
           title: "Archivo Permanente",
           desc: "Acta Constitutiva, Poderes, Licencias, Contratos, Seguros, Proyectos, etc.",
@@ -958,7 +984,7 @@ export default function Portfolio() {
             title: "Modal de Compensaciones (Precisión Aritmética)",
             description: [
               "Si presionas el botón 'Gestionar Aplicaciones (Multi-Bolsa)' se abre el Distribuidor Modal de Compensaciones en el cual puedes elegir la bolsa (monto a favor) de la cual se compensó al presentar la declaración. A veces pueden ser necesarios más de un saldo a favor y se tiene que elegir el monto a aplicar. A pesar de ser un sistema forense, hace cálculos que permiten fácilmente capturar la información.",
-              "Este Dsitribuidor calcula la actualización del monto (parcial o total) que se está tomando del saldo a favor, desde el momento en que nación el saldo a favor al momento de cada aplicación.",
+              "Este Distribuidor calcula la actualización del monto (parcial o total) que se está tomando del saldo a favor, desde el momento en que nació el saldo a favor al momento de cada aplicación.",
             ],
             image: "/images/RepoDeclara-modal-multicompensacion.png",
           },
