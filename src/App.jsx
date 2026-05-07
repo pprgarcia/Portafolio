@@ -170,7 +170,6 @@ const ProjectModal = ({ project, onClose }) => {
                   {details.process.map((step, idxpr) => (
                     <div
                       key={idxpr}
-                      onClick={() => setZoomImage(step.image)}
                       className="border-l-4 border-blue-500 pl-6"
                     >
                       <h4 className="text-xl font-semibold text-gray-800 mb-2 pl-14">
@@ -202,7 +201,7 @@ const ProjectModal = ({ project, onClose }) => {
                             onClick={
                               step.noZoom ? null : () => setZoomImage(img)
                             }
-                            className={`max-w-4xl mx-auto rounded-lg shadow-md mb-4 ${step.noZoom ? "cursor-default" : "cursor-zoom-in"}`}
+                            className={`max-w-6xl mx-auto rounded-lg shadow-sm my-8 ${step.noZoom ? "cursor-default" : "cursor-zoom-in"}`}
                           />
                         ))}
                       {step.src && (
@@ -296,67 +295,6 @@ const ProjectModal = ({ project, onClose }) => {
                       src={img}
                       alt={`Screenshot ${idxim + 1}`}
                       onClick={() => setZoomImage(img)}
-                      className="w-full rounded-lg shadow-md"
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Proceso_2 */}
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                Dashboards adicionales
-              </h3>
-              <div className="space-y-8">
-                {details.process_2?.map((step, idxpr2) => (
-                  <div key={idxpr2} className="border-l-4 border-blue-500 pl-6">
-                    <h4 className="text-xl font-semibold text-gray-800 mb-2">
-                      {idxpr2 + 1}. {step.title}
-                    </h4>
-                    <p className="text-gray-700 mb-4">{step.description}</p>
-                    {step.image && (
-                      <img
-                        src={step.image}
-                        alt={step.title}
-                        onClick={() => setZoomImage(step.image)}
-                        className="w-full rounded-lg shadow-md mb-4 "
-                      />
-                    )}
-                    {step.src && (
-                      <a
-                        href={step.src}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg mt-4"
-                      >
-                        👁️ Ver Dashboard
-                      </a>
-                    )}
-
-                    {step.codeExample && (
-                      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-                        <code>{step.codeExample}</code>
-                      </pre>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Imágenes adicionales 2*/}
-            {details.images_2 && details.images_2.length > 1 && (
-              <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Otros Dashboards
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {details.images_2.map((img2, idxim2) => (
-                    <img
-                      key={idxim2}
-                      src={img2}
-                      alt={`Screenshot ${idxim2 + 1}`}
-                      onClick={() => setZoomImage(img2)}
                       className="w-full rounded-lg shadow-md"
                     />
                   ))}
