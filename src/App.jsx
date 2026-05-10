@@ -727,21 +727,24 @@ export default function Portfolio() {
       tags: ["React 19", "Next.js 16 (App Router)", "Prisma ORM", "TypeScript"],
       metrics: [
         {
-          title: "Digitalización de Declaraciones",
-          desc: "Mediante la  Cédula Integral de Registro (CIR)",
+          title: "Documentación y Digitalización de Declaraciones:",
+          desc: "Mediante la  Cédula Integral de Registro (CIR) se documenta cada presentación al SAT",
         },
         {
-          title: "Listado de Declaraciones",
+          title: "Listado de Declaraciones:",
           desc: "Con Actualizaciones y Recargos, Saldos a Favor",
         },
-        { title: "Compensaciones", desc: "Aplicaciones y sus Actualizaciones" },
         {
-          title: "Devoluciones",
-          desc: "Sus Actualizaciones e Intereses Moratorios",
+          title: "Compensaciones:",
+          desc: "Dcumenta sus Aplicaciones y Actualizaciones",
         },
         {
-          title: "Integración de papeles de trabajo por declaración",
-          desc: "",
+          title: "Devoluciones:",
+          desc: "Documena sus Actualizaciones e Intereses Moratorios",
+        },
+        {
+          title: "Integración de papeles de trabajo por declaración:",
+          desc: "No vuelvas a perder la versión final de tus papeles de trabajo para cada declaración presentada. Adjunta y relaciona el archivo definitivo a cada declaración.",
         },
         {
           title: "Demandas:",
@@ -749,17 +752,17 @@ export default function Portfolio() {
         },
 
         {
-          title: "Contratos",
-          desc: "Seguimiento a su Cumplimiento para evitar riesgos de sanciones",
+          title: "Contratos:",
+          desc: "Seguimiento a su Cumplimiento para evitar riesgos de sanciones por no planear y asignar responsabilidades al equipo",
         },
 
         {
-          title: "Seguimiento al Cumplimiento de proyectos",
+          title: "Seguimiento al Cumplimiento de Proyectos:",
           desc: "Planeación y Asignación de actividades",
         },
-        { title: "Pólizas", desc: "Seguimiento y Vencimiento" },
+        { title: "Pólizas:", desc: "Seguimiento y Vencimiento" },
         {
-          title: "Archivo Permanente",
+          title: "Archivo Permanente:",
           desc: "Acta Constitutiva, Poderes, Licencias, Contratos, Seguros, Proyectos, etc.",
         },
       ],
@@ -1554,7 +1557,7 @@ Monto_Advertencia =>
 
             <div className="mb-12">
               <h2 className="text-2xl md:text-4xl text-gray-800 font-bold tracking-tight">
-                Senior Financial Data Analyst & BI Specialist
+                Senior Financial Data Analyst & Analytics Engineer
               </h2>
               <p className="text-xl md:text-2xl text-gray-500 font-light mt-2">
                 Especialista en Automatización de Procesos Financieros y
