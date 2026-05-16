@@ -506,6 +506,12 @@ export default function Portfolio() {
             image: "/images/etl-pdf-screenshot.png",
           },
           {
+            title: "Generación Automática de Reportes Ejecutivos (.txt)",
+            description:
+              'Si el resultado se va a integrar a un papel de trabajo, por ejemplo en Excel, o a otro sistema, el resultado puede presentarse en un archivo ".txt".',
+            image: "/images/etl-txt-screenshot.png",
+          },
+          {
             title: "Estructura Modular y Escalabilidad",
             description:
               "El código fue diseñado bajo principios de programación modular, permitiendo agregar nuevos validadores (como retenciones de ISR o cuotas de seguridad social) simplemente inyectando nuevas funciones al motor de transformación.",
