@@ -424,25 +424,32 @@ export default function Portfolio() {
         "Framework de Automatización de Datos: Pipeline ETL & Data Governance",
       category: "Analytics Engineering",
       description:
-        "Infraestructura de procesamiento de datos diseñada para automatizar flujos administrativos y financieros complejos. Garantiza la integridad de los datos, la soberanía de la información y el cumplimiento normativo mediante procesos locales, seguros y auditables.",
+        "Infraestructura de procesamiento de datos diseñada para automatizar flujos administrativos y financieros complejos. Garantiza la integridad de los datos, la soberanía de la información, el cumplimiento normativo y de control interno digitales, mediante procesos locales, determinísticos y auditables.",
       image: "/images/etl-cover.png", // Aquí pondrías una miniatura del PDF generado
-      tags: ["Python", "Pandas", "Analytics Engineering", "Data Governance"],
+      tags: [
+        "Python",
+        "Pandas",
+        "Analytics Engineering",
+        "Data Governance",
+        "Control Interno Digital",
+        "Automatización de Procesos",
+      ],
       metrics: [
         {
-          title:
-            "Procesamiento Híbrido (Real-time Watchdog & Batch Processing)",
+          title: "Procesamiento Híbrido",
+          desc: "Real-time Watchdog & Batch Processing",
         },
         {
-          title:
-            "Arquitectura Privacy-First (Ejecución local sin exposición a nubes externas)",
+          title: "Arquitectura Privacy-First",
+          desc: "Ejecución local sin exposición a nubes externas",
         },
         {
-          title:
-            "Integridad Decimal (Cálculos financieros con precisión de punto fijo)",
+          title: "Integridad Decimal:",
+          desc: "Cálculos financieros con precisión de punto fijo",
         },
         {
-          title:
-            "Trazabilidad Forense Completa (Generación de Logs de Auditoría y Reportes de Excepción)",
+          title: "Trazabilidad Forense Completa:",
+          desc: "Generación de Logs de Auditoría y Reportes de Excepción.",
         },
       ],
 
@@ -453,7 +460,7 @@ export default function Portfolio() {
         impact:
           "El impacto inmediato es la eliminación de la conciliación manual y la mitigación directa de riesgos de cumplimiento y errores de 'timing' antes del cierre fiscal. No obstante, el valor estratégico reside en la soberanía de la información: el desarrollo de sistemas determinísticos y confiables liderados por un perfil que domina tanto el control interno como la ingeniería de datos. Esto permite que la organización no solo asegure la integridad de sus registros, sino que su equipo financiero evolucione de una carga operativa táctica hacia una gestión estratégica de alto nivel, operando en un entorno de automatización privado, seguro y auditable.",
         businessQuestions: [
-          "Como ejemplo de caso de uso, éste ejemplo automatiza la respuesta a interrogantes críticas de cumplimiento:",
+          "Como ejemplo de caso de uso, este ejemplo automatiza la respuesta a interrogantes críticas de cumplimiento:",
           "¿Existen discrepancias entre el IVA registrado en el ERP y el cálculo basado en el Tipo de Cambio (TC) oficial de Banxico?",
           "¿Qué facturas fueron registradas con un TC desactualizado antes del cierre diario?",
           "¿Cuál es el impacto financiero acumulado por errores de redondeo o fluctuación no controlada en el mes?",
@@ -476,7 +483,7 @@ export default function Portfolio() {
           {
             title: "Cruce con Master Data Oficial (Data Merging)",
             description:
-              "Desarrollo de un motor de búsqueda lógica con Pandas que realiza un 'lookup' dinámico (Merge) entre los registros operativos y el archivo maestro de Tipos de Cambio oficiales, validando el TC exacto según la fecha de cada transacción.",
+              "Desarrollo de un motor de búsqueda lógica con Pandas que realiza un 'lookup' dinámico (merge) entre los registros operativos y el archivo maestro de Tipos de Cambio oficiales, validando el TC exacto según la fecha de cada transacción.",
             codeExample: `# Lógica Core: Cruce de Auditoría con Pandas
               df_audit = pd.merge(df_facturas, df_master, on='Fecha', how='left')
               
@@ -581,7 +588,7 @@ export default function Portfolio() {
 
       detailedInfo: {
         context:
-          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), éste es un Ejemplo de Plataforma de Software a Medida que he desarrollado y que representa una solución a la Soberanía de Datos de Grado Empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
+          "A diferencia de las soluciones cerradas de BI (Tableau/PowerBI), este es un Ejemplo de Plataforma de Software a Medida que he desarrollado y que representa una solución a la Soberanía de Datos de Grado Empresarial. Diseñado bajo una arquitectura desacoplada (FastAPI + Next.js), el sistema elimina costos de licenciamiento por usuario y ofrece un control total sobre la seguridad y la interpretación estratégica de la información. Es escalable, y brinda total flexibilidad en la visualización de datos.",
         impact: [
           <>
             Mi enfoque no se limita a la visualización; diseño ecosistemas de
@@ -645,7 +652,7 @@ export default function Portfolio() {
           <>
             Cualquier <strong>proceso</strong> que actualmente administres en{" "}
             <strong>spreadsheets de Excel</strong>, puede ser llevado a un{" "}
-            <strong>sistema personalizado</strong> como éste, con esta calidad
+            <strong>sistema personalizado</strong> como este, con esta calidad
             de gráficas, con la visión de lo que es importante{" "}
             <strong>controlar administrativamente</strong>, y te ayude a
             desarrollar las mejores estrategias con tu equipo. El poder de las
@@ -719,7 +726,7 @@ export default function Portfolio() {
         ],
         businessQuestions: [
           <>
-            <b>En éste Ejemplo</b>, a nivel de negocio, el sistema valida
+            <b>En este Ejemplo</b>, a nivel de negocio, el sistema valida
             matemáticamente la pérdida de $920K USD por descuentos mal aplicados
             y desmiente mitos sobre los costos logísticos, para reorientar la
             estrategia comercial de la empresa. Las preguntas que se plantearon
@@ -1049,7 +1056,7 @@ export default function Portfolio() {
             description: [
               "Cada vez que se guarda una CIR, cada impuesto se forma en su tarjeta exclusiva específica de su nombre, en donde se puede revisar la información capturada (Favor de ampliar el zoom del navegador a +175)",
               'En la columna "Compensación" se muestra el monto total compensado (Acumulación de una o más aplicaciones de diferentes bolsas) el cual se disminuye del monto pagado (columna: "Pagado / (-) Pend. Rec."), el cual puede ser "cero", o haber quedado un remanente pagado con dinero.',
-              'Se puede obtener en un reporte Excel la información del tablero principal. Cabe aclarar que todos los módulos tiene una o varias versiones de Reportes Excel, hay un Reporte General en Excel con toda la información capturada en un click. También, con el botón "Bóveda de Evidencia" se pueden obtener todos los archivos (o una selección) que hayan servido de evidencia para las declaraciones (Archivos: .xlxs, .docx, pdf, imágenes, fotografías, etc.)',
+              'Se puede obtener en un reporte Excel la información del tablero principal. Cabe aclarar que todos los módulos tiene una o varias versiones de Reportes Excel, hay un Reporte General en Excel con toda la información capturada en un click. También, con el botón "Bóveda de Evidencia" se pueden obtener todos los archivos (o una selección) que hayan servido de evidencia para las declaraciones (Archivos: .xlsx, .docx, pdf, imágenes, fotografías, etc.)',
             ],
             image: [
               "/images/RepoDeclara-declaraciones-1.png",
@@ -1059,14 +1066,14 @@ export default function Portfolio() {
           {
             title: "Modal de Resumen de declaración",
             description:
-              "El modal de resumen (ventana desde la derecha que surge al dar click en botón de acciones) permite identificar instantáneamente todos los elementos que han afectado a la declaración: compensaciones, actualizaciones y recargos del monto a cargo, actualizaciones del monto a favor, monto histórico aplicado en la compensación, INPC's y Facto de actualización así como meses de recargos, Memo de aclaraciones y archivos digitales como evidencia de la información de la declaración.",
+              "El modal de resumen (ventana desde la derecha que surge al dar click en botón de acciones) permite identificar instantáneamente todos los elementos que han afectado a la declaración: compensaciones, actualizaciones y recargos del monto a cargo, actualizaciones del monto a favor, monto histórico aplicado en la compensación, INPC's y Factor de actualización así como meses de recargos, Memo de aclaraciones y archivos digitales como evidencia de la información de la declaración.",
             image: "/images/RepoDeclara-resumen-modal.png",
           },
           {
             title: "Tarjetas de Reamanentes de Compensación",
             description: [
               "En estas tarjetas muestran claramente cuáles han sido las aplicaciones de cada monto a favor, con toda su información, y el saldo remanente por aplicar en el futuro (Ese saldo también se puede ver desde el Listado de Declaraciones).",
-              "Se puede observar claramente el Monto a Favor Inicial, el Monto Compensado, su Monto Histórico (el que en realidad disminuye la Bolsa o Monto a Favor), los INPC's y Factor con que se calculó la Actualización a Favor en el Distribuidor Modal, y lo más importante en éste caso, el remanente por compensar hasta ese momento.",
+              "Se puede observar claramente el Monto a Favor Inicial, el Monto Compensado, su Monto Histórico (el que en realidad disminuye la Bolsa o Monto a Favor), los INPC's y Factor con que se calculó la Actualización a Favor en el Distribuidor Modal, y lo más importante en este caso, el remanente por compensar hasta ese momento.",
               "Uno de los peores escenarios es haber determinado un saldo a favor, haber hecho aplicaciones a ese saldo por compensación, y tiempo después por auditoría o revisión se determina que el saldo original no era correcto. El sistema no pierde el control gracias a su trazabilidad de declaraciones y montos acumulados de compensaciones.",
               "La primer tarjeta representa ese escenario, en la normal de marzo se pagaron $825,686 MXN después se identificó lo que pudo haber sido un error de captura y se presentó la complementaria por $225,686 MXN, e iniciaron las compensaciones contra un monto a favor de $600,000. Tiempo después se determinó que el monto correcto era $375,686 MXN, pero la bolsa en el sistema ya se había creado por $600,000 MXN a favor. Con la captura de la segunda complementaria el monto de la bolsa desciende a $450,000 MXN y con ello, se modifica la tarjeta automáticamente cambiando su monto inicial y mostrando el remanente por compensar correctamente (incluso si fuera negativo por haber compensado de más).",
               "Recordar que al monto compensado, en el saldo a favor, se debe restar la actualización a favor de esa parcialidad, disminuyendo sólo el monto histórico del Saldo a Favor, e identificando para contabilizar la actualización a favor. Gracias a la identificación y posterior seguimiento se puede evitar un procedimiento de revisión por parte del SAT.",
@@ -1149,7 +1156,7 @@ export default function Portfolio() {
         ],
 
         dashboardBreakdown: [
-          "El tablero principal esta ordenado por tarjetas de impuestos, ordenadas de más recientes a mas antigüas lo que permite ver claramente el saldo de impuesto a cargo o a favor de cada mes, si importar cuántas declaraciones tenga ese mes y cuántas compensaciones y/ devoluciones tenga ese impuesto/periodo.",
+          "El tablero principal esta ordenado por tarjetas de impuestos, ordenadas de más recientes a mas antiguas lo que permite ver claramente el saldo de impuesto a cargo o a favor de cada mes, si importar cuántas declaraciones tenga ese mes y cuántas compensaciones y/ devoluciones tenga ese impuesto/periodo.",
           "La sección Documental para Cumplimiento Legal permite llevar un control de los compromisos más importantes de la entidad, o incluso puede ser usada como bitácora de reuniones gerenciales en donde se den seguimiento a los objetivos de la empresa como un proceso continuo, separadas por ejemplo, por cada mes.",
           "El sistema tiene una sección en donde se guardan los INPC's que se acumulan gracias al llamado de una API del Banco de México, por lo que con un click mensual se mantendrá actualizado el listado.",
           "El sistema cuenta con un proceso de autenticación para poder entrar al sistema, garantizando que sólo los usuarios asignados a cada empresa tengan acceso. Ningún usuario puede ver una empresa a la que no haya sido asignado previamente",
@@ -2045,8 +2052,8 @@ Monto_Advertencia =>
             Proyectos Destacados
           </h2>
           <p className="text-center text-indigo-700 font-bold rounded-2xl mb-12 max-w-2xl mx-auto">
-            ETL, Dashboards y análisis que demuestran mi capacidad para
-            convertir datos en valor empresarial
+            ETL, Dashboards y Sistemas que demuestran mi capacidad para
+            convertir datos en valor empresarial.
           </p>
           <div className="space-y-12">
             {projects.map((project) => (
