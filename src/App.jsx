@@ -59,14 +59,14 @@ const ProjectModal = ({ project, onClose }) => {
           {/* Content (Mismo código, manteniendo tus px-10 internos que te gustan) */}
           <div className="px-8 py-8 space-y-12">
             {/* Imagen principal - (Sin cambios en tu lógica interna) */}
-
-            <img
-              src={project.image}
-              alt={project.title}
-              onClick={() => setZoomImage(project.image)}
-              className="max-w-8xl mx-auto rounded-xl shadow-lg"
-            />
-
+            <div className="w-full flex justify-center">
+              <img
+                src={project.image}
+                alt={project.title}
+                onClick={() => setZoomImage(project.image)}
+                className="w-full max-w-5xl h-auto rounded-xl shadow-md border border-gray-100 cursor-zoom-in"
+              />
+            </div>
             {/* Contexto */}
             {/* Contexto - CÓDIGO CORREGIDO */}
             {/* Contenedor con ancho limitado para mejor lectura */}
@@ -201,7 +201,7 @@ const ProjectModal = ({ project, onClose }) => {
                             onClick={
                               step.noZoom ? null : () => setZoomImage(img)
                             }
-                            className={`max-w-6xl mx-auto rounded-lg shadow-sm my-8 ${step.noZoom ? "cursor-default" : "cursor-zoom-in"}`}
+                            className={`w-full max-w-5xl mx-auto rounded-lg shadow-sm my-8 block ${step.noZoom ? "cursor-default" : "cursor-zoom-in"}`}
                           />
                         ))}
                       {step.src && (
@@ -329,7 +329,7 @@ const ProjectModal = ({ project, onClose }) => {
             <img
               src={zoomImage}
               alt="Zoom"
-              className="max-w-full max-h-[95vh] rounded-lg shadow-2xl object-contain animate-in zoom-in-95 duration-300"
+              className="w-auto h-auto max-w-[95vw] max-h-[90vh] rounded-lg shadow-2xl object-contain animate-in zoom-in-95 duration-300"
               style={{ transform: "scale(1.15)" }} // Aquí controlas el tamaño extra del zoom
             />
           </div>
