@@ -1785,8 +1785,8 @@ Monto_Advertencia =>
           {/* Aumentamos el padding interno (p-12 md:p-20) y suavizamos el redondeado */}
           {/*<div className="bg-gray-50 rounded-[3rem] p-10 md:p-20 shadow-sm border border-gray-100">*/}
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-black text-indigo-600 uppercase italic tracking-tighter mb-6">
-              "Construyo puentes donde los ERP tradicionales fallan."
+            <h3 className="text-2xl font-black text-indigo-600 italic tracking-tighter mb-6">
+              "CONSTRUYO PUENTES DONDE LOS ERPs TRADICIONALES FALLAN."
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Analista de datos con una trayectoria sólida de 17 años en
@@ -1813,24 +1813,46 @@ Monto_Advertencia =>
               <strong>arquitectura de software moderna (Next.js/Prisma)</strong>
               .
             </p>
-
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Mi enfoque actual se centra en el desarrollo de arquitecturas{" "}
+              Mi enfoque actual se centra en la{" "}
+              <strong>arquitectura de flujos de datos (ETL) soberanos</strong>,
+              utilizando Python y SQL para rescatar la información atrapada en
+              silos corporativos. No solo diseño dashboards; construyo la
+              infraestructura que los alimenta, asegurando que cada dato sea
+              validado mediante <strong>lógica determinística</strong> antes de
+              llegar a los estados financieros. Mi objetivo es{" "}
               <strong>
-                ETL (extracción, limpieza y carga) utilizando SQL y Python
+                erradicar la fragilidad operativa de los procesos manuales
               </strong>
-              , diseñando <strong>dashboards dinámicos</strong> que permiten a
-              las organizaciones transitar de reportes estáticos a herramientas
-              de <strong>inteligencia de negocios </strong> que impulsan
-              decisiones estratégicas en tiempo real mediante la integración de
-              evidencia técnica y visualización avanzada.
+              , sustituyéndolos por sistemas de ingeniería que garantizan
+              integridad, privacidad y trazabilidad absoluta,{" "}
+              <strong>
+                cumpliendo con los criterios de protección para la información
+                sensible y evitando su exposición innecesaria ante servicios de
+                IA externos.
+              </strong>
             </p>
             <div className="mb-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">
-                Lo que aporto a su organización con logros clave y Proyectos
+                Lo que aporto a su organización con logros clave y proyectos
                 como:
               </h4>
               <ul className="space-y-4">
+                <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                  •{" "}
+                  <strong>
+                    Ingeniería de Automatización y Procesos (Python/Windows):
+                  </strong>{" "}
+                  Especialista en la sustitución de papeles de trabajo manuales
+                  por procesos automatizados locales (Batch/Real-time).{" "}
+                  <strong>Diseño pipelines </strong>
+                  que extraen datos crudos,{" "}
+                  <strong>
+                    ejecutan transformaciones contables complejas
+                  </strong>{" "}
+                  y los integran con papeles de trabajo, sistemas de Dashboards,
+                  bases de datos o modelos de Machine Learning.
+                </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
                   •{" "}
                   <strong>
@@ -1843,36 +1865,34 @@ Monto_Advertencia =>
                   <strong>
                     confidencialidad y el acceso basado en roles (RBAC)
                   </strong>{" "}
-                  garantizan silos de información seguros y trazabilidad total.
+                  garantizan silos de información seguros.
                 </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Ingeniería Forense y Fiscal:</strong> Desarrollo e
-                  implementación de{" "}
-                  <strong>plataformas de trazabilidad fiscal y legal</strong>{" "}
-                  (RepoDeclara), garantizando el cumplimiento normativo en
-                  entornos de alta complejidad que los ERPs extranjeros suelen
-                  omitir.
+                  • <strong>Ingeniería Forense y Fiscal:</strong> Creador de
+                  RepoDeclara, una plataforma de trazabilidad fiscal y legal
+                  diseñada para resolver la complejidad que los sistemas
+                  extranjeros suelen omitir en materia de documentación fiscal y
+                  legal.
                 </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
                   • <strong>Analítica con Propósito:</strong> Implementación de
                   Modelos de Machine Learning para reducir la incertidumbre en
-                  variables críticas:
-                  <strong> rotación de personal</strong> (modelo predictivo),
+                  variables críticas como la{" "}
+                  <strong>rotación de personal</strong> (modelo predictivo),
                   riesgo crediticio, y{" "}
-                  <strong>proyección de flujo de efectivo</strong>.
+                  <strong>proyecciones de flujo de efectivo</strong>.
                 </li>
               </ul>
             </div>
-
             <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
               <strong>
-                No soy un programador que intenta entender las finanzas;
+                Soy un experto financiero que utiliza la tecnología para
+                eliminar riesgos, no un programador que intenta entender los
+                problemas operativos financieros.
               </strong>{" "}
-              soy un{" "}
-              <strong>experto financiero que domina la tecnología</strong> para
-              eliminar riesgos. Mi objetivo es convertir la carga administrativa
-              en información consultable que facilite hallazgos críticos para la
-              salud financiera de la organización.
+              Mi objetivo es convertir la carga administrativa en información
+              consultable que facilite hallazgos críticos para la salud
+              financiera de la organización.
             </p>
           </div>
           <br />
