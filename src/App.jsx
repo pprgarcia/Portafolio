@@ -419,6 +419,121 @@ export default function Portfolio() {
 
   const projects = [
     {
+      id: "etl-data-governance-framework",
+      title:
+        "Framework de Automatización de Datos: Pipeline ETL & Data Governance",
+      category: "Analytics Engineering",
+      description:
+        "Infraestructura de procesamiento de datos diseñada para automatizar flujos administrativos y financieros complejos. Garantiza la integridad de los datos, la soberanía de la información y el cumplimiento normativo mediante procesos locales, seguros y auditables.",
+      image: "/images/etl-cover.png", // Aquí pondrías una miniatura del PDF generado
+      tags: ["Python", "Pandas", "Analytics Engineering", "Data Governance"],
+      metrics: [
+        {
+          title:
+            "Procesamiento Híbrido (Real-time Watchdog & Batch Processing)",
+        },
+        {
+          title:
+            "Arquitectura Privacy-First (Ejecución local sin exposición a nubes externas)",
+        },
+        {
+          title:
+            "Integridad Decimal (Cálculos financieros con precisión de punto fijo)",
+        },
+        {
+          title:
+            "Trazabilidad Forense Completa (Generación de Logs de Auditoría y Reportes de Excepción)",
+        },
+      ],
+
+      detailedInfo: {
+        context:
+          "En el ecosistema financiero, los ERPs tradicionales a menudo presentan brechas de integridad al sincronizar reportes operativos con fuentes externas oficiales (como Banxico). Este proyecto desarrolla un pipeline ETL robusto que actúa como una capa de gobernanza automática, utilizando como ejemplo la auditoría de registros en moneda extranjera vs. el tipo de cambio oficial. Sin embargo, la arquitectura está diseñada para automatizar cualquier proceso administrativo, independientemente de la industria, mediante software local que garantiza la confidencialidad absoluta. A diferencia de las soluciones basadas en IAs externas, este enfoque elimina el riesgo de compartir información clasificada o 'know-how' con terceros, manteniendo el control total bajo los estándares de auditoría más estrictos.",
+
+        impact:
+          "El impacto inmediato es la eliminación de la conciliación manual y la mitigación directa de riesgos de cumplimiento y errores de 'timing' antes del cierre fiscal. No obstante, el valor estratégico reside en la soberanía de la información: el desarrollo de sistemas determinísticos y confiables liderados por un perfil que domina tanto el control interno como la ingeniería de datos. Esto permite que la organización no solo asegure la integridad de sus registros, sino que su equipo financiero evolucione de una carga operativa táctica hacia una gestión estratégica de alto nivel, operando en un entorno de automatización privado, seguro y auditable.",
+        businessQuestions: [
+          "Como ejemplo de caso de uso, éste ejemplo automatiza la respuesta a interrogantes críticas de cumplimiento:",
+          "¿Existen discrepancias entre el IVA registrado en el ERP y el cálculo basado en el Tipo de Cambio (TC) oficial de Banxico?",
+          "¿Qué facturas fueron registradas con un TC desactualizado antes del cierre diario?",
+          "¿Cuál es el impacto financiero acumulado por errores de redondeo o fluctuación no controlada en el mes?",
+          "¿Cómo podemos garantizar un rastro de auditoría íntegro para cada reporte procesado?",
+          "¿Podemos liberar al equipo de finanzas de la carga manual de conciliación periódica?",
+        ],
+
+        process: [
+          {
+            title: "Diseño de Arquitectura de Vigilancia (Watchdog)",
+            description:
+              "Implementación de un monitor de eventos del sistema de archivos que vigila directorios en tiempo real. El sistema detecta la llegada de nuevos reportes del ERP (TXT/CSV/Excel) e inicia el pipeline sin intervención humana. Otro enfoque de trabajo es configurar un proceso de 'batch' en el que cada cierto periodo de tiempo (ej. cada hora) se ejecuta el proceso de validación, lo que permite acumular los archivos que llegan durante ese periodo y procesarlos en bloque, optimizando recursos y permitiendo una conciliación más eficiente al final del día.",
+          },
+          {
+            title: "Gestión de Estados y Trazabilidad (Pipeline Flow)",
+            description:
+              "Diseño de un flujo de estados robusto: Entrada → Procesando → Procesados | Errores. Cada etapa incluye manejo de excepciones para archivos bloqueados y un sistema de Logging detallado que sirve como evidencia de auditoría. Abajo, la imagen del log de procesamiento que se le puede pedir para dar trazabilidad al proceso (el contenido se diseña según los requerimientos).",
+            image: "/images/etl-logs-example.png",
+          },
+          {
+            title: "Cruce con Master Data Oficial (Data Merging)",
+            description:
+              "Desarrollo de un motor de búsqueda lógica con Pandas que realiza un 'lookup' dinámico (Merge) entre los registros operativos y el archivo maestro de Tipos de Cambio oficiales, validando el TC exacto según la fecha de cada transacción.",
+            codeExample: `# Lógica Core: Cruce de Auditoría con Pandas
+              df_audit = pd.merge(df_facturas, df_master, on='Fecha', how='left')
+              
+              # Cálculo Forense de IVA
+              df_audit['IVA_Correcto'] = (df_audit['Monto_USD'] * df_audit['TC_Oficial'] * 0.16).round(2)
+              df_audit['Diferencia'] = (df_audit['IVA_Registrado'] - df_audit['IVA_Correcto']).round(2)
+              
+              # Filtrado selectivo de Excepciones
+              df_excepciones = df_audit[df_audit['Diferencia'].abs() > 0.01].copy()`,
+          },
+          {
+            title: "Ingeniería de Transformación y Normalización",
+            description:
+              "Normalización de tipos de datos y manejo de precisión decimal para evitar los errores de redondeo comunes en lenguajes de programación estándar. Asegura que el resultado coincida con los estándares de contabilidad gubernamental.",
+          },
+          {
+            title: "Generación Automática de Reportes Ejecutivos (PDF)",
+            description:
+              "Integración de la librería FPDF para traducir los datos analíticos en un documento formal de auditoría. El reporte incluye resumen ejecutivo, totales de discrepancia y el detalle de cada factura que requiere atención inmediata.",
+            image: "/images/etl-pdf-screenshot.png",
+          },
+          {
+            title: "Estructura Modular y Escalabilidad",
+            description:
+              "El código fue diseñado bajo principios de programación modular, permitiendo agregar nuevos validadores (como retenciones de ISR o cuotas de seguridad social) simplemente inyectando nuevas funciones al motor de transformación.",
+          },
+        ],
+
+        dashboardBreakdown: [
+          "Monitoreo de carpetas del sistema de archivos en tiempo real (Real-time Ingestion)",
+          "Motor de transformación basado en Pandas para lógica de negocio contable compleja",
+          "Sistema de validación cruzada con fuentes maestras de datos (Master Data Management)",
+          "Logs de auditoría detallados (.log) para cumplimiento de control interno (SOX/ISO)",
+          "Generador de informes de excepción en PDF con encabezados corporativos personalizados",
+          "Estructura de directorios segregada para gestión segura de archivos (Archiving)",
+        ],
+
+        keyInsights: [
+          "La automatización detecta discrepancias de 'timing' (errores de TC antes de las 12:00 PM) que son invisibles para la mayoría de los ERPs.",
+          "Reducción del tiempo de conciliación de IVA de horas a segundos por archivo procesado.",
+          "Detección proactiva de errores de captura antes de la presentación de declaraciones informativas (DIOT).",
+          "Automatización y blindaje del 'Papel de Trabajo' para la determinación de IVA mensual, garantizando la consistencia total entre registros contables y el cálculo de impuestos.",
+          "Sustitución de hojas de cálculo manuales por pipelines determinísticos en conciliaciones críticas (contenida en archivos Excel), eliminando la fragilidad operativa y garantizando la integridad de los datos procesados.",
+          "El sistema actúa como una barrera de Control Interno, garantizando que solo los datos validados lleguen a los repositorios de información histórica.",
+          "La trazabilidad forense total permite responder a requerimientos de la autoridad con evidencia documental generada al momento del proceso.",
+        ],
+
+        images: [
+          //"/images/etl-flow-diagram.png", // Un diagrama de cómo se mueven los archivos
+          //"/images/etl-pdf-screenshot.png", // El PDF reporte de excepciones
+          //"/images/etl-logs-example.png", // Una captura de los logs de auditoría
+        ],
+      },
+
+      link: "https://github.com/tu-usuario/tu-repo-etl", // Aquí pondrás el link a tu repo de GitHub
+    },
+    {
       id: "react-supertienda-admin",
       title: "Dashboard SuperTienda Analytics - Sistema Web Personalizable",
       category: "Full Stack Development / Data Analytics",
@@ -1571,7 +1686,7 @@ Monto_Advertencia =>
               <div className="relative flex items-center group">
                 <button
                   onClick={() =>
-                    copyToClipboard("442 597 37 53", setCopiedPhone)
+                    copyToClipboard("+524425973753", setCopiedPhone)
                   }
                   className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-md overflow-hidden ${
                     copiedPhone
@@ -1589,7 +1704,7 @@ Monto_Advertencia =>
                         : "opacity-0 group-hover:opacity-100 text-gray-800 text-sm"
                     }`}
                   >
-                    {copiedPhone ? "¡NÚMERO COPIADO!" : "442 597 37 53"}
+                    {copiedPhone ? "¡NÚMERO COPIADO!" : "+524425973753"}
                   </span>
                 </button>
               </div>
@@ -1929,9 +2044,9 @@ Monto_Advertencia =>
           <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center">
             Proyectos Destacados
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Dashboards y análisis que demuestran mi capacidad para convertir
-            datos en valor empresarial
+          <p className="text-center text-indigo-700 font-bold rounded-2xl mb-12 max-w-2xl mx-auto">
+            ETL, Dashboards y análisis que demuestran mi capacidad para
+            convertir datos en valor empresarial
           </p>
           <div className="space-y-12">
             {projects.map((project) => (
@@ -2049,7 +2164,7 @@ Monto_Advertencia =>
             <div className="relative flex items-center group">
               <button
                 onClick={() =>
-                  copyToClipboard("442 597 37 53", setCopiedWhatsapp)
+                  copyToClipboard("+524425973753", setCopiedWhatsapp)
                 }
                 className={`w-14 h-14 rounded-full flex items-center justify-start px-4 transition-all duration-300 shadow-xl overflow-hidden ${
                   copiedWhatsapp
@@ -2071,7 +2186,7 @@ Monto_Advertencia =>
                       : "opacity-0 group-hover:opacity-100 text-white text-sm"
                   }`}
                 >
-                  {copiedWhatsapp ? "¡Copiado!" : "442 597 37 53"}
+                  {copiedWhatsapp ? "¡Copiado!" : "+524425973753"}
                 </span>
               </button>
             </div>
