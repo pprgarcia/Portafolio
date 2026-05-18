@@ -1795,7 +1795,7 @@ Monto_Advertencia =>
               "CONSTRUYO PUENTES DONDE LOS ERPs TRADICIONALES FALLAN."
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Analista de datos con una trayectoria sólida de 17 años en
+              Analista de datos con una trayectoria sólida de + 16 años en
               gerencia administrativa y auditoría (Big Four), especializado en
               la creación de{" "}
               <strong>soluciones de Business Intelligence</strong> y{" "}
