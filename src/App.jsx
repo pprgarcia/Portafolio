@@ -512,9 +512,15 @@ export default function Portfolio() {
             image: "/images/etl-txt-screenshot.png",
           },
           {
-            title: "Estructura Modular y Escalabilidad",
+            title: "Persistencia Estructurada y Consola de Gobernanza",
             description:
-              "El código fue diseñado bajo principios de programación modular, permitiendo agregar nuevos validadores (como retenciones de ISR o cuotas de seguridad social) simplemente inyectando nuevas funciones al motor de transformación.",
+              "La arquitectura permite que los hallazgos de este motor ETL persistan en una base de datos PostgreSQL de alta disponibilidad. Esto transforma datos volátiles en una Fuente Única de Verdad (Single Source of Truth), fundamental cuando se requiere automatizar múltiples procesos críticos. El sistema permite reconstruir la trazabilidad histórica en cualquier momento, visualizando los detalles de cada excepción mediante una interfaz web privada con acceso basado en roles (RBAC), garantizando que la información sensible permanezca protegida dentro del perímetro de seguridad de la organización.",
+            image: "/images/etl-sistema.png",
+          },
+          {
+            title: "Arquitectura Desacoplada y Escalabilidad Funcional",
+            description:
+              "El sistema se diseñó bajo un modelo de micro-servicios donde el motor de procesamiento (Python) opera de forma independiente a la capa de visualización (Next.js). Esta modularidad permite inyectar nuevas reglas de negocio para cálculos de depreciaciones, amortizaciones, papeles de trabajo para auditoría o cierres mensuales, etc., simplemente agregando nuevos módulos al motor de transformación. La arquitectura es altamente escalable, permitiendo a la organización centralizar todos sus procesos de control interno en un solo framework de automatización financiera.",
           },
         ],
 
