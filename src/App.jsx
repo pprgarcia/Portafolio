@@ -520,7 +520,7 @@ export default function Portfolio() {
           {
             title: "Arquitectura Desacoplada y Escalabilidad Funcional",
             description:
-              "El sistema se diseñó bajo un modelo de micro-servicios donde el motor de procesamiento (Python) opera de forma independiente a la capa de visualización (Next.js). Esta modularidad permite inyectar nuevas reglas de negocio para cálculos de depreciaciones, amortizaciones, papeles de trabajo para auditoría o cierres mensuales, etc., simplemente agregando nuevos módulos al motor de transformación. La arquitectura es altamente escalable, permitiendo a la organización centralizar todos sus procesos de control interno en un solo framework de automatización financiera.",
+              "El sistema se diseñó bajo un modelo de micro-servicios donde el motor de procesamiento (Python) opera de forma independiente a la capa de visualización (Next.js). Esta modularidad permite inyectar nuevas reglas de negocio para cálculos de depreciaciones, amortizaciones, papeles de trabajo para auditoría o cierres mensuales, etc., simplemente agregando nuevos módulos al motor de transformación. La arquitectura es altamente escalable, permitiendo a la organización centralizar todos sus procesos de control interno digital en un solo framework de automatización financiera.",
           },
         ],
 
@@ -1897,14 +1897,19 @@ Monto_Advertencia =>
               </ul>
             </div>
             <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
+              Soy un financiero que utiliza la tecnología para eliminar riesgos.
+              Creo firmemente en la{" "}
               <strong>
-                Soy un experto financiero que utiliza la tecnología para
-                eliminar riesgos, no un programador que intenta entender los
-                problemas operativos financieros.
+                potenciación que resulta del uso responsable de la IA.
               </strong>{" "}
-              Mi objetivo es convertir la carga administrativa en información
-              consultable que facilite hallazgos críticos para la salud
-              financiera de la organización.
+              Por eso diseño{" "}
+              <strong>herramientas locales y determinísticas</strong> que
+              aprovechan la inteligencia artificial para crear automatizaciones
+              confiables, manteniendo el{" "}
+              <strong>control total de los datos sensibles</strong> dentro de la
+              organización. De esta forma se obtiene el poder de la IA sin
+              comprometer la confidencialidad ni la trazabilidad que exigen los
+              temas financieros, fiscales y legales.
             </p>
           </div>
           <br />
