@@ -1800,22 +1800,43 @@ Monto_Advertencia =>
             <h3 className="text-2xl font-black text-indigo-600 italic tracking-tighter mb-6">
               "CONSTRUYO PUENTES DONDE LOS ERPs TRADICIONALES FALLAN."
             </h3>
+            <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
+              Soy un Financial Data Analyst | Analytics Engineer que utiliza la
+              tecnología para eliminar riesgos. Creo firmemente en la{" "}
+              <strong>
+                potenciación que resulta del uso responsable de la IA.
+              </strong>{" "}
+              Por eso diseño{" "}
+              <strong>herramientas locales y determinísticas</strong> que
+              aprovechan la inteligencia artificial para crear automatizaciones
+              confiables, manteniendo el{" "}
+              <strong>control total de los datos sensibles</strong> dentro de la
+              organización. De esta forma se obtiene el poder de la IA sin
+              comprometer la confidencialidad ni la trazabilidad que exigen los
+              temas financieros, fiscales, legales y de propiedad intelectual.
+            </p>
+            <br></br>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Analista de datos con una trayectoria sólida de + 16 años en
-              gerencia administrativa y auditoría (Big Four), especializado en
-              la creación de{" "}
-              <strong>soluciones de Business Intelligence</strong> y{" "}
-              <strong>automatización de reportes críticos</strong>. Poseo la
+              Con una trayectoria sólida de + 16 años en gerencia administrativa
+              y auditoría (Big Four), especializado en la creación de{" "}
+              <strong>
+                automatización de cálculos y reportes críticos, herramientas de
+                auditoría
+              </strong>{" "}
+              y <strong>soluciones de Business Intelligence</strong>. Tengo la
               capacidad única de traducir la lógica contable, fiscal y operativa
               en modelos de datos accionables, desde la extracción de datos
               hasta la visualización estratégica.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Con <strong>años de experiencia</strong> no solo entiendo los
-              estados financieros: diseño y programo los ecosistemas
-              tecnológicos que los gestionan, protegen y proyectan. Mi
-              diferencial es la fusión de tres mundos: la{" "}
+              Con años de experiencia no solo entiendo el proceso de creación de
+              los estados financieros,{" "}
+              <strong>
+                diseño y programo los ecosistemas tecnológicos que los
+                gestionan, protegen y proyectan
+              </strong>
+              . Mi diferencial es la fusión de tres mundos: la{" "}
               <strong>rigurosidad del cumplimiento fiscal mexicano</strong>, el
               poder del{" "}
               <strong>
@@ -1836,13 +1857,16 @@ Monto_Advertencia =>
               <strong>
                 erradicar la fragilidad operativa de los procesos manuales
               </strong>
-              , sustituyéndolos por sistemas de ingeniería que garantizan
-              integridad, privacidad y trazabilidad absoluta,{" "}
+              , sustituyéndolos por sistemas de ingeniería que garantizan{" "}
               <strong>
-                cumpliendo con los criterios de protección para la información
-                sensible y evitando su exposición innecesaria ante servicios de
-                IA externos.
+                integridad forense, privacidad y trazabilidad absoluta
               </strong>
+              , cumpliendo con los{" "}
+              <strong>
+                criterios de protección para la información sensible
+              </strong>{" "}
+              y evitando su exposición innecesaria ante servicios de IA externos
+              (agentes).
             </p>
             <div className="mb-8">
               <h4 className="text-xl font-bold text-gray-800 mb-4">
@@ -1887,30 +1911,19 @@ Monto_Advertencia =>
                   legal.
                 </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Analítica con Propósito:</strong> Implementación de
-                  Modelos de Machine Learning para reducir la incertidumbre en
-                  variables críticas como la{" "}
-                  <strong>rotación de personal</strong> (modelo predictivo),
-                  riesgo crediticio, y{" "}
-                  <strong>proyecciones de flujo de efectivo</strong>.
+                  • <strong>Analítica con Propósito:</strong> Implementación de{" "}
+                  <strong>Modelos de Machine Learning</strong> para reducir la
+                  incertidumbre en <strong>variables críticas</strong> como la{" "}
+                  rotación de personal (modelo predictivo), riesgo crediticio, y{" "}
+                  proyecciones de flujo de efectivo; brindando la capacidad de
+                  poner cualquier{" "}
+                  <strong>
+                    métrica estratégica bajo un estricto rigor estadístico para
+                    administrar su riesgo.
+                  </strong>
                 </li>
               </ul>
             </div>
-            <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
-              Soy un financiero que utiliza la tecnología para eliminar riesgos.
-              Creo firmemente en la{" "}
-              <strong>
-                potenciación que resulta del uso responsable de la IA.
-              </strong>{" "}
-              Por eso diseño{" "}
-              <strong>herramientas locales y determinísticas</strong> que
-              aprovechan la inteligencia artificial para crear automatizaciones
-              confiables, manteniendo el{" "}
-              <strong>control total de los datos sensibles</strong> dentro de la
-              organización. De esta forma se obtiene el poder de la IA sin
-              comprometer la confidencialidad ni la trazabilidad que exigen los
-              temas financieros, fiscales y legales.
-            </p>
           </div>
           <br />
           <br />
