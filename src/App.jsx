@@ -1818,27 +1818,29 @@ Monto_Advertencia =>
             <br></br>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Con una trayectoria sólida de + 16 años en gerencia administrativa
-              y auditoría (Big Four), especializado en la creación de{" "}
+              y auditoría (Big Four), y especializado en la{" "}
               <strong>
-                automatización de cálculos y reportes críticos, herramientas de
-                auditoría
+                automatización de cálculos, reportes críticos, procesos,
+                herramientas de auditoría
               </strong>{" "}
-              y <strong>soluciones de Business Intelligence</strong>. Tengo la
-              capacidad única de traducir la lógica contable, fiscal y operativa
-              en modelos de datos accionables, desde la extracción de datos
-              hasta la visualización estratégica.
+              y <strong>soluciones de Business Intelligence</strong>, soy capaz
+              de traducir la lógica contable, fiscal y operativa en modelos de
+              datos accionables, desde la extracción de datos hasta la
+              visualización estratégica.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Con años de experiencia no solo entiendo el proceso de creación de
-              los estados financieros,{" "}
+              No sólo entiendo el proceso de creación de los estados
+              financieros,{" "}
               <strong>
                 diseño y programo los ecosistemas tecnológicos que los
                 gestionan, protegen y proyectan
               </strong>
               . Mi diferencial es la fusión de tres mundos: la{" "}
-              <strong>rigurosidad del cumplimiento fiscal mexicano</strong>, el
-              poder del{" "}
+              <strong>
+                rigurosidad del cumplimiento financiero-fiscal mexicano
+              </strong>
+              , el poder del{" "}
               <strong>
                 análisis estadístico predictivo (Python/Machine Learning)
               </strong>{" "}
@@ -1850,10 +1852,18 @@ Monto_Advertencia =>
               Mi enfoque actual se centra en la{" "}
               <strong>arquitectura de flujos de datos (ETL) soberanos</strong>,
               utilizando Python y SQL para rescatar la información atrapada en
-              silos corporativos. No solo diseño dashboards; construyo la
-              infraestructura que los alimenta, asegurando que cada dato sea
-              validado mediante <strong>lógica determinística</strong> antes de
-              llegar a los estados financieros. Mi objetivo es{" "}
+              bases de datos corporativas. Más allá de la visualización y
+              tableros, mi labor consiste en asegurar la integridad de la fuente
+              de la verdad y el proceso. Construyo la arquitectura que valida
+              cada dato mediante <strong>lógica determinística</strong>,
+              garantizando que la información que sustenta los{" "}
+              <strong>
+                estados financieros o los procesos analíticos críticos
+              </strong>{" "}
+              sea, por definición, exacta, auditable y libre de error humano.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              Mi objetivo es{" "}
               <strong>
                 erradicar la fragilidad operativa de los procesos manuales
               </strong>
@@ -1883,11 +1893,9 @@ Monto_Advertencia =>
                   por procesos automatizados locales (Batch/Real-time).{" "}
                   <strong>Diseño pipelines </strong>
                   que extraen datos crudos,{" "}
-                  <strong>
-                    ejecutan transformaciones contables complejas
-                  </strong>{" "}
-                  y los integran con papeles de trabajo, sistemas de Dashboards,
-                  bases de datos o modelos de Machine Learning.
+                  <strong>ejecutan transformaciones complejas</strong> y los
+                  integran con papeles de trabajo, sistemas de Dashboards, bases
+                  de datos o modelos de Machine Learning.
                 </li>
                 <li className="text-lg text-gray-700 leading-relaxed ml-4">
                   •{" "}
@@ -1916,10 +1924,10 @@ Monto_Advertencia =>
                   incertidumbre en <strong>variables críticas</strong> como la{" "}
                   rotación de personal (modelo predictivo), riesgo crediticio, y{" "}
                   proyecciones de flujo de efectivo; brindando la capacidad de
-                  poner cualquier{" "}
+                  poner{" "}
                   <strong>
-                    métrica estratégica bajo un estricto rigor estadístico para
-                    administrar su riesgo.
+                    cualquier métrica estratégica bajo un estricto rigor
+                    estadístico para administrar su riesgo.
                   </strong>
                 </li>
               </ul>
