@@ -1815,8 +1815,8 @@ Monto_Advertencia =>
 
             <br></br>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              He vivido estos problemas en primera persona como Auditor y
-              Gerente Financiero. Por eso diseño e implemento{" "}
+              He vivido estos problemas en primera persona como gerente
+              financiero y auditor. Por eso diseño e implemento{" "}
               <strong>pipelines ETL y sistemas de gobernanza</strong> que
               resuelven estos dolores de raíz con{" "}
               <strong>lógica determinística,</strong> trazabilidad forense y
