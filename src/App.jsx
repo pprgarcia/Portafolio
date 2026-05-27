@@ -1691,11 +1691,11 @@ Monto_Advertencia =>
 
             <div className="mb-12">
               <h2 className="text-2xl md:text-4xl text-gray-800 font-bold tracking-tight">
-                Senior Financial Data Analyst & Analytics Engineer
+                Analytics Engineer · Automatización Financiera & Fiscal
               </h2>
+              <br></br>
               <p className="text-xl md:text-2xl text-gray-500 font-light mt-2">
-                Especialista en Automatización de Procesos Financieros y
-                Auditoría de Datos
+                | Big Four | C1 English |
               </p>
             </div>
 
@@ -1800,138 +1800,63 @@ Monto_Advertencia =>
             <h3 className="text-2xl font-black text-indigo-600 italic tracking-tighter mb-6">
               "CONSTRUYO PUENTES DONDE LOS ERPs TRADICIONALES FALLAN."
             </h3>
-            <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
-              Soy un Financial Data Analyst | Analytics Engineer que utiliza la
-              tecnología para eliminar riesgos. Creo firmemente en la{" "}
-              <strong>
-                potenciación que resulta del uso responsable de la IA.
-              </strong>{" "}
-              Por eso diseño{" "}
-              <strong>herramientas locales y determinísticas</strong> que
-              aprovechan la inteligencia artificial para crear automatizaciones
-              confiables, manteniendo el{" "}
-              <strong>control total de los datos sensibles</strong> dentro de la
-              organización. De esta forma se obtiene el poder de la IA sin
-              comprometer la confidencialidad ni la trazabilidad que exigen los
-              temas financieros, fiscales, legales y de propiedad intelectual.
-            </p>
-            <br></br>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Con una trayectoria sólida de + 16 años en gerencia administrativa
-              y auditoría (Big Four), y especializado en la{" "}
-              <strong>
-                automatización de cálculos, reportes críticos, procesos,
-                herramientas de auditoría
-              </strong>{" "}
-              y <strong>soluciones de Business Intelligence</strong>, soy capaz
-              de traducir la lógica contable, fiscal y operativa en modelos de
-              datos accionables, desde la extracción de datos hasta la
-              visualización estratégica.
+              Soy <strong>Financial Data Analyst & Analytics Engineer</strong>{" "}
+              con más de 16 años de experiencia en contraloría y auditoría{" "}
+              <strong>(Big Four)</strong>.
+            </p>
+            <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
+              Mi especialidad es eliminar la fragilidad operativa del área
+              financiera: cierres mensuales caóticos, archivos de Excel con
+              múltiples versiones o sin estructura consistente, procesos
+              manuales sin estandarizar, errores de tipo de cambio,
+              discrepancias entre papeles de trabajo y falta de trazabilidad.
             </p>
 
+            <br></br>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              No sólo entiendo el proceso de creación de los estados
-              financieros,{" "}
-              <strong>
-                diseño y programo los ecosistemas tecnológicos que los
-                gestionan, protegen y proyectan
-              </strong>
-              . Mi diferencial es la fusión de tres mundos: la{" "}
-              <strong>
-                rigurosidad del cumplimiento financiero-fiscal mexicano
-              </strong>
-              , el poder del{" "}
-              <strong>
-                análisis estadístico predictivo (Python/Machine Learning)
-              </strong>{" "}
-              y la{" "}
-              <strong>arquitectura de software moderna (Next.js/Prisma)</strong>
-              .
+              He vivido estos problemas en primera persona como Auditor y
+              Contralor. Por eso diseño e implemento{" "}
+              <strong>pipelines ETL y sistemas de gobernanza</strong> que
+              resuelven estos dolores de raíz con{" "}
+              <strong>lógica determinística,</strong> trazabilidad forense y
+              precisión decimal.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Mi enfoque actual se centra en la{" "}
-              <strong>arquitectura de flujos de datos (ETL) soberanos</strong>,
-              utilizando Python y SQL para rescatar la información atrapada en
-              bases de datos corporativas. Más allá de la visualización y
-              tableros, mi labor consiste en asegurar la integridad de la fuente
-              de la verdad y el proceso. Construyo la arquitectura que valida
-              cada dato mediante <strong>lógica determinística</strong>,
-              garantizando que la información que sustenta los{" "}
+              Creo firmemente en la potenciación que resulta del uso responsable
+              de la IA. Desarrollo herramientas locales y determinísticas que
+              aprovechan la inteligencia artificial para crear automatizaciones
+              confiables, manteniendo el{" "}
               <strong>
-                estados financieros o los procesos analíticos críticos
+                control total de los datos sensibles dentro de la organización.
               </strong>{" "}
-              sea, por definición, exacta, auditable y libre de error humano.
+              De esta forma se obtiene el poder de la IA sin comprometer la
+              confidencialidad ni la trazabilidad que exigen los temas
+              financieros, fiscales, legales y de propiedad intelectual.
             </p>
+            <h3 className="text-lg font-bold text-gray-800 mb-6">
+              Mi diferencial es la combinación de tres mundos:
+            </h3>
+            <ul className="space-y-4">
+              <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                • La rigurosidad del cumplimiento financiero (IFRS, NIFs) y
+                fiscal mexicano
+              </li>
+              <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                • La capacidad de construir soluciones técnicas modernas
+                (Python, React, automatización)
+              </li>
+              <li className="text-lg text-gray-700 leading-relaxed ml-4">
+                • La visión estratégica de quien ha sido responsable de los
+                números en la práctica
+              </li>
+            </ul>
+            <br></br>
+
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Mi objetivo es{" "}
-              <strong>
-                erradicar la fragilidad operativa de los procesos manuales
-              </strong>
-              , sustituyéndolos por sistemas de ingeniería que garantizan{" "}
-              <strong>
-                integridad forense, privacidad y trazabilidad absoluta
-              </strong>
-              , cumpliendo con los{" "}
-              <strong>
-                criterios de protección para la información sensible
-              </strong>{" "}
-              y evitando su exposición innecesaria ante servicios de IA externos
-              (agentes).
+              Especializado en transformar procesos manuales de finanzas y
+              cumplimiento fiscal en sistemas robustos, auditables y escalables.
             </p>
-            <div className="mb-8">
-              <h4 className="text-xl font-bold text-gray-800 mb-4">
-                Lo que aporto a su organización con logros clave y proyectos
-                como:
-              </h4>
-              <ul className="space-y-4">
-                <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  •{" "}
-                  <strong>
-                    Ingeniería de Automatización y Procesos (Python/Windows):
-                  </strong>{" "}
-                  Especialista en la sustitución de papeles de trabajo manuales
-                  por procesos automatizados locales (Batch/Real-time).{" "}
-                  <strong>Diseño pipelines </strong>
-                  que extraen datos crudos,{" "}
-                  <strong>ejecutan transformaciones complejas</strong> y los
-                  integran con papeles de trabajo, sistemas de Dashboards, bases
-                  de datos o modelos de Machine Learning.
-                </li>
-                <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  •{" "}
-                  <strong>
-                    Arquitectura de Sistemas Escalables con Segregación de
-                    Datos:
-                  </strong>{" "}
-                  Capacidad probada para arquitectar plataformas complejas desde
-                  cero (como RepoDeclara y BI Facturación con más de 50,000
-                  registros), donde la{" "}
-                  <strong>
-                    confidencialidad y el acceso basado en roles (RBAC)
-                  </strong>{" "}
-                  garantizan silos de información seguros.
-                </li>
-                <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Ingeniería Forense y Fiscal:</strong> Creador de
-                  RepoDeclara, una plataforma de trazabilidad fiscal y legal
-                  diseñada para resolver la complejidad que los sistemas
-                  extranjeros suelen omitir en materia de documentación fiscal y
-                  legal.
-                </li>
-                <li className="text-lg text-gray-700 leading-relaxed ml-4">
-                  • <strong>Analítica con Propósito:</strong> Implementación de{" "}
-                  <strong>Modelos de Machine Learning</strong> para reducir la
-                  incertidumbre en <strong>variables críticas</strong> como la{" "}
-                  rotación de personal (modelo predictivo), riesgo crediticio, y{" "}
-                  proyecciones de flujo de efectivo; brindando la capacidad de
-                  poner{" "}
-                  <strong>
-                    cualquier métrica estratégica bajo un estricto rigor
-                    estadístico para administrar su riesgo.
-                  </strong>
-                </li>
-              </ul>
-            </div>
           </div>
           <br />
           <br />
