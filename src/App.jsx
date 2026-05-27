@@ -1802,7 +1802,7 @@ Monto_Advertencia =>
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Soy <strong>Financial Data Analyst & Analytics Engineer</strong>{" "}
-              con más de 16 años de experiencia en contraloría y auditoría{" "}
+              con más de 16 años de experiencia en alta gerencia y auditoría{" "}
               <strong>(Big Four)</strong>.
             </p>
             <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
@@ -1816,7 +1816,7 @@ Monto_Advertencia =>
             <br></br>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               He vivido estos problemas en primera persona como Auditor y
-              Contralor. Por eso diseño e implemento{" "}
+              Gerente Financiero. Por eso diseño e implemento{" "}
               <strong>pipelines ETL y sistemas de gobernanza</strong> que
               resuelven estos dolores de raíz con{" "}
               <strong>lógica determinística,</strong> trazabilidad forense y
