@@ -1820,7 +1820,9 @@ Monto_Advertencia =>
               <strong>pipelines ETL y sistemas de gobernanza</strong> que
               resuelven estos dolores de raíz con{" "}
               <strong>lógica determinística,</strong> trazabilidad forense y
-              precisión decimal.
+              precisión decimal, incluyendo la detección automatizada de journal
+              entries inusuales y recálculos de depreciación para equipos de
+              auditoría.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               Creo firmemente en la potenciación que resulta del uso responsable
