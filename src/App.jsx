@@ -515,7 +515,11 @@ export default function Portfolio() {
             title: "Persistencia Estructurada y Consola de Gobernanza",
             description:
               "La arquitectura permite que los hallazgos de este motor ETL persistan en una base de datos PostgreSQL de alta disponibilidad. Esto transforma datos volátiles en una Fuente Única de Verdad (Single Source of Truth), fundamental cuando se requiere automatizar múltiples procesos críticos. El sistema permite reconstruir la trazabilidad histórica en cualquier momento, visualizando los detalles de cada excepción mediante una interfaz web privada con acceso basado en roles (RBAC), garantizando que la información sensible permanezca protegida dentro del perímetro de seguridad de la organización.",
-            image: "/images/etl-sistema.png",
+            image: [
+              "/images/etl-sistema.png",
+              "/images/etl-compras-card.png",
+              "/images/etl-compras-table.png",
+            ],
           },
           {
             title: "Arquitectura Desacoplada y Escalabilidad Funcional",
@@ -544,9 +548,10 @@ export default function Portfolio() {
         ],
 
         images: [
-          //"/images/etl-flow-diagram.png", // Un diagrama de cómo se mueven los archivos
-          //"/images/etl-pdf-screenshot.png", // El PDF reporte de excepciones
-          //"/images/etl-logs-example.png", // Una captura de los logs de auditoría
+          "/images/etl-depr-card.png",
+          "/images/etl-depr-table.png",
+          "/images/etl-JE-card.png",
+          "/images/etl-JE-table.png",
         ],
       },
 
@@ -557,7 +562,7 @@ export default function Portfolio() {
       title: "Dashboard SuperTienda Analytics - Sistema Web Personalizable",
       category: "Full Stack Development / Data Analytics",
       description:
-        "Aplicación web de analítica a medida desarrollada con Next.js y Python. Procesa 50k+ registros para diagnosticar fugas de capital y optimizar la rentabilidad operativa mediante una arquitectura de microservicios.",
+        "Aplicación web de dashboards analíticos a medida desarrollada con Next.js y Python. Procesa 50k+ registros para diagnosticar fugas de efectivo (capital de trabajo) y optimizar la rentabilidad operativa mediante una arquitectura de microservicios.",
       image: "/images/admintool_main.png",
       tags: [
         "Next.js",
