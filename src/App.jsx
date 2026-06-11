@@ -456,12 +456,12 @@ export default function Portfolio() {
         context: [
           "En el entorno corporativo actual, los ERPs tradicionales presentan brechas de diseño o implementaciones incompletas al sincronizar la operación contable con la realidad fiscal y financiera de México. Finanzas-Shell es un sistema que utilizo para mostrar el concepto de automatización de papeles de trabajo; no es un producto per se, sino la carcasa que aloja un motor de análisis diseñado para identificar proactivamente excepciones y generar resultados determinísticos con persistencia en bases de datos.",
           "El sustento de este proyecto es mitigar un riesgo crítico: investigaciones de la Universidad de Hawái (Ray Panko) revelan que el 88% de las hojas de cálculo corporativas contienen errores materiales. En finanzas, esto se traduce en resultados no reproducibles y falta de integridad. Este framework sustituye esa fragilidad por pipelines determinísticos donde la regla de negocio es inalterable y auditable.",
-          'El mínimo entregable para un papel de trabajo automatizado es un archivo con el script (código Pandas) al que se le presenta un reporte o integración contable del ERP, el script analiza la información y genera un entregable en Excel.  Esta arquitectura es escalable: puede operar como un script independiente para soluciones rápidas o integrarse a una base de datos para proyectos de persistencia histórica. Similar a una "Macro" de hoja de cálculo de Excel, pero con la ventaja de que el código es verificable y autodocumentado, lo que garantiza la integridad del proceso. El resultado final sigue siendo el Excel que el usuario conoce, pero ahora es el producto de un proceso determinístico y libre de errores de manipulación manual."',
+          'El mínimo entregable para un papel de trabajo automatizado es un archivo con el script (código Pandas) al que se le presenta un reporte o integración contable del ERP, el script analiza la información y genera un entregable en Excel.  Esta arquitectura es escalable: puede operar como un script independiente para soluciones rápidas o integrarse a una base de datos para proyectos de persistencia histórica. Funciona bajo una premisa similar a una "Macro" de Excel, pero con la ventaja de que el código es verificable y autodocumentado, lo que garantiza la integridad del proceso. El resultado final sigue siendo el Excel que el usuario conoce, pero ahora es el producto de un proceso determinístico y libre de errores de manipulación manual.',
           "A diferencia de las soluciones en la nube, esta metodología opera dentro del perímetro de seguridad de la organización (servidores de la empresa), cumpliendo estrictamente con las políticas de confidencialidad y soberanía de datos sensibles.",
         ],
         impact: [
           "El impacto trasciende la simple automatización: transformo el departamento financiero de un centro de costos operativo en una unidad de inteligencia estratégica. Al eliminar la dependencia de hojas de cálculo vulnerables a errores, se reducen significativamente los riesgos de control interno y de resultados inexactos o no reproducibles. Cuando este sistema esté completo, otorgará la certeza de que cada cifra en el balance tiene un rastro forense inalterable y una justificación técnica documentada, permitiendo cierres mensuales estandarizados y auditables.",
-          'Cada papel de trabajo automatizado presenta en el sistema una tarjeta con las excepciones encontradas, una tabla con todas las partidas procesadas y el resultado del análisis (se puede exportar a Excel), un reporte ejecutivo en PDF y en versión archivo ".csv" para verlo en Excel. Estas son las diferentes opciones que veo como entregables de un proceso de automatización de papeles de trabajo, independientemente de estar contenido en un sistema o ser un script independiente.',
+          "Cada proceso automatizado presenta una tarjeta de excepciones, tablas de alta densidad con filtros dinámicos y reportes ejecutivos en PDF o CSV. Estos componentes representan las diversas opciones de entregables de un proceso de automatización de papeles de trabajo, o de transformación de datos, ya sea que se consuman a través de una interfaz de sistema o como scripts independientes de alta precisión.",
         ],
 
         businessQuestions: [
@@ -476,7 +476,7 @@ export default function Portfolio() {
           {
             title: "Orquestación de Ingesta Local (Watchdog)",
             description:
-              "Diseñé un motor de vigilancia que monitorea directorios específicos en el Sistema Operativo. En cuanto un reporte raw del ERP es depositado, el motor lo identifica por convención de nombres y dispara el pipeline correspondiente, eliminando la carga manual de datos.",
+              "Diseñé una infraestructura de vigilancia que automatiza la captura de datos directamente desde el Sistema Operativo. El motor identifica los reportes por su nomenclatura y dispara el pipeline correspondiente, optimiza la ingesta desatendida en entornos locales y habilita una carga validada mediante la interfaz web. Para garantizar la flexibilidad y el control humano, el sistema incluye un selector de periodos fiscales que permite gestionar el avance del cierre mensual, asegurando que ningún procedimiento quede pendiente y manteniendo la trazabilidad histórica de cada periodo (mes).",
             image: ["/images/etl-cover.png", "/images/etl-periodo.png"],
           },
           {
@@ -511,7 +511,7 @@ export default function Portfolio() {
           {
             title: "Caso de Uso 2: Integración de Activos Fijos y Depreciación",
             description:
-              "Implementación de lógica de 'Fingerprinting' para detectar duplicados en el ERP. El motor calcula la depreciación teórica mediante moda estadística de tasas y detecta automáticamente Altas y Bajas del mes, comparando contra saldos iniciales (Periodo 0).",
+              "Implementación de lógica de 'Fingerprinting' para la detección de registros duplicados en el ERP. El motor calcula la depreciación teórica aplicando la moda estadística para identificar tasas inconsistentes por categoría. El sistema automatiza la identificación de Altas y Bajas del mes, validando la integridad del saldo mediante una comparativa incremental contra saldos iniciales (Periodo 0) y cierres históricos mensuales.",
             image: ["/images/etl-depr-card.png", "/images/etl-depr-table.png"],
           },
           {
@@ -1380,27 +1380,6 @@ export default function Portfolio() {
       link: "https://github.com/pprgarcia/Predictive-model-for-employee-turnover-using-XGBoost",
     },
     {
-      id: "web-inmuebles",
-      title: "Páginas Web",
-      category: "Javascript",
-      description:
-        "Páginas Web funcionales y responsivas para promoción de negocios, con mapas y formulario de contactos.",
-      image: "/images/web-1.jpeg",
-      tags: ["React", "Google Maps", "Responsive Design"],
-      metrics: [
-        { title: "Responsivo:", desc: "100%" },
-        { title: "SEO:", desc: "Optimizado" },
-        { title: "Galería de fotos:", desc: "Con Zoom" },
-        { title: "Mapa de Ubicación:", desc: "Integrado con Google Maps" },
-        {
-          title: "Formulario de Contacto:",
-          desc: "Integrado con Google Forms",
-        },
-        { title: "Base de Datos:", desc: "Supabase" },
-      ],
-      link: "https://departamento-queretaro.vercel.app/",
-    },
-    {
       id: "dashboard-looker",
       title: "Looker Studio - Dashboard Pedidos",
       category: "Looker",
@@ -1625,6 +1604,27 @@ Monto_Advertencia =>
       },
 
       link: "https://public.tableau.com/app/profile/jos.rodr.guez.garc.a/viz/SuperTienda-AnlisisdeRentabilidad/SuperTiendaAnlisisdeRentabilidad",
+    },
+    {
+      id: "web-inmuebles",
+      title: "Páginas Web",
+      category: "Javascript",
+      description:
+        "Páginas Web funcionales y responsivas para promoción de negocios, con mapas y formulario de contactos.",
+      image: "/images/web-1.jpeg",
+      tags: ["React", "Google Maps", "Responsive Design"],
+      metrics: [
+        { title: "Responsivo:", desc: "100%" },
+        { title: "SEO:", desc: "Optimizado" },
+        { title: "Galería de fotos:", desc: "Con Zoom" },
+        { title: "Mapa de Ubicación:", desc: "Integrado con Google Maps" },
+        {
+          title: "Formulario de Contacto:",
+          desc: "Integrado con Google Forms",
+        },
+        { title: "Base de Datos:", desc: "Supabase" },
+      ],
+      link: "https://departamento-queretaro.vercel.app/",
     },
   ];
 
