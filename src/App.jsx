@@ -419,132 +419,135 @@ export default function Portfolio() {
 
   const projects = [
     {
-      id: "etl-data-governance-framework",
-      title:
-        "Framework de Automatización de Datos: Pipeline ETL & Data Governance",
-      category: "Analytics Engineering",
+      id: "finanzas-shell-governance",
+      title: "Framework de Integridad Financiera y Gobernanza de Datos",
+      category: "Financial Analytics Engineering",
       description:
-        "Infraestructura de procesamiento de datos diseñada para automatizar flujos administrativos y financieros complejos. Garantiza la integridad de los datos, la soberanía de la información, el cumplimiento normativo y de control interno digitales, mediante procesos locales, determinísticos y auditables.",
-      image: "/images/etl-cover.png", // Aquí pondrías una miniatura del PDF generado
+        "Presento Finanzas-Shell como una propuesta de Infraestructura local diseñada para erradicar la fragilidad operativa de los procesos manuales en finanzas. Es la carcaza (shell) que sirve como entorno para mostrar la validación de papeles de trabajo complejos mediante pipelines determinísticos, garantizando soberanía de datos, trazabilidad forense y el cumplimiento de controles internos bajo estándares de Big Four.",
+      image: "/images/etl-compras-card.png",
       tags: [
-        "Python",
-        "Pandas",
+        "Python / Pandas",
         "Analytics Engineering",
-        "Data Governance",
+        "Gobernanza de Datos",
         "Control Interno Digital",
-        "Automatización de Procesos",
+        "Auditoría Forense",
+        "Soberanía de Datos",
       ],
       metrics: [
         {
-          title: "Procesamiento Híbrido",
-          desc: "Real-time Watchdog & Batch Processing",
-        },
-        {
           title: "Arquitectura Privacy-First",
-          desc: "Ejecución local sin exposición a nubes externas",
+          desc: "Ejecución local que garantiza que el know-how y datos sensibles no se expongan a IAs externas.",
         },
         {
-          title: "Integridad Decimal:",
-          desc: "Cálculos financieros con precisión de punto fijo",
+          title: "Lógica Determinística",
+          desc: "Cálculos matemáticos con precisión decimal que eliminan el error humano de las fórmulas de Excel.",
         },
         {
-          title: "Trazabilidad Forense Completa:",
-          desc: "Generación de Logs de Auditoría y Reportes de Excepción.",
+          title: "Segregación de Funciones",
+          desc: "Sistema con roles diferenciados donde solo el Gerente/Administrador emite el veredicto final.",
+        },
+        {
+          title: "Trazabilidad Inalterable",
+          desc: "Generación automática de logs de auditoría y reportes de excepción en PDF y TXT.",
         },
       ],
 
       detailedInfo: {
-        context:
-          "En el ecosistema financiero, los ERPs tradicionales a menudo presentan brechas de integridad al sincronizar reportes operativos con fuentes externas oficiales (como Banxico). Este proyecto desarrolla un pipeline ETL robusto que actúa como una capa de gobernanza automática, utilizando como ejemplo la auditoría de registros en moneda extranjera vs. el tipo de cambio oficial. Sin embargo, la arquitectura está diseñada para automatizar cualquier proceso administrativo, independientemente de la industria, mediante software local que garantiza la confidencialidad absoluta. A diferencia de las soluciones basadas en IAs externas, este enfoque elimina el riesgo de compartir información clasificada o 'know-how' con terceros, manteniendo el control total bajo los estándares de auditoría más estrictos.",
+        context: [
+          "En el entorno corporativo actual, los ERPs tradicionales presentan brechas de diseño o implementaciones incompletas al sincronizar la operación contable con la realidad fiscal y financiera de México. Finanzas-Shell es un sistema que utilizo para mostrar el concepto de automatización de papeles de trabajo; no es un producto per se, sino la carcasa que aloja un motor de análisis diseñado para identificar proactivamente excepciones y generar resultados determinísticos con persistencia en bases de datos.",
+          "El sustento de este proyecto es mitigar un riesgo crítico: investigaciones de la Universidad de Hawái (Ray Panko) revelan que el 88% de las hojas de cálculo corporativas contienen errores materiales. En finanzas, esto se traduce en resultados no reproducibles y falta de integridad. Este framework sustituye esa fragilidad por pipelines determinísticos donde la regla de negocio es inalterable y auditable.",
+          'El mínimo entregable para un papel de trabajo automatizado es un archivo con el script (código Pandas) al que se le presenta un reporte o integración contable del ERP, el script analiza la información y genera un entregable en Excel.  Esta arquitectura es escalable: puede operar como un script independiente para soluciones rápidas o integrarse a una base de datos para proyectos de persistencia histórica. Similar a una "Macro" de hoja de cálculo de Excel, pero con la ventaja de que el código es verificable y autodocumentado, lo que garantiza la integridad del proceso. El resultado final sigue siendo el Excel que el usuario conoce, pero ahora es el producto de un proceso determinístico y libre de errores de manipulación manual."',
+          "A diferencia de las soluciones en la nube, esta metodología opera dentro del perímetro de seguridad de la organización (servidores de la empresa), cumpliendo estrictamente con las políticas de confidencialidad y soberanía de datos sensibles.",
+        ],
+        impact: [
+          "El impacto trasciende la simple automatización: transformo el departamento financiero de un centro de costos operativo en una unidad de inteligencia estratégica. Al eliminar la dependencia de hojas de cálculo vulnerables a errores, se reducen significativamente los riesgos de control interno y de resultados inexactos o no reproducibles. Cuando este sistema esté completo, otorgará la certeza de que cada cifra en el balance tiene un rastro forense inalterable y una justificación técnica documentada, permitiendo cierres mensuales estandarizados y auditables.",
+          'Cada papel de trabajo automatizado presenta en el sistema una tarjeta con las excepciones encontradas, una tabla con todas las partidas procesadas y el resultado del análisis (se puede exportar a Excel), un reporte ejecutivo en PDF y en versión archivo ".csv" para verlo en Excel. Estas son las diferentes opciones que veo como entregables de un proceso de automatización de papeles de trabajo, independientemente de estar contenido en un sistema o ser un script independiente.',
+        ],
 
-        impact:
-          "El impacto inmediato es la eliminación de la conciliación manual y la mitigación directa de riesgos de cumplimiento y errores de 'timing' antes del cierre fiscal. No obstante, el valor estratégico reside en la soberanía de la información: el desarrollo de sistemas determinísticos y confiables liderados por un perfil que domina tanto el control interno como la ingeniería de datos. Esto permite que la organización no solo asegure la integridad de sus registros, sino que su equipo financiero evolucione de una carga operativa táctica hacia una gestión estratégica de alto nivel, operando en un entorno de automatización privado, seguro y auditable.",
         businessQuestions: [
-          "Como ejemplo de caso de uso, este ejemplo automatiza la respuesta a interrogantes críticas de cumplimiento:",
-          "¿Existen discrepancias entre el IVA registrado en el ERP y el cálculo basado en el Tipo de Cambio (TC) oficial de Banxico?",
-          "¿Qué facturas fueron registradas con un TC desactualizado antes del cierre diario?",
-          "¿Cuál es el impacto financiero acumulado por errores de redondeo o fluctuación no controlada en el mes?",
-          "¿Cómo podemos garantizar un rastro de auditoría íntegro para cada reporte procesado?",
-          "¿Podemos liberar al equipo de finanzas de la carga manual de conciliación periódica?",
+          "¿Podemos garantizar la soberanía de nuestros datos financieros sin depender de servidores externos?",
+          "¿Cómo eliminamos el riesgo de fórmulas inconsistentes en los papeles de trabajo de cierre?",
+          "¿Es posible detectar discrepancias fiscales y errores de captura en el ERP en tiempo real?",
+          "¿Qué rastro de auditoría tenemos para justificar las variaciones encontradas ante la autoridad?",
+          "¿Podemos implementar una segregación de funciones digital donde la preparación y la revisión estén blindadas?",
         ],
 
         process: [
           {
-            title: "Diseño de Arquitectura de Vigilancia (Watchdog)",
+            title: "Orquestación de Ingesta Local (Watchdog)",
             description:
-              "Implementación de un monitor de eventos del sistema de archivos que vigila directorios en tiempo real. El sistema detecta la llegada de nuevos reportes del ERP (TXT/CSV/Excel) e inicia el pipeline sin intervención humana. Otro enfoque de trabajo es configurar un proceso de 'batch' en el que cada cierto periodo de tiempo (ej. cada hora) se ejecuta el proceso de validación, lo que permite acumular los archivos que llegan durante ese periodo y procesarlos en bloque, optimizando recursos y permitiendo una conciliación más eficiente al final del día.",
+              "Diseñé un motor de vigilancia que monitorea directorios específicos en el Sistema Operativo. En cuanto un reporte raw del ERP es depositado, el motor lo identifica por convención de nombres y dispara el pipeline correspondiente, eliminando la carga manual de datos.",
+            image: ["/images/etl-cover.png", "/images/etl-periodo.png"],
           },
           {
-            title: "Gestión de Estados y Trazabilidad (Pipeline Flow)",
+            title: "Trazabilidad de Procesos y Logs Forenses",
             description:
-              "Diseño de un flujo de estados robusto: Entrada → Procesando → Procesados | Errores. Cada etapa incluye manejo de excepciones para archivos bloqueados y un sistema de Logging detallado que sirve como evidencia de auditoría. Abajo, la imagen del log de procesamiento que se le puede pedir para dar trazabilidad al proceso (el contenido se diseña según los requerimientos).",
+              "Cada ejecución genera una huella digital única. El sistema registra quién, cuándo y qué se procesó, guardando una bitácora técnica de cada transformación. Esta evidencia es fundamental para el cumplimiento de controles internos ISO/SOX.",
             image: "/images/etl-logs-example.png",
           },
           {
-            title: "Cruce con Master Data Oficial (Data Merging)",
+            title: "Ingeniería de Datos con Precisión Decimal",
             description:
-              "Desarrollo de un motor de búsqueda lógica con Pandas que realiza un 'lookup' dinámico (merge) entre los registros operativos y el archivo maestro de Tipos de Cambio oficiales, validando el TC exacto según la fecha de cada transacción.",
-            codeExample: `# Lógica Core: Cruce de Auditoría con Pandas
-              df_audit = pd.merge(df_facturas, df_master, on='Fecha', how='left')
+              "Utilizo Pandas (principal librería de Python para análisis de datos) para ejecutar transformaciones contables complejas. El código implementa validaciones de tipos, limpieza de caracteres especiales y aritmética de punto fijo para asegurar que no se pierdan centavos en los redondeos.",
+            codeExample: `# Ejemplo: Lógica de Auditoría Multimoneda
+              # Se realiza un cruce (merge) de la data operativa contra fuentes maestras externas
+              df_final = pd.merge(df_erp, df_master, on=['Fecha_Registro', 'Moneda'], how='left')
               
-              # Cálculo Forense de IVA
-              df_audit['IVA_Correcto'] = (df_audit['Monto_USD'] * df_audit['TC_Oficial'] * 0.16).round(2)
-              df_audit['Diferencia'] = (df_audit['IVA_Registrado'] - df_audit['IVA_Correcto']).round(2)
-              
-              # Filtrado selectivo de Excepciones
-              df_excepciones = df_audit[df_audit['Diferencia'].abs() > 0.01].copy()`,
+              # Cálculo de diferencia basado en el Tipo de Cambio oficial (Banxico)
+              df_final['IVA_Real'] = (df_final['Monto_Origen'] * df_final['TC_Oficial'] * 0.16).round(2)
+              df_final['Diferencia'] = (df_final['IVA_MXN_ERP'] - df_final['IVA_Real']).round(2)`,
           },
           {
-            title: "Ingeniería de Transformación y Normalización",
-            description:
-              "Normalización de tipos de datos y manejo de precisión decimal para evitar los errores de redondeo comunes en lenguajes de programación estándar. Asegura que el resultado coincida con los estándares de contabilidad gubernamental.",
-          },
-          {
-            title: "Generación Automática de Reportes Ejecutivos (PDF)",
-            description:
-              "Integración de la librería FPDF para traducir los datos analíticos en un documento formal de auditoría. El reporte incluye resumen ejecutivo, totales de discrepancia y el detalle de cada factura que requiere atención inmediata.",
-            image: "/images/etl-pdf-screenshot.png",
-          },
-          {
-            title: "Generación Automática de Reportes Ejecutivos (.txt)",
-            description:
-              'Si el resultado se va a integrar a un papel de trabajo, por ejemplo en Excel, o a otro sistema, el resultado puede presentarse en un archivo ".txt".',
-            image: "/images/etl-txt-screenshot.png",
-          },
-          {
-            title: "Persistencia Estructurada y Consola de Gobernanza",
-            description:
-              "La arquitectura permite que los hallazgos de este motor ETL persistan en una base de datos PostgreSQL de alta disponibilidad. Esto transforma datos volátiles en una Fuente Única de Verdad (Single Source of Truth), fundamental cuando se requiere automatizar múltiples procesos críticos. El sistema permite reconstruir la trazabilidad histórica en cualquier momento, visualizando los detalles de cada excepción mediante una interfaz web privada con acceso basado en roles (RBAC), garantizando que la información sensible permanezca protegida dentro del perímetro de seguridad de la organización.",
+            title: "Caso de Uso 1: Auditoría de IVA vs Tipo de Cambio",
+            description: [
+              "En este ejemplo, el proceso se especializa en facturas de Comercio Exterior y detecta discrepancias de Tipo de Cambio en el registro de facturas en moneda extranjera. El sistema presenta una tarjeta en el sistema con las excepciones encontradas, la tabla con todo el contenido analizado, y un reporte ejecutivo en PDF, detallando cada folio que presenta una variación vs el TC oficial de Banxico.",
+            ],
             image: [
-              "/images/etl-sistema.png",
               "/images/etl-compras-card.png",
               "/images/etl-compras-table.png",
+              "/images/etl-pdf-compras.png",
             ],
           },
           {
-            title: "Arquitectura Desacoplada y Escalabilidad Funcional",
+            title: "Caso de Uso 2: Integración de Activos Fijos y Depreciación",
             description:
-              "El sistema se diseñó bajo un modelo de micro-servicios donde el motor de procesamiento (Python) opera de forma independiente a la capa de visualización (Next.js). Esta modularidad permite inyectar nuevas reglas de negocio para cálculos de depreciaciones, amortizaciones, papeles de trabajo para auditoría o cierres mensuales, etc., simplemente agregando nuevos módulos al motor de transformación. La arquitectura es altamente escalable, permitiendo a la organización centralizar todos sus procesos de control interno digital en un solo framework de automatización financiera.",
+              "Implementación de lógica de 'Fingerprinting' para detectar duplicados en el ERP. El motor calcula la depreciación teórica mediante moda estadística de tasas y detecta automáticamente Altas y Bajas del mes, comparando contra saldos iniciales (Periodo 0).",
+            image: ["/images/etl-depr-card.png", "/images/etl-depr-table.png"],
+          },
+          {
+            title: "Caso de Uso 3: Neteo y Conciliación de Journal Entries",
+            description:
+              'Motor de integración de cuentas que realiza el neteo masivo de pólizas. Utiliza llaves únicas (RFC + Folio) para identificar partidas abiertas, permitiendo crear "integraciones de cuentas", y documentar el proceso mediante memos integrados que persiste en la base de datos, para dejar evidencia de revisión de partidas inusuales.',
+            image: ["/images/etl-JE-card.png", "/images/etl-JE-table.png"],
+          },
+          {
+            title: "Consola de Gobernanza y Control de Acceso (RBAC)",
+            description:
+              "Los resultados se centralizan en una interfaz privada desarrollada en Next.js. El sistema implementa una estricta segregación de funciones: mientras el personal operativo prepara la ingesta, solo el nivel de Gerencia tiene permisos para otorgar el 'Veredicto Final' y cerrar el ciclo del proceso en la plataforma.",
+            image: [
+              "/images/etl-control-accesos.png",
+              "/images/etl-panel-de-control.png",
+            ],
           },
         ],
 
         dashboardBreakdown: [
-          "Monitoreo de carpetas del sistema de archivos en tiempo real (Real-time Ingestion)",
-          "Motor de transformación basado en Pandas para lógica de negocio contable compleja",
-          "Sistema de validación cruzada con fuentes maestras de datos (Master Data Management)",
-          "Logs de auditoría detallados (.log) para cumplimiento de control interno (SOX/ISO)",
-          "Generador de informes de excepción en PDF con encabezados corporativos personalizados",
-          "Estructura de directorios segregada para gestión segura de archivos (Archiving)",
+          "Monitor ETL con estados en tiempo real (Online/Offline) del motor de procesamiento.",
+          "Selector de Periodo Maestro para la gestión de auditorías por ejercicios fiscales (Periodo 0 al 12).",
+          "Tablas de alta densidad con filtros por columna y cálculos de totales dinámicos.",
+          "Módulo lateral (Drawer) para documentar la materialidad mediante justificaciones contables vinculadas directamente al dato.",
+          "Bóveda de Evidencia Histórica con acceso a archivos fuente y resultados documentados.",
+          "Consola de Excepciones de Ingesta para la gestión de archivos con errores de formato.",
         ],
 
         keyInsights: [
-          "La automatización detecta discrepancias de 'timing' (errores de TC antes de las 12:00 PM) que son invisibles para la mayoría de los ERPs.",
-          "Reducción del tiempo de conciliación de IVA de horas a segundos por archivo procesado.",
-          "Detección proactiva de errores de captura antes de la presentación de declaraciones informativas (DIOT).",
-          "Automatización y blindaje del 'Papel de Trabajo' para la determinación de IVA mensual, garantizando la consistencia total entre registros contables y el cálculo de impuestos.",
-          "Sustitución de hojas de cálculo manuales por pipelines determinísticos en conciliaciones críticas (contenida en archivos Excel), eliminando la fragilidad operativa y garantizando la integridad de los datos procesados.",
-          "El sistema actúa como una barrera de Control Interno, garantizando que solo los datos validados lleguen a los repositorios de información histórica.",
-          "La trazabilidad forense total permite responder a requerimientos de la autoridad con evidencia documental generada al momento del proceso.",
+          "Sustitución de la fragilidad del Excel por pipelines determinísticos y auditables.",
+          "Detección de riesgos de cumplimiento (IVA/Depreciación) antes de los cierres fiscales definitivos.",
+          "Implementación de soberanía de datos financiera: la información sensible nunca sale de la red local.",
+          "Capacidad de escalar el framework a cualquier proceso administrativo de forma modular.",
+          "Optimización del tiempo de los equipos contables: de la captura manual al análisis de excepciones.",
+          "Garantía de integridad referencial: cada hallazgo tiene un responsable, una fecha y un memo de soporte.",
+          "Preparación automatizada para auditorías externas de Big Four con evidencia lista para descarga.",
         ],
 
         images: [
@@ -552,6 +555,8 @@ export default function Portfolio() {
           "/images/etl-depr-table.png",
           "/images/etl-JE-card.png",
           "/images/etl-JE-table.png",
+          "/images/etl-compras-card.png",
+          "/images/etl-compras-table.png",
         ],
       },
 
