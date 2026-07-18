@@ -428,6 +428,7 @@ export default function Portfolio() {
       tags: [
         "Python / Pandas",
         "Analytics Engineering",
+        "Financial Data Analysis",
         "Gobernanza de Datos",
         "Control Interno Digital",
         "Auditoría Forense",
@@ -1701,7 +1702,7 @@ Monto_Advertencia =>
 
             <div className="mb-12">
               <h2 className="text-2xl md:text-4xl text-gray-800 font-bold tracking-tight">
-                Analytics Engineer · Automatización Financiera & Fiscal
+                Financial Data Analyst · Automatización Financiera & Fiscal
               </h2>
               <br></br>
               <p className="text-xl md:text-2xl text-gray-500 font-light mt-2">
@@ -1811,8 +1812,8 @@ Monto_Advertencia =>
               "CONSTRUYO PUENTES DONDE LOS ERPs TRADICIONALES FALLAN."
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Soy <strong>Financial Data Analyst & Analytics Engineer</strong>{" "}
-              con más de 16 años de experiencia en alta gerencia y auditoría{" "}
+              Soy <strong>Financial Data Analyst</strong> con más de 16 años de
+              experiencia en alta gerencia y auditoría{" "}
               <strong>(Big Four)</strong>.
             </p>
             <p className="text-lg text-gray-800 leading-relaxed font-medium border-t border-gray-200 pt-8 italic">
